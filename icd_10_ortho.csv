@@ -456,7 +456,7 @@ M,7,1,3,3,2,M7,M71,M71.3,M71.33,M71.332,Other bursopathies,bursal cyst,wrist,.,b
 M,2,4,5,0,.,M2,M24,M24.5,M24.50,M24.50,Other specific joint derangements,contracture,joint,.,contracture joint .,.,-,.,musculoskeletal,joint disorder,y,.
 L,0,3,0,1,1,L0,L03,L03.0,L03.01,L03.011,Cellulitis,acute cellulitis finger lymphangitis toe,left right,.,acute cellulitis finger lymphangitis toe left right .,finger,hand,arm,skin,.,y,.
 L,0,3,0,1,2,L0,L03,L03.0,L03.01,L03.012,Cellulitis,acute cellulitis finger lymphangitis toe,left right,.,acute cellulitis finger lymphangitis toe left right .,finger,hand,arm,skin,.,y,.
-O,6,6,0,.,.,O6,O66,O66.0,O66.0,O66.0,Other obstructed labor,due dystocia labor obstructed shoulder,.,.,due dystocia labor obstructed shoulder . .,shoulder,arm,arm,genitourinary,joint,y,.
+O,6,6,0,.,.,O6,O66,O66.0,O66.0,O66.0,Other obstructed labor,due dystocia labor obstructed shoulder,.,.,due dystocia labor obstructed shoulder . .,shoulder,-,.,genitourinary,joint,y,.
 Q,6,8,1,.,.,Q6,Q68,Q68.1,Q68.1,Q68.1,Other congenital musculoskeletal deformities,congenital deformity fingers hand,.,.,congenital deformity fingers hand . .,finger,hand,arm,congenital,deformity,y,.
 Q,6,9,0,.,.,Q6,Q69,Q69.0,Q69.0,Q69.0,Polydactyly,accessory fingers,.,.,accessory fingers . .,finger,hand,arm,congenital,digits,y,.
 Q,6,9,1,.,.,Q6,Q69,Q69.1,Q69.1,Q69.1,Polydactyly,accessory thumbs,.,.,accessory thumbs . .,finger,hand,arm,congenital,digits,y,.
@@ -2225,10 +2225,10 @@ Q,7,4,2,.,.,Q7,Q74,Q74.2,Q74.2,Q74.2,Other congenital malformations of limb(s),c
 Q,7,4,3,.,.,Q7,Q74,Q74.3,Q74.3,Q74.3,Other congenital malformations of limb(s),arthrogryposis congenita multiplex,.,.,arthrogryposis congenita multiplex . .,.,-,other,congenital,malformation,y,.
 Q,7,4,8,.,.,Q7,Q74,Q74.8,Q74.8,Q74.8,Other congenital malformations of limb(s),congenital limbs malformations,.,.,congenital limbs malformations . .,.,-,other,congenital,malformation,y,.
 Q,7,4,9,.,.,Q7,Q74,Q74.9,Q74.9,Q74.9,Other congenital malformations of limb(s),congenital limbs malformation,.,.,congenital limbs malformation . .,.,-,other,congenital,malformation,y,.
-C,4,1,4,.,.,C4,C41,C41.4,C41.4,C41.4,Malignant neoplasm of bone & articular cartilage of other & unspecified sites,bones coccyx malignant neoplasm pelvic sacrum,.,.,bones coccyx malignant neoplasm pelvic sacrum . .,coccyx,pelvis,pelvis,tumor,.,y,.
+C,4,1,4,.,.,C4,C41,C41.4,C41.4,C41.4,Malignant neoplasm of bone & articular cartilage of other & unspecified sites,bones coccyx malignant neoplasm pelvic sacrum,.,.,bones coccyx malignant neoplasm pelvic sacrum . .,coccyx,spine,spine,tumor,.,y,.
 C,4,9,2,1,.,C4,C49,C49.2,C49.21,C49.21,Malignant neoplasm of other connective & soft tissue,connective hip including limb lower malignant neoplasm soft tissue,right,.,connective hip including limb lower malignant neoplasm soft tissue right .,.,pelvis,pelvis,tumor,joint,y,.
 C,4,9,2,2,.,C4,C49,C49.2,C49.22,C49.22,Malignant neoplasm of other connective & soft tissue,connective hip including limb lower malignant neoplasm soft tissue,left,.,connective hip including limb lower malignant neoplasm soft tissue left .,.,pelvis,pelvis,tumor,joint,y,.
-D,1,6,8,.,.,D1,D16,D16.8,D16.8,D16.8,Benign neoplasm of bone & articular cartilage,benign bones coccyx neoplasm pelvic sacrum,.,.,benign bones coccyx neoplasm pelvic sacrum . .,coccyx,pelvis,pelvis,tumor,.,y,.
+D,1,6,8,.,.,D1,D16,D16.8,D16.8,D16.8,Benign neoplasm of bone & articular cartilage,benign bones coccyx neoplasm pelvic sacrum,.,.,benign bones coccyx neoplasm pelvic sacrum . .,coccyx,spine,spine,tumor,.,y,.
 D,2,1,2,1,.,D2,D21,D21.2,D21.21,D21.21,Other benign neoplasms of connective & other soft tissue,benign connective hip including limb lower neoplasm soft tissue,right,.,benign connective hip including limb lower neoplasm soft tissue right .,.,pelvis,pelvis,tumor,joint,y,.
 D,2,1,2,2,.,D2,D21,D21.2,D21.22,D21.22,Other benign neoplasms of connective & other soft tissue,benign connective hip including limb lower neoplasm soft tissue,left,.,benign connective hip including limb lower neoplasm soft tissue left .,.,pelvis,pelvis,tumor,joint,y,.
 D,3,6,1,3,.,D3,D36,D36.1,D36.13,D36.13,Benign neoplasm of other & unspecified sites,autonomic benign neoplasm nerves nervous peripheral system,hip including limb lower,.,autonomic benign neoplasm nerves nervous peripheral system hip including limb lower .,.,pelvis,pelvis,tumor,joint,y,.
@@ -2287,8 +2287,8 @@ Q,6,5,8,9,.,Q6,Q65,Q65.8,Q65.89,Q65.89,Congenital deformities of hip,congenital,
 Q,6,5,9,.,.,Q6,Q65,Q65.9,Q65.9,Q65.9,Congenital deformities of hip,congenital deformity hip,.,.,congenital deformity hip . .,.,pelvis,pelvis,congenital,deformity,y,.
 R,2,9,4,.,.,R2,R29,R29.4,R29.4,R29.4,Other symptoms & signs involving the nervous & musculoskeletal systems,clicking hip,.,.,clicking hip . .,.,pelvis,pelvis,symptoms/findings,joint,y,.
 S,3,0,0,X,X,S3,S30,S30.0,S30.0X,S30.0XX,"Superficial injury of abdomen, lower back, & pelvis",contusion lower pelvis,initial sequela subsequent,.,contusion lower pelvis initial sequela subsequent .,.,pelvis,pelvis,trauma,contusion,y,.
-S,3,2,1,0,X,S3,S32,S32.1,S32.10,S32.10X,Fracture of lumbar spine & pelvis,fracture,sacrum,.,fracture sacrum .,sacrum,pelvis,pelvis,trauma,fracture,y,.
-S,3,2,2,X,X,S3,S32,S32.2,S32.2X,S32.2XX,Fracture of lumbar spine & pelvis,fracture,coccyx,.,fracture coccyx .,coccyx,pelvis,pelvis,trauma,fracture,y,.
+S,3,2,1,0,X,S3,S32,S32.1,S32.10,S32.10X,Fracture of lumbar spine & pelvis,fracture,sacrum,.,fracture sacrum .,sacrum,spine,spine,trauma,fracture,y,.
+S,3,2,2,X,X,S3,S32,S32.2,S32.2X,S32.2XX,Fracture of lumbar spine & pelvis,fracture,coccyx,.,fracture coccyx .,coccyx,spine,spine,trauma,fracture,y,.
 S,3,2,3,0,1,S3,S32,S32.3,S32.30,S32.301,Fracture of lumbar spine & pelvis,fracture,ilium,right,fracture ilium right,ilium,pelvis,pelvis,trauma,fracture,y,.
 S,3,2,3,0,2,S3,S32,S32.3,S32.30,S32.302,Fracture of lumbar spine & pelvis,fracture,ilium,left,fracture ilium left,ilium,pelvis,pelvis,trauma,fracture,y,.
 S,3,2,3,1,1,S3,S32,S32.3,S32.31,S32.311,Fracture of lumbar spine & pelvis,fracture,avulsion ilium,displaced right,fracture avulsion ilium displaced right,ilium,pelvis,pelvis,trauma,fracture,y,.
