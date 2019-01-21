@@ -1391,11 +1391,11 @@ Q,7,5,4,.,.,Q7,Q75,Q75.4,Q75.4,Q75.4,Other congenital malformations of skull & f
 Q,7,5,9,.,.,Q7,Q75,Q75.9,Q75.9,Q75.9,Other congenital malformations of skull & face bones,bones congenital malformation skull,.,.,bones congenital malformation skull . .,.,skull,head,congenital,malformation,y,.
 S,0,0,9,0,X,S0,S00,S00.9,S00.90,S00.90X,Superficial injury of head,head part,injury superficial,.,head part injury superficial .,head,skull,head,trauma,injury,y,.
 S,0,2,6,0,0,S0,S02,S02.6,S02.60,S02.600,Fracture of skull & facial bones,fracture,mandible,body part,fracture mandible body part,head,skull,head,trauma,fracture,y,.
-M,5,4,3,1,.,M5,M54,M54.3,M54.31,M54.31,Dorsalgia,sciatica,right,.,sciatica right .,.,leg,leg,musculoskeletal,"dorsopathies, other",y,.
-M,5,4,3,2,.,M5,M54,M54.3,M54.32,M54.32,Dorsalgia,sciatica,left,.,sciatica left .,.,leg,leg,musculoskeletal,"dorsopathies, other",y,.
-M,5,4,4,0,.,M5,M54,M54.4,M54.40,M54.40,Dorsalgia,lumbago sciatica,.,.,lumbago sciatica . .,.,leg,leg,musculoskeletal,"dorsopathies, other",y,.
-M,5,4,4,1,.,M5,M54,M54.4,M54.41,M54.41,Dorsalgia,lumbago sciatica,right,.,lumbago sciatica right .,.,leg,leg,musculoskeletal,"dorsopathies, other",y,.
-M,5,4,4,2,.,M5,M54,M54.4,M54.42,M54.42,Dorsalgia,lumbago sciatica,left,.,lumbago sciatica left .,.,leg,leg,musculoskeletal,"dorsopathies, other",y,.
+M,5,4,3,1,.,M5,M54,M54.3,M54.31,M54.31,Dorsalgia,sciatica,right,.,sciatica right .,.,.,leg,musculoskeletal,"dorsopathies, other",y,.
+M,5,4,3,2,.,M5,M54,M54.3,M54.32,M54.32,Dorsalgia,sciatica,left,.,sciatica left .,.,.,leg,musculoskeletal,"dorsopathies, other",y,.
+M,5,4,4,0,.,M5,M54,M54.4,M54.40,M54.40,Dorsalgia,lumbago sciatica,.,.,lumbago sciatica . .,.,.,leg,musculoskeletal,"dorsopathies, other",y,.
+M,5,4,4,1,.,M5,M54,M54.4,M54.41,M54.41,Dorsalgia,lumbago sciatica,right,.,lumbago sciatica right .,.,.,leg,musculoskeletal,"dorsopathies, other",y,.
+M,5,4,4,2,.,M5,M54,M54.4,M54.42,M54.42,Dorsalgia,lumbago sciatica,left,.,lumbago sciatica left .,.,.,leg,musculoskeletal,"dorsopathies, other",y,.
 M,7,9,6,0,4,M7,M79,M79.6,M79.60,M79.604,Other soft tissue disorders,pain,arm leg,.,pain arm leg .,need last char,.,.,musculoskeletal,"disorder, soft-tissue",y,.
 M,7,9,6,0,5,M7,M79,M79.6,M79.60,M79.605,Other soft tissue disorders,pain,arm leg,.,pain arm leg .,need last char,.,.,musculoskeletal,"disorder, soft-tissue",y,.
 M,2,1,4,0,.,M2,M21,M21.4,M21.40,M21.40,Other acquired deformities of limbs,foot,acquired flat pes planus,.,foot acquired flat pes planus .,.,.,foot,musculoskeletal,joint disorder,y,.
@@ -1701,206 +1701,206 @@ M,2,0,1,2,.,M2,M20,M20.1,M20.12,M20.12,Acquired deformities of fingers & toes,ac
 M,2,0,2,2,.,M2,M20,M20.2,M20.22,M20.22,Acquired deformities of fingers & toes,foot hallux rigidus,left,.,foot hallux rigidus left .,hallux,hallux,foot,musculoskeletal,.,y,.
 M,2,0,3,1,.,M2,M20,M20.3,M20.31,M20.31,Acquired deformities of fingers & toes,acquired foot hallux varus,right,.,acquired foot hallux varus right .,hallux,hallux,foot,musculoskeletal,.,y,.
 M,2,0,3,2,.,M2,M20,M20.3,M20.32,M20.32,Acquired deformities of fingers & toes,acquired foot hallux varus,left,.,acquired foot hallux varus left .,hallux,hallux,foot,musculoskeletal,.,y,.
-M,0,0,0,6,1,M0,M00,M00.0,M00.06,M00.061,Pyogenic arthritis,staphylococcal,arthritis knee,.,staphylococcal arthritis knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,0,0,0,6,2,M0,M00,M00.0,M00.06,M00.062,Pyogenic arthritis,staphylococcal,arthritis knee,.,staphylococcal arthritis knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,0,0,2,6,2,M0,M00,M00.2,M00.26,M00.262,Pyogenic arthritis,streptococcal,arthritis knee,.,streptococcal arthritis knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,0,0,8,6,1,M0,M00,M00.8,M00.86,M00.861,Pyogenic arthritis,bacteria due,arthritis knee,.,bacteria due arthritis knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,0,0,8,6,2,M0,M00,M00.8,M00.86,M00.862,Pyogenic arthritis,bacteria due,arthritis knee,.,bacteria due arthritis knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,1,0,6,1,M2,M21,M21.0,M21.06,M21.061,Other acquired deformities of limbs,classified deformity valgus,knee,.,classified deformity valgus knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,1,0,6,2,M2,M21,M21.0,M21.06,M21.062,Other acquired deformities of limbs,classified deformity valgus,knee,.,classified deformity valgus knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,1,0,6,9,M2,M21,M21.0,M21.06,M21.069,Other acquired deformities of limbs,classified deformity valgus,knee,.,classified deformity valgus knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,1,1,6,1,M2,M21,M21.1,M21.16,M21.161,Other acquired deformities of limbs,classified deformity varus,knee,.,classified deformity varus knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,1,1,6,2,M2,M21,M21.1,M21.16,M21.162,Other acquired deformities of limbs,classified deformity varus,knee,.,classified deformity varus knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,1,1,6,9,M2,M21,M21.1,M21.16,M21.169,Other acquired deformities of limbs,classified deformity varus,knee,.,classified deformity varus knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,1,2,6,2,M2,M21,M21.2,M21.26,M21.262,Other acquired deformities of limbs,deformity flexion,knee,.,deformity flexion knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,2,0,1,.,M2,M22,M22.0,M22.01,M22.01,Disorders of patella,dislocation knee patella recurrent,right,.,dislocation knee patella recurrent right .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,2,0,2,.,M2,M22,M22.0,M22.02,M22.02,Disorders of patella,dislocation knee patella recurrent,left,.,dislocation knee patella recurrent left .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,2,1,1,.,M2,M22,M22.1,M22.11,M22.11,Disorders of patella,knee patella recurrent subluxation,right,.,knee patella recurrent subluxation right .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,2,1,2,.,M2,M22,M22.1,M22.12,M22.12,Disorders of patella,knee patella recurrent subluxation,left,.,knee patella recurrent subluxation left .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,2,2,X,1,M2,M22,M22.2,M22.2X,M22.2X1,Disorders of patella,disorders knee patellofemoral,left right,.,disorders knee patellofemoral left right .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,2,2,X,2,M2,M22,M22.2,M22.2X,M22.2X2,Disorders of patella,disorders knee patellofemoral,left right,.,disorders knee patellofemoral left right .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,2,4,1,.,M2,M22,M22.4,M22.41,M22.41,Disorders of patella,chondromalacia knee patellae,right,.,chondromalacia knee patellae right .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,2,4,2,.,M2,M22,M22.4,M22.42,M22.42,Disorders of patella,chondromalacia knee patellae,left,.,chondromalacia knee patellae left .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,2,8,X,1,M2,M22,M22.8,M22.8X,M22.8X1,Disorders of patella,disorders knee patella,left right,.,disorders knee patella left right .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,2,8,X,2,M2,M22,M22.8,M22.8X,M22.8X2,Disorders of patella,disorders knee patella,left right,.,disorders knee patella left right .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,3,0,0,6,M2,M23,M23.0,M23.00,M23.006,Internal derangement of knee,meniscus,cystic knee,.,meniscus cystic knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,3,2,0,0,M2,M23,M23.2,M23.20,M23.200,Internal derangement of knee,derangement due injury knee meniscus tear,lateral left medial right,.,derangement due injury knee meniscus tear lateral left medial right .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,3,2,0,1,M2,M23,M23.2,M23.20,M23.201,Internal derangement of knee,derangement due injury knee meniscus tear,lateral left medial right,.,derangement due injury knee meniscus tear lateral left medial right .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,3,2,0,3,M2,M23,M23.2,M23.20,M23.203,Internal derangement of knee,derangement due injury knee meniscus tear,lateral left medial right,.,derangement due injury knee meniscus tear lateral left medial right .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,3,3,0,0,M2,M23,M23.3,M23.30,M23.300,Internal derangement of knee,meniscus,derangements knee,lateral,meniscus derangements knee lateral,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,3,3,0,1,M2,M23,M23.3,M23.30,M23.301,Internal derangement of knee,meniscus,derangements knee,lateral,meniscus derangements knee lateral,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,3,3,0,4,M2,M23,M23.3,M23.30,M23.304,Internal derangement of knee,meniscus,derangements knee,medial,meniscus derangements knee medial,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,3,3,0,6,M2,M23,M23.3,M23.30,M23.306,Internal derangement of knee,meniscus,derangements knee,.,meniscus derangements knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,3,3,0,7,M2,M23,M23.3,M23.30,M23.307,Internal derangement of knee,meniscus,derangements knee,.,meniscus derangements knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,3,3,2,1,M2,M23,M23.3,M23.32,M23.321,Internal derangement of knee,meniscus,derangements horn knee medial posterior,.,meniscus derangements horn knee medial posterior .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,3,4,1,.,M2,M23,M23.4,M23.41,M23.41,Internal derangement of knee,knee,body loose right,.,knee body loose right .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,3,4,2,.,M2,M23,M23.4,M23.42,M23.42,Internal derangement of knee,knee,body left loose,.,knee body left loose .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,3,8,X,1,M2,M23,M23.8,M23.8X,M23.8X1,Internal derangement of knee,derangements internal knee,left right,.,derangements internal knee left right .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,3,8,X,2,M2,M23,M23.8,M23.8X,M23.8X2,Internal derangement of knee,derangements internal knee,left right,.,derangements internal knee left right .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,3,9,1,.,M2,M23,M23.9,M23.91,M23.91,Internal derangement of knee,derangement internal knee,right,.,derangement internal knee right .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,3,9,2,.,M2,M23,M23.9,M23.92,M23.92,Internal derangement of knee,derangement internal knee,left,.,derangement internal knee left .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,4,4,6,2,M2,M24,M24.4,M24.46,M24.462,Other specific joint derangements,dislocation recurrent,knee,.,dislocation recurrent knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,4,5,6,1,M2,M24,M24.5,M24.56,M24.561,Other specific joint derangements,contracture,knee,.,contracture knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,4,5,6,2,M2,M24,M24.5,M24.56,M24.562,Other specific joint derangements,contracture,knee,.,contracture knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,4,5,6,9,M2,M24,M24.5,M24.56,M24.569,Other specific joint derangements,contracture,knee,.,contracture knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,4,6,6,1,M2,M24,M24.6,M24.66,M24.661,Other specific joint derangements,ankylosis,knee,.,ankylosis knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,4,6,6,2,M2,M24,M24.6,M24.66,M24.662,Other specific joint derangements,ankylosis,knee,.,ankylosis knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,5,0,6,1,M2,M25,M25.0,M25.06,M25.061,Other joint disorders,hemarthrosis,knee,.,hemarthrosis knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,5,3,6,1,M2,M25,M25.3,M25.36,M25.361,Other joint disorders,instability,knee,.,instability knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,5,3,6,2,M2,M25,M25.3,M25.36,M25.362,Other joint disorders,instability,knee,.,instability knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,5,4,6,1,M2,M25,M25.4,M25.46,M25.461,Other joint disorders,effusion,knee,.,effusion knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,5,4,6,2,M2,M25,M25.4,M25.46,M25.462,Other joint disorders,effusion,knee,.,effusion knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,5,4,6,9,M2,M25,M25.4,M25.46,M25.469,Other joint disorders,effusion,knee,.,effusion knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,5,5,6,1,M2,M25,M25.5,M25.56,M25.561,Other joint disorders,pain,knee,.,pain knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,5,5,6,2,M2,M25,M25.5,M25.56,M25.562,Other joint disorders,pain,knee,.,pain knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,5,6,6,1,M2,M25,M25.6,M25.66,M25.661,Other joint disorders,classified stiffness,knee,.,classified stiffness knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,5,6,6,9,M2,M25,M25.6,M25.66,M25.669,Other joint disorders,classified stiffness,knee,.,classified stiffness knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,5,8,6,1,M2,M25,M25.8,M25.86,M25.861,Other joint disorders,joint,disorders knee,.,joint disorders knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,5,8,6,2,M2,M25,M25.8,M25.86,M25.862,Other joint disorders,joint,disorders knee,.,joint disorders knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,2,5,8,6,9,M2,M25,M25.8,M25.86,M25.869,Other joint disorders,joint,disorders knee,.,joint disorders knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,6,7,3,6,2,M6,M67,M67.3,M67.36,M67.362,Other disorders of synovium & tendon,synovitis transient,knee,.,synovitis transient knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,6,7,4,6,2,M6,M67,M67.4,M67.46,M67.462,Other disorders of synovium & tendon,ganglion,knee,.,ganglion knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,6,7,5,1,.,M6,M67,M67.5,M67.51,M67.51,Other disorders of synovium & tendon,knee plica syndrome,right,.,knee plica syndrome right .,knee,leg,leg,musculoskeletal,joint,y,.
-M,6,7,5,2,.,M6,M67,M67.5,M67.52,M67.52,Other disorders of synovium & tendon,knee plica syndrome,left,.,knee plica syndrome left .,knee,leg,leg,musculoskeletal,joint,y,.
-M,7,0,4,1,.,M7,M70,M70.4,M70.41,M70.41,"Soft tissue disorders related to use, overuse, & pressure",bursitis knee prepatellar,right,.,bursitis knee prepatellar right .,knee,leg,leg,musculoskeletal,joint,y,.
-M,7,0,4,2,.,M7,M70,M70.4,M70.42,M70.42,"Soft tissue disorders related to use, overuse, & pressure",bursitis knee prepatellar,left,.,bursitis knee prepatellar left .,knee,leg,leg,musculoskeletal,joint,y,.
-M,7,0,5,0,.,M7,M70,M70.5,M70.50,M70.50,"Soft tissue disorders related to use, overuse, & pressure",knee,bursitis,.,knee bursitis .,knee,leg,leg,musculoskeletal,joint,y,.
-M,7,0,5,1,.,M7,M70,M70.5,M70.51,M70.51,"Soft tissue disorders related to use, overuse, & pressure",knee,bursitis right,.,knee bursitis right .,knee,leg,leg,musculoskeletal,joint,y,.
-M,7,0,5,2,.,M7,M70,M70.5,M70.52,M70.52,"Soft tissue disorders related to use, overuse, & pressure",knee,bursitis left,.,knee bursitis left .,knee,leg,leg,musculoskeletal,joint,y,.
-M,7,1,2,1,.,M7,M71,M71.2,M71.21,M71.21,Other bursopathies,baker cyst knee popliteal space synovial,right,.,baker cyst knee popliteal space synovial right .,knee,leg,leg,musculoskeletal,joint,y,.
-M,7,1,2,2,.,M7,M71,M71.2,M71.22,M71.22,Other bursopathies,baker cyst knee popliteal space synovial,left,.,baker cyst knee popliteal space synovial left .,knee,leg,leg,musculoskeletal,joint,y,.
-M,7,6,3,1,.,M7,M76,M76.3,M76.31,M76.31,"Enthesopathies of lower limb, excluding foot",band iliotibial leg syndrome,right,.,band iliotibial leg syndrome right .,knee,leg,leg,musculoskeletal,joint,y,.
-M,7,6,3,2,.,M7,M76,M76.3,M76.32,M76.32,"Enthesopathies of lower limb, excluding foot",band iliotibial leg syndrome,left,.,band iliotibial leg syndrome left .,knee,leg,leg,musculoskeletal,joint,y,.
-M,7,6,5,1,.,M7,M76,M76.5,M76.51,M76.51,"Enthesopathies of lower limb, excluding foot",knee patellar tendinitis,right,.,knee patellar tendinitis right .,knee,leg,leg,musculoskeletal,joint,y,.
-M,7,6,5,2,.,M7,M76,M76.5,M76.52,M76.52,"Enthesopathies of lower limb, excluding foot",knee patellar tendinitis,left,.,knee patellar tendinitis left .,knee,leg,leg,musculoskeletal,joint,y,.
-M,9,2,4,0,.,M9,M92,M92.4,M92.40,M92.40,Other juvenile osteochondrosis,juvenile knee osteochondrosis patella,.,.,juvenile knee osteochondrosis patella . .,knee,leg,leg,musculoskeletal,joint,y,.
-M,9,3,2,6,1,M9,M93,M93.2,M93.26,M93.261,Other osteochondropathies,dissecans osteochondritis,knee,.,dissecans osteochondritis knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,9,3,2,6,2,M9,M93,M93.2,M93.26,M93.262,Other osteochondropathies,dissecans osteochondritis,knee,.,dissecans osteochondritis knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,9,4,2,6,1,M9,M94,M94.2,M94.26,M94.261,Other disorders of cartilage,chondromalacia,knee,.,chondromalacia knee .,knee,leg,leg,musculoskeletal,joint,y,.
-M,9,4,2,6,2,M9,M94,M94.2,M94.26,M94.262,Other disorders of cartilage,chondromalacia,knee,.,chondromalacia knee .,knee,leg,leg,musculoskeletal,joint,y,.
-Q,6,8,2,.,.,Q6,Q68,Q68.2,Q68.2,Q68.2,Other congenital musculoskeletal deformities,congenital deformity knee,.,.,congenital deformity knee . .,knee,leg,leg,congenital,deformity,y,.
-Q,6,8,5,.,.,Q6,Q68,Q68.5,Q68.5,Q68.5,Other congenital musculoskeletal deformities,bones bowing congenital leg,.,.,bones bowing congenital leg . .,knee,leg,leg,congenital,deformity,y,.
-Q,6,8,6,.,.,Q6,Q68,Q68.6,Q68.6,Q68.6,Other congenital musculoskeletal deformities,discoid meniscus,.,.,discoid meniscus . .,knee,leg,leg,congenital,deformity,y,.
-Q,7,4,1,.,.,Q7,Q74,Q74.1,Q74.1,Q74.1,Other congenital malformations of limb(s),congenital knee malformation,.,.,congenital knee malformation . .,knee,leg,leg,congenital,malformation,y,.
-S,8,0,0,1,X,S8,S80,S80.0,S80.01,S80.01X,Superficial injury of lower leg,contusion knee,right,.,contusion knee right .,knee,leg,leg,trauma,contusion,y,.
-S,8,0,0,2,X,S8,S80,S80.0,S80.02,S80.02X,Superficial injury of lower leg,contusion knee,left,.,contusion knee left .,knee,leg,leg,trauma,contusion,y,.
-S,8,0,2,1,1,S8,S80,S80.2,S80.21,S80.211,Superficial injury of lower leg,knee,abrasion,right,knee abrasion right,knee,leg,leg,trauma,friction,y,.
-S,8,0,2,1,2,S8,S80,S80.2,S80.21,S80.212,Superficial injury of lower leg,knee,abrasion,left,knee abrasion left,knee,leg,leg,trauma,friction,y,.
-S,8,0,2,5,1,S8,S80,S80.2,S80.25,S80.251,Superficial injury of lower leg,knee,body foreign superficial,right,knee body foreign superficial right,knee,leg,leg,trauma,foreign,y,.
-S,8,0,2,5,2,S8,S80,S80.2,S80.25,S80.252,Superficial injury of lower leg,knee,body foreign superficial,left,knee body foreign superficial left,knee,leg,leg,trauma,foreign,y,.
-S,8,1,0,1,1,S8,S81,S81.0,S81.01,S81.011,Open wound of lower leg,knee,body foreign laceration,right,knee body foreign laceration right,knee,leg,leg,trauma,laceration,y,.
-S,8,1,0,1,2,S8,S81,S81.0,S81.01,S81.012,Open wound of lower leg,knee,body foreign laceration,left,knee body foreign laceration left,knee,leg,leg,trauma,laceration,y,.
-S,8,1,0,3,1,S8,S81,S81.0,S81.03,S81.031,Open wound of lower leg,knee,body foreign puncture wound,right,knee body foreign puncture wound right,knee,leg,leg,trauma,wound,y,.
-S,8,1,0,4,1,S8,S81,S81.0,S81.04,S81.041,Open wound of lower leg,knee,body foreign puncture wound,right,knee body foreign puncture wound right,knee,leg,leg,trauma,wound,y,.
-S,8,3,1,0,1,S8,S83,S83.1,S83.10,S83.101,"Dislocation, sprain, & strain of joints & ligaments of knee",knee,dislocation subluxation,right,knee dislocation subluxation right,knee,leg,leg,trauma,dislocation,y,.
-S,8,3,1,0,2,S8,S83,S83.1,S83.10,S83.102,"Dislocation, sprain, & strain of joints & ligaments of knee",knee,dislocation subluxation,left,knee dislocation subluxation left,knee,leg,leg,trauma,dislocation,y,.
-S,8,3,1,0,4,S8,S83,S83.1,S83.10,S83.104,"Dislocation, sprain, & strain of joints & ligaments of knee",knee,dislocation subluxation,right,knee dislocation subluxation right,knee,leg,leg,trauma,dislocation,y,.
-S,8,3,1,0,5,S8,S83,S83.1,S83.10,S83.105,"Dislocation, sprain, & strain of joints & ligaments of knee",knee,dislocation subluxation,left,knee dislocation subluxation left,knee,leg,leg,trauma,dislocation,y,.
-S,8,3,2,0,6,S8,S83,S83.2,S83.20,S83.206,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,buckethandle initial left right sequela subsequent,.,current injury knee meniscus tear buckethandle initial left right sequela subsequent .,knee,leg,leg,trauma,tear,y,.
-S,8,3,2,0,7,S8,S83,S83.2,S83.20,S83.207,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,buckethandle initial left right sequela subsequent,.,current injury knee meniscus tear buckethandle initial left right sequela subsequent .,knee,leg,leg,trauma,tear,y,.
-S,8,3,2,0,9,S8,S83,S83.2,S83.20,S83.209,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,buckethandle initial left right sequela subsequent,.,current injury knee meniscus tear buckethandle initial left right sequela subsequent .,knee,leg,leg,trauma,tear,y,.
-S,8,3,2,1,1,S8,S83,S83.2,S83.21,S83.211,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,buckethandle medial,right,current injury knee meniscus tear buckethandle medial right,knee,leg,leg,trauma,tear,y,.
-S,8,3,2,1,2,S8,S83,S83.2,S83.21,S83.212,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,buckethandle medial,left,current injury knee meniscus tear buckethandle medial left,knee,leg,leg,trauma,tear,y,.
-S,8,3,2,2,1,S8,S83,S83.2,S83.22,S83.221,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,medial peripheral,right,current injury knee meniscus tear medial peripheral right,knee,leg,leg,trauma,tear,y,.
-S,8,3,2,2,2,S8,S83,S83.2,S83.22,S83.222,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,medial peripheral,left,current injury knee meniscus tear medial peripheral left,knee,leg,leg,trauma,tear,y,.
-S,8,3,2,3,1,S8,S83,S83.2,S83.23,S83.231,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,complex medial,right,current injury knee meniscus tear complex medial right,knee,leg,leg,trauma,tear,y,.
-S,8,3,2,3,2,S8,S83,S83.2,S83.23,S83.232,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,complex medial,left,current injury knee meniscus tear complex medial left,knee,leg,leg,trauma,tear,y,.
-S,8,3,2,4,1,S8,S83,S83.2,S83.24,S83.241,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,medial,right,current injury knee meniscus tear medial right,knee,leg,leg,trauma,tear,y,.
-S,8,3,2,4,2,S8,S83,S83.2,S83.24,S83.242,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,medial,left,current injury knee meniscus tear medial left,knee,leg,leg,trauma,tear,y,.
-S,8,3,2,5,1,S8,S83,S83.2,S83.25,S83.251,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,buckethandle lateral,right,current injury knee meniscus tear buckethandle lateral right,knee,leg,leg,trauma,tear,y,.
-S,8,3,2,5,2,S8,S83,S83.2,S83.25,S83.252,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,buckethandle lateral,left,current injury knee meniscus tear buckethandle lateral left,knee,leg,leg,trauma,tear,y,.
-S,8,3,2,6,1,S8,S83,S83.2,S83.26,S83.261,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,lateral peripheral,right,current injury knee meniscus tear lateral peripheral right,knee,leg,leg,trauma,tear,y,.
-S,8,3,2,6,2,S8,S83,S83.2,S83.26,S83.262,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,lateral peripheral,left,current injury knee meniscus tear lateral peripheral left,knee,leg,leg,trauma,tear,y,.
-S,8,3,2,7,1,S8,S83,S83.2,S83.27,S83.271,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,complex lateral,right,current injury knee meniscus tear complex lateral right,knee,leg,leg,trauma,tear,y,.
-S,8,3,2,7,2,S8,S83,S83.2,S83.27,S83.272,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,complex lateral,left,current injury knee meniscus tear complex lateral left,knee,leg,leg,trauma,tear,y,.
-S,8,3,2,8,1,S8,S83,S83.2,S83.28,S83.281,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,lateral,right,current injury knee meniscus tear lateral right,knee,leg,leg,trauma,tear,y,.
-S,8,3,2,8,2,S8,S83,S83.2,S83.28,S83.282,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,lateral,left,current injury knee meniscus tear lateral left,knee,leg,leg,trauma,tear,y,.
-S,8,3,4,0,1,S8,S83,S83.4,S83.40,S83.401,"Dislocation, sprain, & strain of joints & ligaments of knee",collateral knee ligament sprain,initial left right sequela subsequent,.,collateral knee ligament sprain initial left right sequela subsequent .,knee,leg,leg,trauma,sprain,y,.
-S,8,3,4,1,1,S8,S83,S83.4,S83.41,S83.411,"Dislocation, sprain, & strain of joints & ligaments of knee",collateral knee ligament sprain,medial,right,collateral knee ligament sprain medial right,knee,leg,leg,trauma,sprain,y,.
-S,8,3,4,1,2,S8,S83,S83.4,S83.41,S83.412,"Dislocation, sprain, & strain of joints & ligaments of knee",collateral knee ligament sprain,medial,left,collateral knee ligament sprain medial left,knee,leg,leg,trauma,sprain,y,.
-S,8,3,4,1,9,S8,S83,S83.4,S83.41,S83.419,"Dislocation, sprain, & strain of joints & ligaments of knee",collateral knee ligament sprain,medial,.,collateral knee ligament sprain medial .,knee,leg,leg,trauma,sprain,y,.
-S,8,3,4,2,1,S8,S83,S83.4,S83.42,S83.421,"Dislocation, sprain, & strain of joints & ligaments of knee",collateral knee ligament sprain,lateral,right,collateral knee ligament sprain lateral right,knee,leg,leg,trauma,sprain,y,.
-S,8,3,4,2,2,S8,S83,S83.4,S83.42,S83.422,"Dislocation, sprain, & strain of joints & ligaments of knee",collateral knee ligament sprain,lateral,left,collateral knee ligament sprain lateral left,knee,leg,leg,trauma,sprain,y,.
-S,8,3,5,1,1,S8,S83,S83.5,S83.51,S83.511,"Dislocation, sprain, & strain of joints & ligaments of knee",cruciate knee ligament sprain,anterior,right,cruciate knee ligament sprain anterior right,knee,leg,leg,trauma,sprain,y,.
-S,8,3,5,1,2,S8,S83,S83.5,S83.51,S83.512,"Dislocation, sprain, & strain of joints & ligaments of knee",cruciate knee ligament sprain,anterior,left,cruciate knee ligament sprain anterior left,knee,leg,leg,trauma,sprain,y,.
-S,8,3,5,2,1,S8,S83,S83.5,S83.52,S83.521,"Dislocation, sprain, & strain of joints & ligaments of knee",cruciate knee ligament sprain,posterior,right,cruciate knee ligament sprain posterior right,knee,leg,leg,trauma,sprain,y,.
-S,8,3,5,2,2,S8,S83,S83.5,S83.52,S83.522,"Dislocation, sprain, & strain of joints & ligaments of knee",cruciate knee ligament sprain,posterior,left,cruciate knee ligament sprain posterior left,knee,leg,leg,trauma,sprain,y,.
-S,8,3,8,X,1,S8,S83,S83.8,S83.8X,S83.8X1,"Dislocation, sprain, & strain of joints & ligaments of knee",knee sprain,initial left right sequela subsequent,.,knee sprain initial left right sequela subsequent .,knee,leg,leg,trauma,sprain,y,.
-S,8,3,8,X,2,S8,S83,S83.8,S83.8X,S83.8X2,"Dislocation, sprain, & strain of joints & ligaments of knee",knee sprain,initial left right sequela subsequent,.,knee sprain initial left right sequela subsequent .,knee,leg,leg,trauma,sprain,y,.
-S,8,3,9,0,X,S8,S83,S83.9,S83.90,S83.90X,"Dislocation, sprain, & strain of joints & ligaments of knee",knee site sprain,initial sequela subsequent,.,knee site sprain initial sequela subsequent .,knee,leg,leg,trauma,sprain,y,.
-S,8,3,9,1,X,S8,S83,S83.9,S83.91,S83.91X,"Dislocation, sprain, & strain of joints & ligaments of knee",knee site sprain,right,.,knee site sprain right .,knee,leg,leg,trauma,sprain,y,.
-S,8,3,9,2,X,S8,S83,S83.9,S83.92,S83.92X,"Dislocation, sprain, & strain of joints & ligaments of knee",knee site sprain,left,.,knee site sprain left .,knee,leg,leg,trauma,sprain,y,.
-S,8,8,0,1,1,S8,S88,S88.0,S88.01,S88.011,Traumatic amputation of lower leg,amputation knee leg level lower traumatic,complete,right,amputation knee leg level lower traumatic complete right,knee,leg,leg,trauma,amputation,y,.
-S,8,8,1,1,1,S8,S88,S88.1,S88.11,S88.111,Traumatic amputation of lower leg,amputation ankle knee leg level lower traumatic,complete,right,amputation ankle knee leg level lower traumatic complete right,knee,leg,leg,trauma,amputation,y,.
-S,8,8,1,1,2,S8,S88,S88.1,S88.11,S88.112,Traumatic amputation of lower leg,amputation ankle knee leg level lower traumatic,complete,left,amputation ankle knee leg level lower traumatic complete left,knee,leg,leg,trauma,amputation,y,.
-M,2,1,8,6,1,M2,M21,M21.8,M21.86,M21.861,Other acquired deformities of limbs,acquired deformities,leg lower,.,acquired deformities leg lower .,lower,leg,leg,musculoskeletal,joint disorder,y,.
-M,2,1,8,6,2,M2,M21,M21.8,M21.86,M21.862,Other acquired deformities of limbs,acquired deformities,leg lower,.,acquired deformities leg lower .,lower,leg,leg,musculoskeletal,joint disorder,y,.
-M,2,1,8,6,9,M2,M21,M21.8,M21.86,M21.869,Other acquired deformities of limbs,acquired deformities,leg lower,.,acquired deformities leg lower .,lower,leg,leg,musculoskeletal,joint disorder,y,.
-M,2,1,9,6,1,M2,M21,M21.9,M21.96,M21.961,Other acquired deformities of limbs,acquired deformity,leg lower,.,acquired deformity leg lower .,lower,leg,leg,musculoskeletal,joint disorder,y,.
-M,2,1,9,6,2,M2,M21,M21.9,M21.96,M21.962,Other acquired deformities of limbs,acquired deformity,leg lower,.,acquired deformity leg lower .,lower,leg,leg,musculoskeletal,joint disorder,y,.
-M,2,1,9,6,9,M2,M21,M21.9,M21.96,M21.969,Other acquired deformities of limbs,acquired deformity,leg lower,.,acquired deformity leg lower .,lower,leg,leg,musculoskeletal,joint disorder,y,.
-M,6,2,4,6,2,M6,M62,M62.4,M62.46,M62.462,Other disorders of muscle,contracture muscle,leg lower,.,contracture muscle leg lower .,lower,leg,leg,musculoskeletal,"disorder, muscle",y,.
-M,6,2,5,6,1,M6,M62,M62.5,M62.56,M62.561,Other disorders of muscle,atrophy classified muscle wasting,leg lower,.,atrophy classified muscle wasting leg lower .,lower,leg,leg,musculoskeletal,"disorder, muscle",y,.
-M,7,6,7,1,.,M7,M76,M76.7,M76.71,M76.71,"Enthesopathies of lower limb, excluding foot",leg peroneal tendinitis,right,.,leg peroneal tendinitis right .,lower,leg,leg,musculoskeletal,"disorder, soft-tissue",y,.
-M,7,6,7,2,.,M7,M76,M76.7,M76.72,M76.72,"Enthesopathies of lower limb, excluding foot",leg peroneal tendinitis,left,.,leg peroneal tendinitis left .,lower,leg,leg,musculoskeletal,"disorder, soft-tissue",y,.
-M,7,6,9,.,.,M7,M76,M76.9,M76.9,M76.9,"Enthesopathies of lower limb, excluding foot",enthesopathy excluding foot limb lower,.,.,enthesopathy excluding foot limb lower . .,lower,leg,leg,musculoskeletal,"disorder, soft-tissue",y,.
-M,7,9,6,6,1,M7,M79,M79.6,M79.66,M79.661,Other soft tissue disorders,pain,leg lower,.,pain leg lower .,lower,leg,leg,musculoskeletal,"disorder, soft-tissue",y,.
-M,7,9,6,6,2,M7,M79,M79.6,M79.66,M79.662,Other soft tissue disorders,pain,leg lower,.,pain leg lower .,lower,leg,leg,musculoskeletal,"disorder, soft-tissue",y,.
-M,7,9,A,2,1,M7,M79,M79.A,M79.A2,M79.A21,Other soft tissue disorders,compartment nontraumatic syndrome,extremity lower,.,compartment nontraumatic syndrome extremity lower .,lower,leg,leg,musculoskeletal,"disorder, soft-tissue",y,.
-M,7,9,A,2,2,M7,M79,M79.A,M79.A2,M79.A22,Other soft tissue disorders,compartment nontraumatic syndrome,extremity lower,.,compartment nontraumatic syndrome extremity lower .,lower,leg,leg,musculoskeletal,"disorder, soft-tissue",y,.
-M,8,5,5,6,1,M8,M85,M85.5,M85.56,M85.561,Other disorders of bone density & structure,aneurysmal bone cyst,leg lower,.,aneurysmal bone cyst leg lower .,lower,leg,leg,musculoskeletal,"disorder, bone density",y,.
-M,8,5,5,6,2,M8,M85,M85.5,M85.56,M85.562,Other disorders of bone density & structure,aneurysmal bone cyst,leg lower,.,aneurysmal bone cyst leg lower .,lower,leg,leg,musculoskeletal,"disorder, bone density",y,.
-M,8,5,8,6,2,M8,M85,M85.8,M85.86,M85.862,Other disorders of bone density & structure,bone density disorders structure,leg lower,.,bone density disorders structure leg lower .,lower,leg,leg,musculoskeletal,"disorder, bone density",y,.
-M,8,9,6,6,2,M8,M89,M89.6,M89.66,M89.662,Other disorders of bone,osteopathy poliomyelitis,leg lower,.,osteopathy poliomyelitis leg lower .,lower,leg,leg,musculoskeletal,bone development,y,.
-M,9,3,9,6,1,M9,M93,M93.9,M93.96,M93.961,Other osteochondropathies,osteochondropathy,leg lower,.,osteochondropathy leg lower .,lower,leg,leg,musculoskeletal,"osteochondrosis, other",y,.
-Q,7,2,8,1,1,Q7,Q72,Q72.8,Q72.81,Q72.811,Reduction defects of lower limb,limb lower,congenital shortening,.,limb lower congenital shortening .,lower,leg,leg,congenital,reduction,y,.
-Q,7,2,8,1,2,Q7,Q72,Q72.8,Q72.81,Q72.812,Reduction defects of lower limb,limb lower,congenital shortening,.,limb lower congenital shortening .,lower,leg,leg,congenital,reduction,y,.
-Q,7,2,8,1,3,Q7,Q72,Q72.8,Q72.81,Q72.813,Reduction defects of lower limb,limb lower,congenital shortening,.,limb lower congenital shortening .,lower,leg,leg,congenital,reduction,y,.
-Q,7,2,8,9,1,Q7,Q72,Q72.8,Q72.89,Q72.891,Reduction defects of lower limb,limb lower,defects reduction,.,limb lower defects reduction .,lower,leg,leg,congenital,reduction,y,.
-Q,7,2,8,9,2,Q7,Q72,Q72.8,Q72.89,Q72.892,Reduction defects of lower limb,limb lower,defects reduction,.,limb lower defects reduction .,lower,leg,leg,congenital,reduction,y,.
-Q,7,2,8,9,3,Q7,Q72,Q72.8,Q72.89,Q72.893,Reduction defects of lower limb,limb lower,defects reduction,.,limb lower defects reduction .,lower,leg,leg,congenital,reduction,y,.
-Q,7,2,8,9,9,Q7,Q72,Q72.8,Q72.89,Q72.899,Reduction defects of lower limb,limb lower,defects reduction,.,limb lower defects reduction .,lower,leg,leg,congenital,reduction,y,.
-S,8,0,1,0,X,S8,S80,S80.1,S80.10,S80.10X,Superficial injury of lower leg,contusion leg lower,initial sequela subsequent,.,contusion leg lower initial sequela subsequent .,lower,leg,leg,trauma,contusion,y,.
-S,8,0,1,1,X,S8,S80,S80.1,S80.11,S80.11X,Superficial injury of lower leg,contusion leg lower,right,.,contusion leg lower right .,lower,leg,leg,trauma,contusion,y,.
-S,8,0,1,2,X,S8,S80,S80.1,S80.12,S80.12X,Superficial injury of lower leg,contusion leg lower,left,.,contusion leg lower left .,lower,leg,leg,trauma,contusion,y,.
-S,8,1,8,0,1,S8,S81,S81.8,S81.80,S81.801,Open wound of lower leg,leg lower,open wound,right,leg lower open wound right,lower,leg,leg,trauma,wound,y,.
-S,8,1,8,0,2,S8,S81,S81.8,S81.80,S81.802,Open wound of lower leg,leg lower,open wound,left,leg lower open wound left,lower,leg,leg,trauma,wound,y,.
-S,8,1,8,1,1,S8,S81,S81.8,S81.81,S81.811,Open wound of lower leg,leg lower,body foreign laceration,right,leg lower body foreign laceration right,lower,leg,leg,trauma,laceration,y,.
-S,8,1,8,1,2,S8,S81,S81.8,S81.81,S81.812,Open wound of lower leg,leg lower,body foreign laceration,left,leg lower body foreign laceration left,lower,leg,leg,trauma,laceration,y,.
-S,8,2,8,4,1,S8,S82,S82.8,S82.84,S82.841,"Fracture of lower leg, including ankle",fracture,bimalleolar leg lower,displaced right,fracture bimalleolar leg lower displaced right,lower,leg,leg,trauma,fracture,y,.
-S,8,2,8,4,2,S8,S82,S82.8,S82.84,S82.842,"Fracture of lower leg, including ankle",fracture,bimalleolar leg lower,displaced left,fracture bimalleolar leg lower displaced left,lower,leg,leg,trauma,fracture,y,.
-S,8,2,8,5,1,S8,S82,S82.8,S82.85,S82.851,"Fracture of lower leg, including ankle",fracture,leg lower trimalleolar,displaced right,fracture leg lower trimalleolar displaced right,lower,leg,leg,trauma,fracture,y,.
-S,8,2,8,5,2,S8,S82,S82.8,S82.85,S82.852,"Fracture of lower leg, including ankle",fracture,leg lower trimalleolar,displaced left,fracture leg lower trimalleolar displaced left,lower,leg,leg,trauma,fracture,y,.
-S,8,2,8,9,1,S8,S82,S82.8,S82.89,S82.891,"Fracture of lower leg, including ankle",fracture,leg lower,right,fracture leg lower right,lower,leg,leg,trauma,fracture,y,.
-S,8,2,8,9,2,S8,S82,S82.8,S82.89,S82.892,"Fracture of lower leg, including ankle",fracture,leg lower,left,fracture leg lower left,lower,leg,leg,trauma,fracture,y,.
-S,8,2,9,1,X,S8,S82,S82.9,S82.91,S82.91X,"Fracture of lower leg, including ankle",fracture,leg lower right,.,fracture leg lower right .,lower,leg,leg,trauma,fracture,y,.
-S,8,2,9,2,X,S8,S82,S82.9,S82.92,S82.92X,"Fracture of lower leg, including ankle",fracture,left leg lower,.,fracture left leg lower .,lower,leg,leg,trauma,fracture,y,.
-S,8,4,1,1,X,S8,S84,S84.1,S84.11,S84.11X,Injury of nerves at lower leg level,leg,injury level lower nerve peroneal right,.,leg injury level lower nerve peroneal right .,lower,leg,leg,trauma,nerve,y,.
-S,8,6,1,1,1,S8,S86,S86.1,S86.11,S86.111,Injury of muscle & tendon at lower leg level,leg,level lower muscle muscles posterior strain tendons,right,leg level lower muscle muscles posterior strain tendons right,lower,leg,leg,trauma,strain,y,.
-S,8,6,1,1,2,S8,S86,S86.1,S86.11,S86.112,Injury of muscle & tendon at lower leg level,leg,level lower muscle muscles posterior strain tendons,left,leg level lower muscle muscles posterior strain tendons left,lower,leg,leg,trauma,strain,y,.
-S,8,6,3,0,1,S8,S86,S86.3,S86.30,S86.301,Injury of muscle & tendon at lower leg level,leg,injury level lower muscle muscles peroneal tendons,right,leg injury level lower muscle muscles peroneal tendons right,lower,leg,leg,trauma,tendon,y,.
-S,8,6,3,0,2,S8,S86,S86.3,S86.30,S86.302,Injury of muscle & tendon at lower leg level,leg,injury level lower muscle muscles peroneal tendons,left,leg injury level lower muscle muscles peroneal tendons left,lower,leg,leg,trauma,tendon,y,.
-S,8,6,3,1,1,S8,S86,S86.3,S86.31,S86.311,Injury of muscle & tendon at lower leg level,leg,level lower muscle muscles peroneal strain tendons,right,leg level lower muscle muscles peroneal strain tendons right,lower,leg,leg,trauma,strain,y,.
-S,8,6,3,1,2,S8,S86,S86.3,S86.31,S86.312,Injury of muscle & tendon at lower leg level,leg,level lower muscle muscles peroneal strain tendons,left,leg level lower muscle muscles peroneal strain tendons left,lower,leg,leg,trauma,strain,y,.
-S,8,6,8,1,1,S8,S86,S86.8,S86.81,S86.811,Injury of muscle & tendon at lower leg level,leg,level lower muscles strain tendons,right,leg level lower muscles strain tendons right,lower,leg,leg,trauma,strain,y,.
-S,8,6,8,1,2,S8,S86,S86.8,S86.81,S86.812,Injury of muscle & tendon at lower leg level,leg,level lower muscles strain tendons,left,leg level lower muscles strain tendons left,lower,leg,leg,trauma,strain,y,.
-S,8,6,8,1,9,S8,S86,S86.8,S86.81,S86.819,Injury of muscle & tendon at lower leg level,leg,level lower muscles strain tendons,.,leg level lower muscles strain tendons .,lower,leg,leg,trauma,strain,y,.
-S,8,6,8,9,1,S8,S86,S86.8,S86.89,S86.891,Injury of muscle & tendon at lower leg level,leg,injury level lower muscles tendons,right,leg injury level lower muscles tendons right,lower,leg,leg,trauma,tendon,y,.
-S,8,6,8,9,2,S8,S86,S86.8,S86.89,S86.892,Injury of muscle & tendon at lower leg level,leg,injury level lower muscles tendons,left,leg injury level lower muscles tendons left,lower,leg,leg,trauma,tendon,y,.
-S,8,6,8,9,9,S8,S86,S86.8,S86.89,S86.899,Injury of muscle & tendon at lower leg level,leg,injury level lower muscles tendons,.,leg injury level lower muscles tendons .,lower,leg,leg,trauma,tendon,y,.
-S,8,6,9,1,1,S8,S86,S86.9,S86.91,S86.911,Injury of muscle & tendon at lower leg level,leg,level lower muscles strain tendons,right,leg level lower muscles strain tendons right,lower,leg,leg,trauma,strain,y,.
-S,8,6,9,1,2,S8,S86,S86.9,S86.91,S86.912,Injury of muscle & tendon at lower leg level,leg,level lower muscles strain tendons,left,leg level lower muscles strain tendons left,lower,leg,leg,trauma,strain,y,.
-S,8,6,9,2,2,S8,S86,S86.9,S86.92,S86.922,Injury of muscle & tendon at lower leg level,leg,laceration level lower muscles tendons,left,leg laceration level lower muscles tendons left,lower,leg,leg,trauma,laceration,y,.
-S,8,7,8,2,X,S8,S87,S87.8,S87.82,S87.82X,Crushing injury of lower leg,crushing injury leg lower,left,.,crushing injury leg lower left .,lower,leg,leg,trauma,crushing,y,.
-S,8,8,9,1,1,S8,S88,S88.9,S88.91,S88.911,Traumatic amputation of lower leg,amputation leg level lower traumatic,complete,right,amputation leg level lower traumatic complete right,lower,leg,leg,trauma,amputation,y,.
-S,8,9,8,0,X,S8,S89,S89.8,S89.80,S89.80X,Other & unspecified injuries of lower leg,injuries leg lower,initial sequela subsequent,.,injuries leg lower initial sequela subsequent .,lower,leg,leg,trauma,injury,y,.
-S,8,9,8,1,X,S8,S89,S89.8,S89.81,S89.81X,Other & unspecified injuries of lower leg,injuries leg lower,right,.,injuries leg lower right .,lower,leg,leg,trauma,injury,y,.
-S,8,9,8,2,X,S8,S89,S89.8,S89.82,S89.82X,Other & unspecified injuries of lower leg,injuries leg lower,left,.,injuries leg lower left .,lower,leg,leg,trauma,injury,y,.
-S,8,9,9,0,X,S8,S89,S89.9,S89.90,S89.90X,Other & unspecified injuries of lower leg,injury leg lower,initial sequela subsequent,.,injury leg lower initial sequela subsequent .,lower,leg,leg,trauma,injury,y,.
-S,8,9,9,1,X,S8,S89,S89.9,S89.91,S89.91X,Other & unspecified injuries of lower leg,injury leg lower,right,.,injury leg lower right .,lower,leg,leg,trauma,injury,y,.
-S,8,9,9,2,X,S8,S89,S89.9,S89.92,S89.92X,Other & unspecified injuries of lower leg,injury leg lower,left,.,injury leg lower left .,lower,leg,leg,trauma,injury,y,.
-S,9,4,2,2,X,S9,S94,S94.2,S94.22,S94.22X,Injury of nerves at ankle & foot level,ankle deep foot injury leg level nerve peroneal,left,.,ankle deep foot injury leg level nerve peroneal left .,lower,leg,leg,trauma,nerve,y,.
-S,9,4,8,X,1,S9,S94,S94.8,S94.8X,S94.8X1,Injury of nerves at ankle & foot level,ankle foot injury leg level nerves,initial left right sequela subsequent,.,ankle foot injury leg level nerves initial left right sequela subsequent .,lower,leg,leg,trauma,nerve,y,.
+M,0,0,0,6,1,M0,M00,M00.0,M00.06,M00.061,Pyogenic arthritis,staphylococcal,arthritis knee,.,staphylococcal arthritis knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,0,0,0,6,2,M0,M00,M00.0,M00.06,M00.062,Pyogenic arthritis,staphylococcal,arthritis knee,.,staphylococcal arthritis knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,0,0,2,6,2,M0,M00,M00.2,M00.26,M00.262,Pyogenic arthritis,streptococcal,arthritis knee,.,streptococcal arthritis knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,0,0,8,6,1,M0,M00,M00.8,M00.86,M00.861,Pyogenic arthritis,bacteria due,arthritis knee,.,bacteria due arthritis knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,0,0,8,6,2,M0,M00,M00.8,M00.86,M00.862,Pyogenic arthritis,bacteria due,arthritis knee,.,bacteria due arthritis knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,1,0,6,1,M2,M21,M21.0,M21.06,M21.061,Other acquired deformities of limbs,classified deformity valgus,knee,.,classified deformity valgus knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,1,0,6,2,M2,M21,M21.0,M21.06,M21.062,Other acquired deformities of limbs,classified deformity valgus,knee,.,classified deformity valgus knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,1,0,6,9,M2,M21,M21.0,M21.06,M21.069,Other acquired deformities of limbs,classified deformity valgus,knee,.,classified deformity valgus knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,1,1,6,1,M2,M21,M21.1,M21.16,M21.161,Other acquired deformities of limbs,classified deformity varus,knee,.,classified deformity varus knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,1,1,6,2,M2,M21,M21.1,M21.16,M21.162,Other acquired deformities of limbs,classified deformity varus,knee,.,classified deformity varus knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,1,1,6,9,M2,M21,M21.1,M21.16,M21.169,Other acquired deformities of limbs,classified deformity varus,knee,.,classified deformity varus knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,1,2,6,2,M2,M21,M21.2,M21.26,M21.262,Other acquired deformities of limbs,deformity flexion,knee,.,deformity flexion knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,2,0,1,.,M2,M22,M22.0,M22.01,M22.01,Disorders of patella,dislocation knee patella recurrent,right,.,dislocation knee patella recurrent right .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,2,0,2,.,M2,M22,M22.0,M22.02,M22.02,Disorders of patella,dislocation knee patella recurrent,left,.,dislocation knee patella recurrent left .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,2,1,1,.,M2,M22,M22.1,M22.11,M22.11,Disorders of patella,knee patella recurrent subluxation,right,.,knee patella recurrent subluxation right .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,2,1,2,.,M2,M22,M22.1,M22.12,M22.12,Disorders of patella,knee patella recurrent subluxation,left,.,knee patella recurrent subluxation left .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,2,2,X,1,M2,M22,M22.2,M22.2X,M22.2X1,Disorders of patella,disorders knee patellofemoral,left right,.,disorders knee patellofemoral left right .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,2,2,X,2,M2,M22,M22.2,M22.2X,M22.2X2,Disorders of patella,disorders knee patellofemoral,left right,.,disorders knee patellofemoral left right .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,2,4,1,.,M2,M22,M22.4,M22.41,M22.41,Disorders of patella,chondromalacia knee patellae,right,.,chondromalacia knee patellae right .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,2,4,2,.,M2,M22,M22.4,M22.42,M22.42,Disorders of patella,chondromalacia knee patellae,left,.,chondromalacia knee patellae left .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,2,8,X,1,M2,M22,M22.8,M22.8X,M22.8X1,Disorders of patella,disorders knee patella,left right,.,disorders knee patella left right .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,2,8,X,2,M2,M22,M22.8,M22.8X,M22.8X2,Disorders of patella,disorders knee patella,left right,.,disorders knee patella left right .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,3,0,0,6,M2,M23,M23.0,M23.00,M23.006,Internal derangement of knee,meniscus,cystic knee,.,meniscus cystic knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,3,2,0,0,M2,M23,M23.2,M23.20,M23.200,Internal derangement of knee,derangement due injury knee meniscus tear,lateral left medial right,.,derangement due injury knee meniscus tear lateral left medial right .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,3,2,0,1,M2,M23,M23.2,M23.20,M23.201,Internal derangement of knee,derangement due injury knee meniscus tear,lateral left medial right,.,derangement due injury knee meniscus tear lateral left medial right .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,3,2,0,3,M2,M23,M23.2,M23.20,M23.203,Internal derangement of knee,derangement due injury knee meniscus tear,lateral left medial right,.,derangement due injury knee meniscus tear lateral left medial right .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,3,3,0,0,M2,M23,M23.3,M23.30,M23.300,Internal derangement of knee,meniscus,derangements knee,lateral,meniscus derangements knee lateral,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,3,3,0,1,M2,M23,M23.3,M23.30,M23.301,Internal derangement of knee,meniscus,derangements knee,lateral,meniscus derangements knee lateral,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,3,3,0,4,M2,M23,M23.3,M23.30,M23.304,Internal derangement of knee,meniscus,derangements knee,medial,meniscus derangements knee medial,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,3,3,0,6,M2,M23,M23.3,M23.30,M23.306,Internal derangement of knee,meniscus,derangements knee,.,meniscus derangements knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,3,3,0,7,M2,M23,M23.3,M23.30,M23.307,Internal derangement of knee,meniscus,derangements knee,.,meniscus derangements knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,3,3,2,1,M2,M23,M23.3,M23.32,M23.321,Internal derangement of knee,meniscus,derangements horn knee medial posterior,.,meniscus derangements horn knee medial posterior .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,3,4,1,.,M2,M23,M23.4,M23.41,M23.41,Internal derangement of knee,knee,body loose right,.,knee body loose right .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,3,4,2,.,M2,M23,M23.4,M23.42,M23.42,Internal derangement of knee,knee,body left loose,.,knee body left loose .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,3,8,X,1,M2,M23,M23.8,M23.8X,M23.8X1,Internal derangement of knee,derangements internal knee,left right,.,derangements internal knee left right .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,3,8,X,2,M2,M23,M23.8,M23.8X,M23.8X2,Internal derangement of knee,derangements internal knee,left right,.,derangements internal knee left right .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,3,9,1,.,M2,M23,M23.9,M23.91,M23.91,Internal derangement of knee,derangement internal knee,right,.,derangement internal knee right .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,3,9,2,.,M2,M23,M23.9,M23.92,M23.92,Internal derangement of knee,derangement internal knee,left,.,derangement internal knee left .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,4,4,6,2,M2,M24,M24.4,M24.46,M24.462,Other specific joint derangements,dislocation recurrent,knee,.,dislocation recurrent knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,4,5,6,1,M2,M24,M24.5,M24.56,M24.561,Other specific joint derangements,contracture,knee,.,contracture knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,4,5,6,2,M2,M24,M24.5,M24.56,M24.562,Other specific joint derangements,contracture,knee,.,contracture knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,4,5,6,9,M2,M24,M24.5,M24.56,M24.569,Other specific joint derangements,contracture,knee,.,contracture knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,4,6,6,1,M2,M24,M24.6,M24.66,M24.661,Other specific joint derangements,ankylosis,knee,.,ankylosis knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,4,6,6,2,M2,M24,M24.6,M24.66,M24.662,Other specific joint derangements,ankylosis,knee,.,ankylosis knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,5,0,6,1,M2,M25,M25.0,M25.06,M25.061,Other joint disorders,hemarthrosis,knee,.,hemarthrosis knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,5,3,6,1,M2,M25,M25.3,M25.36,M25.361,Other joint disorders,instability,knee,.,instability knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,5,3,6,2,M2,M25,M25.3,M25.36,M25.362,Other joint disorders,instability,knee,.,instability knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,5,4,6,1,M2,M25,M25.4,M25.46,M25.461,Other joint disorders,effusion,knee,.,effusion knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,5,4,6,2,M2,M25,M25.4,M25.46,M25.462,Other joint disorders,effusion,knee,.,effusion knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,5,4,6,9,M2,M25,M25.4,M25.46,M25.469,Other joint disorders,effusion,knee,.,effusion knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,5,5,6,1,M2,M25,M25.5,M25.56,M25.561,Other joint disorders,pain,knee,.,pain knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,5,5,6,2,M2,M25,M25.5,M25.56,M25.562,Other joint disorders,pain,knee,.,pain knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,5,6,6,1,M2,M25,M25.6,M25.66,M25.661,Other joint disorders,classified stiffness,knee,.,classified stiffness knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,5,6,6,9,M2,M25,M25.6,M25.66,M25.669,Other joint disorders,classified stiffness,knee,.,classified stiffness knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,5,8,6,1,M2,M25,M25.8,M25.86,M25.861,Other joint disorders,joint,disorders knee,.,joint disorders knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,5,8,6,2,M2,M25,M25.8,M25.86,M25.862,Other joint disorders,joint,disorders knee,.,joint disorders knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,2,5,8,6,9,M2,M25,M25.8,M25.86,M25.869,Other joint disorders,joint,disorders knee,.,joint disorders knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,6,7,3,6,2,M6,M67,M67.3,M67.36,M67.362,Other disorders of synovium & tendon,synovitis transient,knee,.,synovitis transient knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,6,7,4,6,2,M6,M67,M67.4,M67.46,M67.462,Other disorders of synovium & tendon,ganglion,knee,.,ganglion knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,6,7,5,1,.,M6,M67,M67.5,M67.51,M67.51,Other disorders of synovium & tendon,knee plica syndrome,right,.,knee plica syndrome right .,knee,knee,leg,musculoskeletal,joint,y,.
+M,6,7,5,2,.,M6,M67,M67.5,M67.52,M67.52,Other disorders of synovium & tendon,knee plica syndrome,left,.,knee plica syndrome left .,knee,knee,leg,musculoskeletal,joint,y,.
+M,7,0,4,1,.,M7,M70,M70.4,M70.41,M70.41,"Soft tissue disorders related to use, overuse, & pressure",bursitis knee prepatellar,right,.,bursitis knee prepatellar right .,knee,knee,leg,musculoskeletal,joint,y,.
+M,7,0,4,2,.,M7,M70,M70.4,M70.42,M70.42,"Soft tissue disorders related to use, overuse, & pressure",bursitis knee prepatellar,left,.,bursitis knee prepatellar left .,knee,knee,leg,musculoskeletal,joint,y,.
+M,7,0,5,0,.,M7,M70,M70.5,M70.50,M70.50,"Soft tissue disorders related to use, overuse, & pressure",knee,bursitis,.,knee bursitis .,knee,knee,leg,musculoskeletal,joint,y,.
+M,7,0,5,1,.,M7,M70,M70.5,M70.51,M70.51,"Soft tissue disorders related to use, overuse, & pressure",knee,bursitis right,.,knee bursitis right .,knee,knee,leg,musculoskeletal,joint,y,.
+M,7,0,5,2,.,M7,M70,M70.5,M70.52,M70.52,"Soft tissue disorders related to use, overuse, & pressure",knee,bursitis left,.,knee bursitis left .,knee,knee,leg,musculoskeletal,joint,y,.
+M,7,1,2,1,.,M7,M71,M71.2,M71.21,M71.21,Other bursopathies,baker cyst knee popliteal space synovial,right,.,baker cyst knee popliteal space synovial right .,knee,knee,leg,musculoskeletal,joint,y,.
+M,7,1,2,2,.,M7,M71,M71.2,M71.22,M71.22,Other bursopathies,baker cyst knee popliteal space synovial,left,.,baker cyst knee popliteal space synovial left .,knee,knee,leg,musculoskeletal,joint,y,.
+M,7,6,3,1,.,M7,M76,M76.3,M76.31,M76.31,"Enthesopathies of lower limb, excluding foot",band iliotibial leg syndrome,right,.,band iliotibial leg syndrome right .,knee,knee,leg,musculoskeletal,joint,y,.
+M,7,6,3,2,.,M7,M76,M76.3,M76.32,M76.32,"Enthesopathies of lower limb, excluding foot",band iliotibial leg syndrome,left,.,band iliotibial leg syndrome left .,knee,knee,leg,musculoskeletal,joint,y,.
+M,7,6,5,1,.,M7,M76,M76.5,M76.51,M76.51,"Enthesopathies of lower limb, excluding foot",knee patellar tendinitis,right,.,knee patellar tendinitis right .,knee,knee,leg,musculoskeletal,joint,y,.
+M,7,6,5,2,.,M7,M76,M76.5,M76.52,M76.52,"Enthesopathies of lower limb, excluding foot",knee patellar tendinitis,left,.,knee patellar tendinitis left .,knee,knee,leg,musculoskeletal,joint,y,.
+M,9,2,4,0,.,M9,M92,M92.4,M92.40,M92.40,Other juvenile osteochondrosis,juvenile knee osteochondrosis patella,.,.,juvenile knee osteochondrosis patella . .,knee,knee,leg,musculoskeletal,joint,y,.
+M,9,3,2,6,1,M9,M93,M93.2,M93.26,M93.261,Other osteochondropathies,dissecans osteochondritis,knee,.,dissecans osteochondritis knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,9,3,2,6,2,M9,M93,M93.2,M93.26,M93.262,Other osteochondropathies,dissecans osteochondritis,knee,.,dissecans osteochondritis knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,9,4,2,6,1,M9,M94,M94.2,M94.26,M94.261,Other disorders of cartilage,chondromalacia,knee,.,chondromalacia knee .,knee,knee,leg,musculoskeletal,joint,y,.
+M,9,4,2,6,2,M9,M94,M94.2,M94.26,M94.262,Other disorders of cartilage,chondromalacia,knee,.,chondromalacia knee .,knee,knee,leg,musculoskeletal,joint,y,.
+Q,6,8,2,.,.,Q6,Q68,Q68.2,Q68.2,Q68.2,Other congenital musculoskeletal deformities,congenital deformity knee,.,.,congenital deformity knee . .,knee,knee,leg,congenital,deformity,y,.
+Q,6,8,5,.,.,Q6,Q68,Q68.5,Q68.5,Q68.5,Other congenital musculoskeletal deformities,bones bowing congenital leg,.,.,bones bowing congenital leg . .,knee,knee,leg,congenital,deformity,y,.
+Q,6,8,6,.,.,Q6,Q68,Q68.6,Q68.6,Q68.6,Other congenital musculoskeletal deformities,discoid meniscus,.,.,discoid meniscus . .,knee,knee,leg,congenital,deformity,y,.
+Q,7,4,1,.,.,Q7,Q74,Q74.1,Q74.1,Q74.1,Other congenital malformations of limb(s),congenital knee malformation,.,.,congenital knee malformation . .,knee,knee,leg,congenital,malformation,y,.
+S,8,0,0,1,X,S8,S80,S80.0,S80.01,S80.01X,Superficial injury of lower leg,contusion knee,right,.,contusion knee right .,knee,knee,leg,trauma,contusion,y,.
+S,8,0,0,2,X,S8,S80,S80.0,S80.02,S80.02X,Superficial injury of lower leg,contusion knee,left,.,contusion knee left .,knee,knee,leg,trauma,contusion,y,.
+S,8,0,2,1,1,S8,S80,S80.2,S80.21,S80.211,Superficial injury of lower leg,knee,abrasion,right,knee abrasion right,knee,knee,leg,trauma,friction,y,.
+S,8,0,2,1,2,S8,S80,S80.2,S80.21,S80.212,Superficial injury of lower leg,knee,abrasion,left,knee abrasion left,knee,knee,leg,trauma,friction,y,.
+S,8,0,2,5,1,S8,S80,S80.2,S80.25,S80.251,Superficial injury of lower leg,knee,body foreign superficial,right,knee body foreign superficial right,knee,knee,leg,trauma,foreign,y,.
+S,8,0,2,5,2,S8,S80,S80.2,S80.25,S80.252,Superficial injury of lower leg,knee,body foreign superficial,left,knee body foreign superficial left,knee,knee,leg,trauma,foreign,y,.
+S,8,1,0,1,1,S8,S81,S81.0,S81.01,S81.011,Open wound of lower leg,knee,body foreign laceration,right,knee body foreign laceration right,knee,knee,leg,trauma,laceration,y,.
+S,8,1,0,1,2,S8,S81,S81.0,S81.01,S81.012,Open wound of lower leg,knee,body foreign laceration,left,knee body foreign laceration left,knee,knee,leg,trauma,laceration,y,.
+S,8,1,0,3,1,S8,S81,S81.0,S81.03,S81.031,Open wound of lower leg,knee,body foreign puncture wound,right,knee body foreign puncture wound right,knee,knee,leg,trauma,wound,y,.
+S,8,1,0,4,1,S8,S81,S81.0,S81.04,S81.041,Open wound of lower leg,knee,body foreign puncture wound,right,knee body foreign puncture wound right,knee,knee,leg,trauma,wound,y,.
+S,8,3,1,0,1,S8,S83,S83.1,S83.10,S83.101,"Dislocation, sprain, & strain of joints & ligaments of knee",knee,dislocation subluxation,right,knee dislocation subluxation right,knee,knee,leg,trauma,dislocation,y,.
+S,8,3,1,0,2,S8,S83,S83.1,S83.10,S83.102,"Dislocation, sprain, & strain of joints & ligaments of knee",knee,dislocation subluxation,left,knee dislocation subluxation left,knee,knee,leg,trauma,dislocation,y,.
+S,8,3,1,0,4,S8,S83,S83.1,S83.10,S83.104,"Dislocation, sprain, & strain of joints & ligaments of knee",knee,dislocation subluxation,right,knee dislocation subluxation right,knee,knee,leg,trauma,dislocation,y,.
+S,8,3,1,0,5,S8,S83,S83.1,S83.10,S83.105,"Dislocation, sprain, & strain of joints & ligaments of knee",knee,dislocation subluxation,left,knee dislocation subluxation left,knee,knee,leg,trauma,dislocation,y,.
+S,8,3,2,0,6,S8,S83,S83.2,S83.20,S83.206,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,buckethandle initial left right sequela subsequent,.,current injury knee meniscus tear buckethandle initial left right sequela subsequent .,knee,knee,leg,trauma,tear,y,.
+S,8,3,2,0,7,S8,S83,S83.2,S83.20,S83.207,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,buckethandle initial left right sequela subsequent,.,current injury knee meniscus tear buckethandle initial left right sequela subsequent .,knee,knee,leg,trauma,tear,y,.
+S,8,3,2,0,9,S8,S83,S83.2,S83.20,S83.209,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,buckethandle initial left right sequela subsequent,.,current injury knee meniscus tear buckethandle initial left right sequela subsequent .,knee,knee,leg,trauma,tear,y,.
+S,8,3,2,1,1,S8,S83,S83.2,S83.21,S83.211,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,buckethandle medial,right,current injury knee meniscus tear buckethandle medial right,knee,knee,leg,trauma,tear,y,.
+S,8,3,2,1,2,S8,S83,S83.2,S83.21,S83.212,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,buckethandle medial,left,current injury knee meniscus tear buckethandle medial left,knee,knee,leg,trauma,tear,y,.
+S,8,3,2,2,1,S8,S83,S83.2,S83.22,S83.221,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,medial peripheral,right,current injury knee meniscus tear medial peripheral right,knee,knee,leg,trauma,tear,y,.
+S,8,3,2,2,2,S8,S83,S83.2,S83.22,S83.222,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,medial peripheral,left,current injury knee meniscus tear medial peripheral left,knee,knee,leg,trauma,tear,y,.
+S,8,3,2,3,1,S8,S83,S83.2,S83.23,S83.231,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,complex medial,right,current injury knee meniscus tear complex medial right,knee,knee,leg,trauma,tear,y,.
+S,8,3,2,3,2,S8,S83,S83.2,S83.23,S83.232,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,complex medial,left,current injury knee meniscus tear complex medial left,knee,knee,leg,trauma,tear,y,.
+S,8,3,2,4,1,S8,S83,S83.2,S83.24,S83.241,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,medial,right,current injury knee meniscus tear medial right,knee,knee,leg,trauma,tear,y,.
+S,8,3,2,4,2,S8,S83,S83.2,S83.24,S83.242,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,medial,left,current injury knee meniscus tear medial left,knee,knee,leg,trauma,tear,y,.
+S,8,3,2,5,1,S8,S83,S83.2,S83.25,S83.251,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,buckethandle lateral,right,current injury knee meniscus tear buckethandle lateral right,knee,knee,leg,trauma,tear,y,.
+S,8,3,2,5,2,S8,S83,S83.2,S83.25,S83.252,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,buckethandle lateral,left,current injury knee meniscus tear buckethandle lateral left,knee,knee,leg,trauma,tear,y,.
+S,8,3,2,6,1,S8,S83,S83.2,S83.26,S83.261,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,lateral peripheral,right,current injury knee meniscus tear lateral peripheral right,knee,knee,leg,trauma,tear,y,.
+S,8,3,2,6,2,S8,S83,S83.2,S83.26,S83.262,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,lateral peripheral,left,current injury knee meniscus tear lateral peripheral left,knee,knee,leg,trauma,tear,y,.
+S,8,3,2,7,1,S8,S83,S83.2,S83.27,S83.271,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,complex lateral,right,current injury knee meniscus tear complex lateral right,knee,knee,leg,trauma,tear,y,.
+S,8,3,2,7,2,S8,S83,S83.2,S83.27,S83.272,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,complex lateral,left,current injury knee meniscus tear complex lateral left,knee,knee,leg,trauma,tear,y,.
+S,8,3,2,8,1,S8,S83,S83.2,S83.28,S83.281,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,lateral,right,current injury knee meniscus tear lateral right,knee,knee,leg,trauma,tear,y,.
+S,8,3,2,8,2,S8,S83,S83.2,S83.28,S83.282,"Dislocation, sprain, & strain of joints & ligaments of knee",current injury knee meniscus tear,lateral,left,current injury knee meniscus tear lateral left,knee,knee,leg,trauma,tear,y,.
+S,8,3,4,0,1,S8,S83,S83.4,S83.40,S83.401,"Dislocation, sprain, & strain of joints & ligaments of knee",collateral knee ligament sprain,initial left right sequela subsequent,.,collateral knee ligament sprain initial left right sequela subsequent .,knee,knee,leg,trauma,sprain,y,.
+S,8,3,4,1,1,S8,S83,S83.4,S83.41,S83.411,"Dislocation, sprain, & strain of joints & ligaments of knee",collateral knee ligament sprain,medial,right,collateral knee ligament sprain medial right,knee,knee,leg,trauma,sprain,y,.
+S,8,3,4,1,2,S8,S83,S83.4,S83.41,S83.412,"Dislocation, sprain, & strain of joints & ligaments of knee",collateral knee ligament sprain,medial,left,collateral knee ligament sprain medial left,knee,knee,leg,trauma,sprain,y,.
+S,8,3,4,1,9,S8,S83,S83.4,S83.41,S83.419,"Dislocation, sprain, & strain of joints & ligaments of knee",collateral knee ligament sprain,medial,.,collateral knee ligament sprain medial .,knee,knee,leg,trauma,sprain,y,.
+S,8,3,4,2,1,S8,S83,S83.4,S83.42,S83.421,"Dislocation, sprain, & strain of joints & ligaments of knee",collateral knee ligament sprain,lateral,right,collateral knee ligament sprain lateral right,knee,knee,leg,trauma,sprain,y,.
+S,8,3,4,2,2,S8,S83,S83.4,S83.42,S83.422,"Dislocation, sprain, & strain of joints & ligaments of knee",collateral knee ligament sprain,lateral,left,collateral knee ligament sprain lateral left,knee,knee,leg,trauma,sprain,y,.
+S,8,3,5,1,1,S8,S83,S83.5,S83.51,S83.511,"Dislocation, sprain, & strain of joints & ligaments of knee",cruciate knee ligament sprain,anterior,right,cruciate knee ligament sprain anterior right,knee,knee,leg,trauma,sprain,y,.
+S,8,3,5,1,2,S8,S83,S83.5,S83.51,S83.512,"Dislocation, sprain, & strain of joints & ligaments of knee",cruciate knee ligament sprain,anterior,left,cruciate knee ligament sprain anterior left,knee,knee,leg,trauma,sprain,y,.
+S,8,3,5,2,1,S8,S83,S83.5,S83.52,S83.521,"Dislocation, sprain, & strain of joints & ligaments of knee",cruciate knee ligament sprain,posterior,right,cruciate knee ligament sprain posterior right,knee,knee,leg,trauma,sprain,y,.
+S,8,3,5,2,2,S8,S83,S83.5,S83.52,S83.522,"Dislocation, sprain, & strain of joints & ligaments of knee",cruciate knee ligament sprain,posterior,left,cruciate knee ligament sprain posterior left,knee,knee,leg,trauma,sprain,y,.
+S,8,3,8,X,1,S8,S83,S83.8,S83.8X,S83.8X1,"Dislocation, sprain, & strain of joints & ligaments of knee",knee sprain,initial left right sequela subsequent,.,knee sprain initial left right sequela subsequent .,knee,knee,leg,trauma,sprain,y,.
+S,8,3,8,X,2,S8,S83,S83.8,S83.8X,S83.8X2,"Dislocation, sprain, & strain of joints & ligaments of knee",knee sprain,initial left right sequela subsequent,.,knee sprain initial left right sequela subsequent .,knee,knee,leg,trauma,sprain,y,.
+S,8,3,9,0,X,S8,S83,S83.9,S83.90,S83.90X,"Dislocation, sprain, & strain of joints & ligaments of knee",knee site sprain,initial sequela subsequent,.,knee site sprain initial sequela subsequent .,knee,knee,leg,trauma,sprain,y,.
+S,8,3,9,1,X,S8,S83,S83.9,S83.91,S83.91X,"Dislocation, sprain, & strain of joints & ligaments of knee",knee site sprain,right,.,knee site sprain right .,knee,knee,leg,trauma,sprain,y,.
+S,8,3,9,2,X,S8,S83,S83.9,S83.92,S83.92X,"Dislocation, sprain, & strain of joints & ligaments of knee",knee site sprain,left,.,knee site sprain left .,knee,knee,leg,trauma,sprain,y,.
+S,8,8,0,1,1,S8,S88,S88.0,S88.01,S88.011,Traumatic amputation of lower leg,amputation knee leg level lower traumatic,complete,right,amputation knee leg level lower traumatic complete right,knee,knee,leg,trauma,amputation,y,.
+S,8,8,1,1,1,S8,S88,S88.1,S88.11,S88.111,Traumatic amputation of lower leg,amputation ankle knee leg level lower traumatic,complete,right,amputation ankle knee leg level lower traumatic complete right,knee,knee,leg,trauma,amputation,y,.
+S,8,8,1,1,2,S8,S88,S88.1,S88.11,S88.112,Traumatic amputation of lower leg,amputation ankle knee leg level lower traumatic,complete,left,amputation ankle knee leg level lower traumatic complete left,knee,knee,leg,trauma,amputation,y,.
+M,2,1,8,6,1,M2,M21,M21.8,M21.86,M21.861,Other acquired deformities of limbs,acquired deformities,leg lower,.,acquired deformities leg lower .,lower,.,leg,musculoskeletal,joint disorder,y,.
+M,2,1,8,6,2,M2,M21,M21.8,M21.86,M21.862,Other acquired deformities of limbs,acquired deformities,leg lower,.,acquired deformities leg lower .,lower,.,leg,musculoskeletal,joint disorder,y,.
+M,2,1,8,6,9,M2,M21,M21.8,M21.86,M21.869,Other acquired deformities of limbs,acquired deformities,leg lower,.,acquired deformities leg lower .,lower,.,leg,musculoskeletal,joint disorder,y,.
+M,2,1,9,6,1,M2,M21,M21.9,M21.96,M21.961,Other acquired deformities of limbs,acquired deformity,leg lower,.,acquired deformity leg lower .,lower,.,leg,musculoskeletal,joint disorder,y,.
+M,2,1,9,6,2,M2,M21,M21.9,M21.96,M21.962,Other acquired deformities of limbs,acquired deformity,leg lower,.,acquired deformity leg lower .,lower,.,leg,musculoskeletal,joint disorder,y,.
+M,2,1,9,6,9,M2,M21,M21.9,M21.96,M21.969,Other acquired deformities of limbs,acquired deformity,leg lower,.,acquired deformity leg lower .,lower,.,leg,musculoskeletal,joint disorder,y,.
+M,6,2,4,6,2,M6,M62,M62.4,M62.46,M62.462,Other disorders of muscle,contracture muscle,leg lower,.,contracture muscle leg lower .,lower,.,leg,musculoskeletal,"disorder, muscle",y,.
+M,6,2,5,6,1,M6,M62,M62.5,M62.56,M62.561,Other disorders of muscle,atrophy classified muscle wasting,leg lower,.,atrophy classified muscle wasting leg lower .,lower,.,leg,musculoskeletal,"disorder, muscle",y,.
+M,7,6,7,1,.,M7,M76,M76.7,M76.71,M76.71,"Enthesopathies of lower limb, excluding foot",leg peroneal tendinitis,right,.,leg peroneal tendinitis right .,lower,.,leg,musculoskeletal,"disorder, soft-tissue",y,.
+M,7,6,7,2,.,M7,M76,M76.7,M76.72,M76.72,"Enthesopathies of lower limb, excluding foot",leg peroneal tendinitis,left,.,leg peroneal tendinitis left .,lower,.,leg,musculoskeletal,"disorder, soft-tissue",y,.
+M,7,6,9,.,.,M7,M76,M76.9,M76.9,M76.9,"Enthesopathies of lower limb, excluding foot",enthesopathy excluding foot limb lower,.,.,enthesopathy excluding foot limb lower . .,lower,.,leg,musculoskeletal,"disorder, soft-tissue",y,.
+M,7,9,6,6,1,M7,M79,M79.6,M79.66,M79.661,Other soft tissue disorders,pain,leg lower,.,pain leg lower .,lower,.,leg,musculoskeletal,"disorder, soft-tissue",y,.
+M,7,9,6,6,2,M7,M79,M79.6,M79.66,M79.662,Other soft tissue disorders,pain,leg lower,.,pain leg lower .,lower,.,leg,musculoskeletal,"disorder, soft-tissue",y,.
+M,7,9,A,2,1,M7,M79,M79.A,M79.A2,M79.A21,Other soft tissue disorders,compartment nontraumatic syndrome,extremity lower,.,compartment nontraumatic syndrome extremity lower .,lower,.,leg,musculoskeletal,"disorder, soft-tissue",y,.
+M,7,9,A,2,2,M7,M79,M79.A,M79.A2,M79.A22,Other soft tissue disorders,compartment nontraumatic syndrome,extremity lower,.,compartment nontraumatic syndrome extremity lower .,lower,.,leg,musculoskeletal,"disorder, soft-tissue",y,.
+M,8,5,5,6,1,M8,M85,M85.5,M85.56,M85.561,Other disorders of bone density & structure,aneurysmal bone cyst,leg lower,.,aneurysmal bone cyst leg lower .,lower,.,leg,musculoskeletal,"disorder, bone density",y,.
+M,8,5,5,6,2,M8,M85,M85.5,M85.56,M85.562,Other disorders of bone density & structure,aneurysmal bone cyst,leg lower,.,aneurysmal bone cyst leg lower .,lower,.,leg,musculoskeletal,"disorder, bone density",y,.
+M,8,5,8,6,2,M8,M85,M85.8,M85.86,M85.862,Other disorders of bone density & structure,bone density disorders structure,leg lower,.,bone density disorders structure leg lower .,lower,.,leg,musculoskeletal,"disorder, bone density",y,.
+M,8,9,6,6,2,M8,M89,M89.6,M89.66,M89.662,Other disorders of bone,osteopathy poliomyelitis,leg lower,.,osteopathy poliomyelitis leg lower .,lower,.,leg,musculoskeletal,bone development,y,.
+M,9,3,9,6,1,M9,M93,M93.9,M93.96,M93.961,Other osteochondropathies,osteochondropathy,leg lower,.,osteochondropathy leg lower .,lower,.,leg,musculoskeletal,"osteochondrosis, other",y,.
+Q,7,2,8,1,1,Q7,Q72,Q72.8,Q72.81,Q72.811,Reduction defects of lower limb,limb lower,congenital shortening,.,limb lower congenital shortening .,lower,.,leg,congenital,reduction,y,.
+Q,7,2,8,1,2,Q7,Q72,Q72.8,Q72.81,Q72.812,Reduction defects of lower limb,limb lower,congenital shortening,.,limb lower congenital shortening .,lower,.,leg,congenital,reduction,y,.
+Q,7,2,8,1,3,Q7,Q72,Q72.8,Q72.81,Q72.813,Reduction defects of lower limb,limb lower,congenital shortening,.,limb lower congenital shortening .,lower,.,leg,congenital,reduction,y,.
+Q,7,2,8,9,1,Q7,Q72,Q72.8,Q72.89,Q72.891,Reduction defects of lower limb,limb lower,defects reduction,.,limb lower defects reduction .,lower,.,leg,congenital,reduction,y,.
+Q,7,2,8,9,2,Q7,Q72,Q72.8,Q72.89,Q72.892,Reduction defects of lower limb,limb lower,defects reduction,.,limb lower defects reduction .,lower,.,leg,congenital,reduction,y,.
+Q,7,2,8,9,3,Q7,Q72,Q72.8,Q72.89,Q72.893,Reduction defects of lower limb,limb lower,defects reduction,.,limb lower defects reduction .,lower,.,leg,congenital,reduction,y,.
+Q,7,2,8,9,9,Q7,Q72,Q72.8,Q72.89,Q72.899,Reduction defects of lower limb,limb lower,defects reduction,.,limb lower defects reduction .,lower,.,leg,congenital,reduction,y,.
+S,8,0,1,0,X,S8,S80,S80.1,S80.10,S80.10X,Superficial injury of lower leg,contusion leg lower,initial sequela subsequent,.,contusion leg lower initial sequela subsequent .,lower,.,leg,trauma,contusion,y,.
+S,8,0,1,1,X,S8,S80,S80.1,S80.11,S80.11X,Superficial injury of lower leg,contusion leg lower,right,.,contusion leg lower right .,lower,.,leg,trauma,contusion,y,.
+S,8,0,1,2,X,S8,S80,S80.1,S80.12,S80.12X,Superficial injury of lower leg,contusion leg lower,left,.,contusion leg lower left .,lower,.,leg,trauma,contusion,y,.
+S,8,1,8,0,1,S8,S81,S81.8,S81.80,S81.801,Open wound of lower leg,leg lower,open wound,right,leg lower open wound right,lower,.,leg,trauma,wound,y,.
+S,8,1,8,0,2,S8,S81,S81.8,S81.80,S81.802,Open wound of lower leg,leg lower,open wound,left,leg lower open wound left,lower,.,leg,trauma,wound,y,.
+S,8,1,8,1,1,S8,S81,S81.8,S81.81,S81.811,Open wound of lower leg,leg lower,body foreign laceration,right,leg lower body foreign laceration right,lower,.,leg,trauma,laceration,y,.
+S,8,1,8,1,2,S8,S81,S81.8,S81.81,S81.812,Open wound of lower leg,leg lower,body foreign laceration,left,leg lower body foreign laceration left,lower,.,leg,trauma,laceration,y,.
+S,8,2,8,4,1,S8,S82,S82.8,S82.84,S82.841,"Fracture of lower leg, including ankle",fracture,bimalleolar leg lower,displaced right,fracture bimalleolar leg lower displaced right,lower,.,leg,trauma,fracture,y,.
+S,8,2,8,4,2,S8,S82,S82.8,S82.84,S82.842,"Fracture of lower leg, including ankle",fracture,bimalleolar leg lower,displaced left,fracture bimalleolar leg lower displaced left,lower,.,leg,trauma,fracture,y,.
+S,8,2,8,5,1,S8,S82,S82.8,S82.85,S82.851,"Fracture of lower leg, including ankle",fracture,leg lower trimalleolar,displaced right,fracture leg lower trimalleolar displaced right,lower,.,leg,trauma,fracture,y,.
+S,8,2,8,5,2,S8,S82,S82.8,S82.85,S82.852,"Fracture of lower leg, including ankle",fracture,leg lower trimalleolar,displaced left,fracture leg lower trimalleolar displaced left,lower,.,leg,trauma,fracture,y,.
+S,8,2,8,9,1,S8,S82,S82.8,S82.89,S82.891,"Fracture of lower leg, including ankle",fracture,leg lower,right,fracture leg lower right,lower,.,leg,trauma,fracture,y,.
+S,8,2,8,9,2,S8,S82,S82.8,S82.89,S82.892,"Fracture of lower leg, including ankle",fracture,leg lower,left,fracture leg lower left,lower,.,leg,trauma,fracture,y,.
+S,8,2,9,1,X,S8,S82,S82.9,S82.91,S82.91X,"Fracture of lower leg, including ankle",fracture,leg lower right,.,fracture leg lower right .,lower,.,leg,trauma,fracture,y,.
+S,8,2,9,2,X,S8,S82,S82.9,S82.92,S82.92X,"Fracture of lower leg, including ankle",fracture,left leg lower,.,fracture left leg lower .,lower,.,leg,trauma,fracture,y,.
+S,8,4,1,1,X,S8,S84,S84.1,S84.11,S84.11X,Injury of nerves at lower leg level,leg,injury level lower nerve peroneal right,.,leg injury level lower nerve peroneal right .,lower,.,leg,trauma,nerve,y,.
+S,8,6,1,1,1,S8,S86,S86.1,S86.11,S86.111,Injury of muscle & tendon at lower leg level,leg,level lower muscle muscles posterior strain tendons,right,leg level lower muscle muscles posterior strain tendons right,lower,.,leg,trauma,strain,y,.
+S,8,6,1,1,2,S8,S86,S86.1,S86.11,S86.112,Injury of muscle & tendon at lower leg level,leg,level lower muscle muscles posterior strain tendons,left,leg level lower muscle muscles posterior strain tendons left,lower,.,leg,trauma,strain,y,.
+S,8,6,3,0,1,S8,S86,S86.3,S86.30,S86.301,Injury of muscle & tendon at lower leg level,leg,injury level lower muscle muscles peroneal tendons,right,leg injury level lower muscle muscles peroneal tendons right,lower,.,leg,trauma,tendon,y,.
+S,8,6,3,0,2,S8,S86,S86.3,S86.30,S86.302,Injury of muscle & tendon at lower leg level,leg,injury level lower muscle muscles peroneal tendons,left,leg injury level lower muscle muscles peroneal tendons left,lower,.,leg,trauma,tendon,y,.
+S,8,6,3,1,1,S8,S86,S86.3,S86.31,S86.311,Injury of muscle & tendon at lower leg level,leg,level lower muscle muscles peroneal strain tendons,right,leg level lower muscle muscles peroneal strain tendons right,lower,.,leg,trauma,strain,y,.
+S,8,6,3,1,2,S8,S86,S86.3,S86.31,S86.312,Injury of muscle & tendon at lower leg level,leg,level lower muscle muscles peroneal strain tendons,left,leg level lower muscle muscles peroneal strain tendons left,lower,.,leg,trauma,strain,y,.
+S,8,6,8,1,1,S8,S86,S86.8,S86.81,S86.811,Injury of muscle & tendon at lower leg level,leg,level lower muscles strain tendons,right,leg level lower muscles strain tendons right,lower,.,leg,trauma,strain,y,.
+S,8,6,8,1,2,S8,S86,S86.8,S86.81,S86.812,Injury of muscle & tendon at lower leg level,leg,level lower muscles strain tendons,left,leg level lower muscles strain tendons left,lower,.,leg,trauma,strain,y,.
+S,8,6,8,1,9,S8,S86,S86.8,S86.81,S86.819,Injury of muscle & tendon at lower leg level,leg,level lower muscles strain tendons,.,leg level lower muscles strain tendons .,lower,.,leg,trauma,strain,y,.
+S,8,6,8,9,1,S8,S86,S86.8,S86.89,S86.891,Injury of muscle & tendon at lower leg level,leg,injury level lower muscles tendons,right,leg injury level lower muscles tendons right,lower,.,leg,trauma,tendon,y,.
+S,8,6,8,9,2,S8,S86,S86.8,S86.89,S86.892,Injury of muscle & tendon at lower leg level,leg,injury level lower muscles tendons,left,leg injury level lower muscles tendons left,lower,.,leg,trauma,tendon,y,.
+S,8,6,8,9,9,S8,S86,S86.8,S86.89,S86.899,Injury of muscle & tendon at lower leg level,leg,injury level lower muscles tendons,.,leg injury level lower muscles tendons .,lower,.,leg,trauma,tendon,y,.
+S,8,6,9,1,1,S8,S86,S86.9,S86.91,S86.911,Injury of muscle & tendon at lower leg level,leg,level lower muscles strain tendons,right,leg level lower muscles strain tendons right,lower,.,leg,trauma,strain,y,.
+S,8,6,9,1,2,S8,S86,S86.9,S86.91,S86.912,Injury of muscle & tendon at lower leg level,leg,level lower muscles strain tendons,left,leg level lower muscles strain tendons left,lower,.,leg,trauma,strain,y,.
+S,8,6,9,2,2,S8,S86,S86.9,S86.92,S86.922,Injury of muscle & tendon at lower leg level,leg,laceration level lower muscles tendons,left,leg laceration level lower muscles tendons left,lower,.,leg,trauma,laceration,y,.
+S,8,7,8,2,X,S8,S87,S87.8,S87.82,S87.82X,Crushing injury of lower leg,crushing injury leg lower,left,.,crushing injury leg lower left .,lower,.,leg,trauma,crushing,y,.
+S,8,8,9,1,1,S8,S88,S88.9,S88.91,S88.911,Traumatic amputation of lower leg,amputation leg level lower traumatic,complete,right,amputation leg level lower traumatic complete right,lower,.,leg,trauma,amputation,y,.
+S,8,9,8,0,X,S8,S89,S89.8,S89.80,S89.80X,Other & unspecified injuries of lower leg,injuries leg lower,initial sequela subsequent,.,injuries leg lower initial sequela subsequent .,lower,.,leg,trauma,injury,y,.
+S,8,9,8,1,X,S8,S89,S89.8,S89.81,S89.81X,Other & unspecified injuries of lower leg,injuries leg lower,right,.,injuries leg lower right .,lower,.,leg,trauma,injury,y,.
+S,8,9,8,2,X,S8,S89,S89.8,S89.82,S89.82X,Other & unspecified injuries of lower leg,injuries leg lower,left,.,injuries leg lower left .,lower,.,leg,trauma,injury,y,.
+S,8,9,9,0,X,S8,S89,S89.9,S89.90,S89.90X,Other & unspecified injuries of lower leg,injury leg lower,initial sequela subsequent,.,injury leg lower initial sequela subsequent .,lower,.,leg,trauma,injury,y,.
+S,8,9,9,1,X,S8,S89,S89.9,S89.91,S89.91X,Other & unspecified injuries of lower leg,injury leg lower,right,.,injury leg lower right .,lower,.,leg,trauma,injury,y,.
+S,8,9,9,2,X,S8,S89,S89.9,S89.92,S89.92X,Other & unspecified injuries of lower leg,injury leg lower,left,.,injury leg lower left .,lower,.,leg,trauma,injury,y,.
+S,9,4,2,2,X,S9,S94,S94.2,S94.22,S94.22X,Injury of nerves at ankle & foot level,ankle deep foot injury leg level nerve peroneal,left,.,ankle deep foot injury leg level nerve peroneal left .,lower,.,leg,trauma,nerve,y,.
+S,9,4,8,X,1,S9,S94,S94.8,S94.8X,S94.8X1,Injury of nerves at ankle & foot level,ankle foot injury leg level nerves,initial left right sequela subsequent,.,ankle foot injury leg level nerves initial left right sequela subsequent .,lower,.,leg,trauma,nerve,y,.
 M,2,1,6,1,1,M2,M21,M21.6,M21.61,M21.611,Other acquired deformities of limbs,foot,bunion,.,foot bunion .,metatarsal,metatarsal,foot,musculoskeletal,joint disorder,y,.
 M,2,1,6,1,2,M2,M21,M21.6,M21.61,M21.612,Other acquired deformities of limbs,foot,bunion,.,foot bunion .,metatarsal,metatarsal,foot,musculoskeletal,joint disorder,y,.
 M,2,1,6,1,9,M2,M21,M21.6,M21.61,M21.619,Other acquired deformities of limbs,foot,bunion,.,foot bunion .,metatarsal,metatarsal,foot,musculoskeletal,joint disorder,y,.
@@ -1950,33 +1950,33 @@ S,9,2,2,5,2,S9,S92,S92.2,S92.25,S92.252,Fracture of foot except ankle,fracture,f
 S,9,2,2,5,4,S9,S92,S92.2,S92.25,S92.254,Fracture of foot except ankle,fracture,foot navicular scaphoid,nondisplaced right,fracture foot navicular scaphoid nondisplaced right,navicular,tarsus,foot,trauma,fracture,y,.
 S,9,2,2,5,5,S9,S92,S92.2,S92.25,S92.255,Fracture of foot except ankle,fracture,foot navicular scaphoid,left nondisplaced,fracture foot navicular scaphoid left nondisplaced,navicular,tarsus,foot,trauma,fracture,y,.
 Q,7,0,4,.,.,Q7,Q70,Q70.4,Q70.4,Q70.4,Syndactyly,polysyndactyly,.,.,polysyndactyly . .,.,.,foot,congenital,digits,y,.
-S,8,2,0,0,1,S8,S82,S82.0,S82.00,S82.001,"Fracture of lower leg, including ankle",fracture,patella,right,fracture patella right,patella,leg,leg,trauma,fracture,y,.
-S,8,2,0,0,2,S8,S82,S82.0,S82.00,S82.002,"Fracture of lower leg, including ankle",fracture,patella,left,fracture patella left,patella,leg,leg,trauma,fracture,y,.
-S,8,2,0,1,1,S8,S82,S82.0,S82.01,S82.011,"Fracture of lower leg, including ankle",fracture,osteochondral patella,displaced right,fracture osteochondral patella displaced right,patella,leg,leg,trauma,fracture,y,.
-S,8,2,0,1,2,S8,S82,S82.0,S82.01,S82.012,"Fracture of lower leg, including ankle",fracture,osteochondral patella,displaced left,fracture osteochondral patella displaced left,patella,leg,leg,trauma,fracture,y,.
-S,8,2,0,1,4,S8,S82,S82.0,S82.01,S82.014,"Fracture of lower leg, including ankle",fracture,osteochondral patella,nondisplaced right,fracture osteochondral patella nondisplaced right,patella,leg,leg,trauma,fracture,y,.
-S,8,2,0,1,5,S8,S82,S82.0,S82.01,S82.015,"Fracture of lower leg, including ankle",fracture,osteochondral patella,left nondisplaced,fracture osteochondral patella left nondisplaced,patella,leg,leg,trauma,fracture,y,.
-S,8,2,0,2,4,S8,S82,S82.0,S82.02,S82.024,"Fracture of lower leg, including ankle",fracture,longitudinal patella,nondisplaced right,fracture longitudinal patella nondisplaced right,patella,leg,leg,trauma,fracture,y,.
-S,8,2,0,2,5,S8,S82,S82.0,S82.02,S82.025,"Fracture of lower leg, including ankle",fracture,longitudinal patella,left nondisplaced,fracture longitudinal patella left nondisplaced,patella,leg,leg,trauma,fracture,y,.
-S,8,2,0,3,4,S8,S82,S82.0,S82.03,S82.034,"Fracture of lower leg, including ankle",fracture,patella transverse,nondisplaced right,fracture patella transverse nondisplaced right,patella,leg,leg,trauma,fracture,y,.
-S,8,2,0,3,5,S8,S82,S82.0,S82.03,S82.035,"Fracture of lower leg, including ankle",fracture,patella transverse,left nondisplaced,fracture patella transverse left nondisplaced,patella,leg,leg,trauma,fracture,y,.
-S,8,2,0,4,1,S8,S82,S82.0,S82.04,S82.041,"Fracture of lower leg, including ankle",fracture,comminuted patella,displaced right,fracture comminuted patella displaced right,patella,leg,leg,trauma,fracture,y,.
-S,8,2,0,4,2,S8,S82,S82.0,S82.04,S82.042,"Fracture of lower leg, including ankle",fracture,comminuted patella,displaced left,fracture comminuted patella displaced left,patella,leg,leg,trauma,fracture,y,.
-S,8,2,0,4,5,S8,S82,S82.0,S82.04,S82.045,"Fracture of lower leg, including ankle",fracture,comminuted patella,left nondisplaced,fracture comminuted patella left nondisplaced,patella,leg,leg,trauma,fracture,y,.
-S,8,2,0,9,1,S8,S82,S82.0,S82.09,S82.091,"Fracture of lower leg, including ankle",fracture,patella,right,fracture patella right,patella,leg,leg,trauma,fracture,y,.
-S,8,2,0,9,2,S8,S82,S82.0,S82.09,S82.092,"Fracture of lower leg, including ankle",fracture,patella,left,fracture patella left,patella,leg,leg,trauma,fracture,y,.
-S,8,3,0,0,1,S8,S83,S83.0,S83.00,S83.001,"Dislocation, sprain, & strain of joints & ligaments of knee",patella,dislocation subluxation,right,patella dislocation subluxation right,patella,leg,leg,trauma,dislocation,y,.
-S,8,3,0,0,2,S8,S83,S83.0,S83.00,S83.002,"Dislocation, sprain, & strain of joints & ligaments of knee",patella,dislocation subluxation,left,patella dislocation subluxation left,patella,leg,leg,trauma,dislocation,y,.
-S,8,3,0,0,4,S8,S83,S83.0,S83.00,S83.004,"Dislocation, sprain, & strain of joints & ligaments of knee",patella,dislocation subluxation,right,patella dislocation subluxation right,patella,leg,leg,trauma,dislocation,y,.
-S,8,3,0,0,5,S8,S83,S83.0,S83.00,S83.005,"Dislocation, sprain, & strain of joints & ligaments of knee",patella,dislocation subluxation,left,patella dislocation subluxation left,patella,leg,leg,trauma,dislocation,y,.
-S,8,3,0,0,6,S8,S83,S83.0,S83.00,S83.006,"Dislocation, sprain, & strain of joints & ligaments of knee",patella,dislocation subluxation,.,patella dislocation subluxation .,patella,leg,leg,trauma,dislocation,y,.
-S,8,3,0,1,1,S8,S83,S83.0,S83.01,S83.011,"Dislocation, sprain, & strain of joints & ligaments of knee",patella,lateral,right subluxation,patella lateral right subluxation,patella,leg,leg,trauma,dislocation,y,.
-S,8,3,0,1,2,S8,S83,S83.0,S83.01,S83.012,"Dislocation, sprain, & strain of joints & ligaments of knee",patella,lateral,left subluxation,patella lateral left subluxation,patella,leg,leg,trauma,dislocation,y,.
-S,8,3,0,1,5,S8,S83,S83.0,S83.01,S83.015,"Dislocation, sprain, & strain of joints & ligaments of knee",patella,lateral,dislocation left,patella lateral dislocation left,patella,leg,leg,trauma,dislocation,y,.
-S,7,6,1,0,1,S7,S76,S76.1,S76.10,S76.101,Injury of muscle & tendon at hip & thigh level,fascia muscle quadriceps tendon,injury,right,fascia muscle quadriceps tendon injury right,quadriceps,leg,leg,trauma,tendon,y,.
-S,7,6,1,1,1,S7,S76,S76.1,S76.11,S76.111,Injury of muscle & tendon at hip & thigh level,fascia muscle quadriceps tendon,strain,right,fascia muscle quadriceps tendon strain right,quadriceps,leg,leg,trauma,strain,y,.
-S,7,6,1,1,2,S7,S76,S76.1,S76.11,S76.112,Injury of muscle & tendon at hip & thigh level,fascia muscle quadriceps tendon,strain,left,fascia muscle quadriceps tendon strain left,quadriceps,leg,leg,trauma,strain,y,.
-S,7,6,1,9,2,S7,S76,S76.1,S76.19,S76.192,Injury of muscle & tendon at hip & thigh level,fascia muscle quadriceps tendon,injury,left,fascia muscle quadriceps tendon injury left,quadriceps,leg,leg,trauma,tendon,y,.
+S,8,2,0,0,1,S8,S82,S82.0,S82.00,S82.001,"Fracture of lower leg, including ankle",fracture,patella,right,fracture patella right,patella,knee,leg,trauma,fracture,y,.
+S,8,2,0,0,2,S8,S82,S82.0,S82.00,S82.002,"Fracture of lower leg, including ankle",fracture,patella,left,fracture patella left,patella,knee,leg,trauma,fracture,y,.
+S,8,2,0,1,1,S8,S82,S82.0,S82.01,S82.011,"Fracture of lower leg, including ankle",fracture,osteochondral patella,displaced right,fracture osteochondral patella displaced right,patella,knee,leg,trauma,fracture,y,.
+S,8,2,0,1,2,S8,S82,S82.0,S82.01,S82.012,"Fracture of lower leg, including ankle",fracture,osteochondral patella,displaced left,fracture osteochondral patella displaced left,patella,knee,leg,trauma,fracture,y,.
+S,8,2,0,1,4,S8,S82,S82.0,S82.01,S82.014,"Fracture of lower leg, including ankle",fracture,osteochondral patella,nondisplaced right,fracture osteochondral patella nondisplaced right,patella,knee,leg,trauma,fracture,y,.
+S,8,2,0,1,5,S8,S82,S82.0,S82.01,S82.015,"Fracture of lower leg, including ankle",fracture,osteochondral patella,left nondisplaced,fracture osteochondral patella left nondisplaced,patella,knee,leg,trauma,fracture,y,.
+S,8,2,0,2,4,S8,S82,S82.0,S82.02,S82.024,"Fracture of lower leg, including ankle",fracture,longitudinal patella,nondisplaced right,fracture longitudinal patella nondisplaced right,patella,knee,leg,trauma,fracture,y,.
+S,8,2,0,2,5,S8,S82,S82.0,S82.02,S82.025,"Fracture of lower leg, including ankle",fracture,longitudinal patella,left nondisplaced,fracture longitudinal patella left nondisplaced,patella,knee,leg,trauma,fracture,y,.
+S,8,2,0,3,4,S8,S82,S82.0,S82.03,S82.034,"Fracture of lower leg, including ankle",fracture,patella transverse,nondisplaced right,fracture patella transverse nondisplaced right,patella,knee,leg,trauma,fracture,y,.
+S,8,2,0,3,5,S8,S82,S82.0,S82.03,S82.035,"Fracture of lower leg, including ankle",fracture,patella transverse,left nondisplaced,fracture patella transverse left nondisplaced,patella,knee,leg,trauma,fracture,y,.
+S,8,2,0,4,1,S8,S82,S82.0,S82.04,S82.041,"Fracture of lower leg, including ankle",fracture,comminuted patella,displaced right,fracture comminuted patella displaced right,patella,knee,leg,trauma,fracture,y,.
+S,8,2,0,4,2,S8,S82,S82.0,S82.04,S82.042,"Fracture of lower leg, including ankle",fracture,comminuted patella,displaced left,fracture comminuted patella displaced left,patella,knee,leg,trauma,fracture,y,.
+S,8,2,0,4,5,S8,S82,S82.0,S82.04,S82.045,"Fracture of lower leg, including ankle",fracture,comminuted patella,left nondisplaced,fracture comminuted patella left nondisplaced,patella,knee,leg,trauma,fracture,y,.
+S,8,2,0,9,1,S8,S82,S82.0,S82.09,S82.091,"Fracture of lower leg, including ankle",fracture,patella,right,fracture patella right,patella,knee,leg,trauma,fracture,y,.
+S,8,2,0,9,2,S8,S82,S82.0,S82.09,S82.092,"Fracture of lower leg, including ankle",fracture,patella,left,fracture patella left,patella,knee,leg,trauma,fracture,y,.
+S,8,3,0,0,1,S8,S83,S83.0,S83.00,S83.001,"Dislocation, sprain, & strain of joints & ligaments of knee",patella,dislocation subluxation,right,patella dislocation subluxation right,patella,knee,leg,trauma,dislocation,y,.
+S,8,3,0,0,2,S8,S83,S83.0,S83.00,S83.002,"Dislocation, sprain, & strain of joints & ligaments of knee",patella,dislocation subluxation,left,patella dislocation subluxation left,patella,knee,leg,trauma,dislocation,y,.
+S,8,3,0,0,4,S8,S83,S83.0,S83.00,S83.004,"Dislocation, sprain, & strain of joints & ligaments of knee",patella,dislocation subluxation,right,patella dislocation subluxation right,patella,knee,leg,trauma,dislocation,y,.
+S,8,3,0,0,5,S8,S83,S83.0,S83.00,S83.005,"Dislocation, sprain, & strain of joints & ligaments of knee",patella,dislocation subluxation,left,patella dislocation subluxation left,patella,knee,leg,trauma,dislocation,y,.
+S,8,3,0,0,6,S8,S83,S83.0,S83.00,S83.006,"Dislocation, sprain, & strain of joints & ligaments of knee",patella,dislocation subluxation,.,patella dislocation subluxation .,patella,knee,leg,trauma,dislocation,y,.
+S,8,3,0,1,1,S8,S83,S83.0,S83.01,S83.011,"Dislocation, sprain, & strain of joints & ligaments of knee",patella,lateral,right subluxation,patella lateral right subluxation,patella,knee,leg,trauma,dislocation,y,.
+S,8,3,0,1,2,S8,S83,S83.0,S83.01,S83.012,"Dislocation, sprain, & strain of joints & ligaments of knee",patella,lateral,left subluxation,patella lateral left subluxation,patella,knee,leg,trauma,dislocation,y,.
+S,8,3,0,1,5,S8,S83,S83.0,S83.01,S83.015,"Dislocation, sprain, & strain of joints & ligaments of knee",patella,lateral,dislocation left,patella lateral dislocation left,patella,knee,leg,trauma,dislocation,y,.
+S,7,6,1,0,1,S7,S76,S76.1,S76.10,S76.101,Injury of muscle & tendon at hip & thigh level,fascia muscle quadriceps tendon,injury,right,fascia muscle quadriceps tendon injury right,quadriceps,.,leg,trauma,tendon,y,.
+S,7,6,1,1,1,S7,S76,S76.1,S76.11,S76.111,Injury of muscle & tendon at hip & thigh level,fascia muscle quadriceps tendon,strain,right,fascia muscle quadriceps tendon strain right,quadriceps,.,leg,trauma,strain,y,.
+S,7,6,1,1,2,S7,S76,S76.1,S76.11,S76.112,Injury of muscle & tendon at hip & thigh level,fascia muscle quadriceps tendon,strain,left,fascia muscle quadriceps tendon strain left,quadriceps,.,leg,trauma,strain,y,.
+S,7,6,1,9,2,S7,S76,S76.1,S76.19,S76.192,Injury of muscle & tendon at hip & thigh level,fascia muscle quadriceps tendon,injury,left,fascia muscle quadriceps tendon injury left,quadriceps,.,leg,trauma,tendon,y,.
 S,9,2,1,0,1,S9,S92,S92.1,S92.10,S92.101,Fracture of foot except ankle,fracture,talus,right,fracture talus right,talus,tarsus,foot,trauma,fracture,y,.
 S,9,2,1,0,2,S9,S92,S92.1,S92.10,S92.102,Fracture of foot except ankle,fracture,talus,left,fracture talus left,talus,tarsus,foot,trauma,fracture,y,.
 S,9,2,1,1,4,S9,S92,S92.1,S92.11,S92.114,Fracture of foot except ankle,fracture,neck talus,nondisplaced right,fracture neck talus nondisplaced right,talus,tarsus,foot,trauma,fracture,y,.
@@ -1990,30 +1990,30 @@ S,9,2,1,5,5,S9,S92,S92.1,S92.15,S92.155,Fracture of foot except ankle,fracture,a
 M,9,2,6,0,.,M9,M92,M92.6,M92.60,M92.60,Other juvenile osteochondrosis,ankle juvenile osteochondrosis tarsus,.,.,ankle juvenile osteochondrosis tarsus . .,tarsus,tarsus,foot,musculoskeletal,"osteochondrosis, juvenile",y,.
 M,9,2,6,1,.,M9,M92,M92.6,M92.61,M92.61,Other juvenile osteochondrosis,ankle juvenile osteochondrosis tarsus,right,.,ankle juvenile osteochondrosis tarsus right .,tarsus,tarsus,foot,musculoskeletal,"osteochondrosis, juvenile",y,.
 M,9,2,6,2,.,M9,M92,M92.6,M92.62,M92.62,Other juvenile osteochondrosis,ankle juvenile osteochondrosis tarsus,left,.,ankle juvenile osteochondrosis tarsus left .,tarsus,tarsus,foot,musculoskeletal,"osteochondrosis, juvenile",y,.
-M,2,1,8,5,1,M2,M21,M21.8,M21.85,M21.851,Other acquired deformities of limbs,acquired deformities,thigh,.,acquired deformities thigh .,thigh,leg,leg,musculoskeletal,joint disorder,y,.
-M,2,1,8,5,2,M2,M21,M21.8,M21.85,M21.852,Other acquired deformities of limbs,acquired deformities,thigh,.,acquired deformities thigh .,thigh,leg,leg,musculoskeletal,joint disorder,y,.
-M,2,1,8,5,9,M2,M21,M21.8,M21.85,M21.859,Other acquired deformities of limbs,acquired deformities,thigh,.,acquired deformities thigh .,thigh,leg,leg,musculoskeletal,joint disorder,y,.
-M,2,1,9,5,1,M2,M21,M21.9,M21.95,M21.951,Other acquired deformities of limbs,acquired deformity,thigh,.,acquired deformity thigh .,thigh,leg,leg,musculoskeletal,joint disorder,y,.
-M,6,2,5,5,2,M6,M62,M62.5,M62.55,M62.552,Other disorders of muscle,atrophy classified muscle wasting,thigh,.,atrophy classified muscle wasting thigh .,thigh,leg,leg,musculoskeletal,"disorder, muscle",y,.
-M,6,2,5,5,9,M6,M62,M62.5,M62.55,M62.559,Other disorders of muscle,atrophy classified muscle wasting,thigh,.,atrophy classified muscle wasting thigh .,thigh,leg,leg,musculoskeletal,"disorder, muscle",y,.
-M,7,9,6,5,1,M7,M79,M79.6,M79.65,M79.651,Other soft tissue disorders,pain,thigh,.,pain thigh .,thigh,leg,leg,musculoskeletal,"disorder, soft-tissue",y,.
-M,7,9,6,5,2,M7,M79,M79.6,M79.65,M79.652,Other soft tissue disorders,pain,thigh,.,pain thigh .,thigh,leg,leg,musculoskeletal,"disorder, soft-tissue",y,.
-M,8,5,5,5,1,M8,M85,M85.5,M85.55,M85.551,Other disorders of bone density & structure,aneurysmal bone cyst,thigh,.,aneurysmal bone cyst thigh .,thigh,leg,leg,musculoskeletal,"disorder, bone density",y,.
-M,8,6,6,5,1,M8,M86,M86.6,M86.65,M86.651,Osteomyelitis,chronic osteomyelitis,thigh,.,chronic osteomyelitis thigh .,thigh,leg,leg,musculoskeletal,osteomyelitis,y,.
-M,8,6,6,5,2,M8,M86,M86.6,M86.65,M86.652,Osteomyelitis,chronic osteomyelitis,thigh,.,chronic osteomyelitis thigh .,thigh,leg,leg,musculoskeletal,osteomyelitis,y,.
-M,9,3,9,5,9,M9,M93,M93.9,M93.95,M93.959,Other osteochondropathies,osteochondropathy,thigh,.,osteochondropathy thigh .,thigh,leg,leg,musculoskeletal,"osteochondrosis, other",y,.
-S,7,0,1,1,X,S7,S70,S70.1,S70.11,S70.11X,Superficial injury of hip & thigh,contusion thigh,right,.,contusion thigh right .,thigh,leg,leg,trauma,contusion,y,.
-S,7,0,1,2,X,S7,S70,S70.1,S70.12,S70.12X,Superficial injury of hip & thigh,contusion thigh,left,.,contusion thigh left .,thigh,leg,leg,trauma,contusion,y,.
-S,7,6,2,0,2,S7,S76,S76.2,S76.20,S76.202,Injury of muscle & tendon at hip & thigh level,adductor fascia muscle tendon thigh,injury,left,adductor fascia muscle tendon thigh injury left,thigh,leg,leg,trauma,tendon,y,.
-S,7,6,2,1,1,S7,S76,S76.2,S76.21,S76.211,Injury of muscle & tendon at hip & thigh level,adductor fascia muscle tendon thigh,strain,right,adductor fascia muscle tendon thigh strain right,thigh,leg,leg,trauma,strain,y,.
-S,7,6,2,1,2,S7,S76,S76.2,S76.21,S76.212,Injury of muscle & tendon at hip & thigh level,adductor fascia muscle tendon thigh,strain,left,adductor fascia muscle tendon thigh strain left,thigh,leg,leg,trauma,strain,y,.
-S,7,6,3,0,1,S7,S76,S76.3,S76.30,S76.301,Injury of muscle & tendon at hip & thigh level,muscle thigh,fascia injury level posterior tendon,right,muscle thigh fascia injury level posterior tendon right,thigh,leg,leg,trauma,tendon,y,.
-S,7,6,3,0,2,S7,S76,S76.3,S76.30,S76.302,Injury of muscle & tendon at hip & thigh level,muscle thigh,fascia injury level posterior tendon,left,muscle thigh fascia injury level posterior tendon left,thigh,leg,leg,trauma,tendon,y,.
-S,7,6,3,1,1,S7,S76,S76.3,S76.31,S76.311,Injury of muscle & tendon at hip & thigh level,muscle thigh,fascia level posterior strain tendon,right,muscle thigh fascia level posterior strain tendon right,thigh,leg,leg,trauma,strain,y,.
-S,7,6,3,1,2,S7,S76,S76.3,S76.31,S76.312,Injury of muscle & tendon at hip & thigh level,muscle thigh,fascia level posterior strain tendon,left,muscle thigh fascia level posterior strain tendon left,thigh,leg,leg,trauma,strain,y,.
-S,7,6,3,1,9,S7,S76,S76.3,S76.31,S76.319,Injury of muscle & tendon at hip & thigh level,muscle thigh,fascia level posterior strain tendon,.,muscle thigh fascia level posterior strain tendon .,thigh,leg,leg,trauma,strain,y,.
-S,7,6,9,1,1,S7,S76,S76.9,S76.91,S76.911,Injury of muscle & tendon at hip & thigh level,thigh,fascia level muscles strain tendons,right,thigh fascia level muscles strain tendons right,thigh,leg,leg,trauma,strain,y,.
-S,7,9,9,2,1,S7,S79,S79.9,S79.92,S79.921,Other & unspecified injuries of hip & thigh,injury,thigh,right,injury thigh right,thigh,leg,leg,trauma,injury,y,.
+M,2,1,8,5,1,M2,M21,M21.8,M21.85,M21.851,Other acquired deformities of limbs,acquired deformities,thigh,.,acquired deformities thigh .,thigh,.,leg,musculoskeletal,joint disorder,y,.
+M,2,1,8,5,2,M2,M21,M21.8,M21.85,M21.852,Other acquired deformities of limbs,acquired deformities,thigh,.,acquired deformities thigh .,thigh,.,leg,musculoskeletal,joint disorder,y,.
+M,2,1,8,5,9,M2,M21,M21.8,M21.85,M21.859,Other acquired deformities of limbs,acquired deformities,thigh,.,acquired deformities thigh .,thigh,.,leg,musculoskeletal,joint disorder,y,.
+M,2,1,9,5,1,M2,M21,M21.9,M21.95,M21.951,Other acquired deformities of limbs,acquired deformity,thigh,.,acquired deformity thigh .,thigh,.,leg,musculoskeletal,joint disorder,y,.
+M,6,2,5,5,2,M6,M62,M62.5,M62.55,M62.552,Other disorders of muscle,atrophy classified muscle wasting,thigh,.,atrophy classified muscle wasting thigh .,thigh,.,leg,musculoskeletal,"disorder, muscle",y,.
+M,6,2,5,5,9,M6,M62,M62.5,M62.55,M62.559,Other disorders of muscle,atrophy classified muscle wasting,thigh,.,atrophy classified muscle wasting thigh .,thigh,.,leg,musculoskeletal,"disorder, muscle",y,.
+M,7,9,6,5,1,M7,M79,M79.6,M79.65,M79.651,Other soft tissue disorders,pain,thigh,.,pain thigh .,thigh,.,leg,musculoskeletal,"disorder, soft-tissue",y,.
+M,7,9,6,5,2,M7,M79,M79.6,M79.65,M79.652,Other soft tissue disorders,pain,thigh,.,pain thigh .,thigh,.,leg,musculoskeletal,"disorder, soft-tissue",y,.
+M,8,5,5,5,1,M8,M85,M85.5,M85.55,M85.551,Other disorders of bone density & structure,aneurysmal bone cyst,thigh,.,aneurysmal bone cyst thigh .,thigh,.,leg,musculoskeletal,"disorder, bone density",y,.
+M,8,6,6,5,1,M8,M86,M86.6,M86.65,M86.651,Osteomyelitis,chronic osteomyelitis,thigh,.,chronic osteomyelitis thigh .,thigh,.,leg,musculoskeletal,osteomyelitis,y,.
+M,8,6,6,5,2,M8,M86,M86.6,M86.65,M86.652,Osteomyelitis,chronic osteomyelitis,thigh,.,chronic osteomyelitis thigh .,thigh,.,leg,musculoskeletal,osteomyelitis,y,.
+M,9,3,9,5,9,M9,M93,M93.9,M93.95,M93.959,Other osteochondropathies,osteochondropathy,thigh,.,osteochondropathy thigh .,thigh,.,leg,musculoskeletal,"osteochondrosis, other",y,.
+S,7,0,1,1,X,S7,S70,S70.1,S70.11,S70.11X,Superficial injury of hip & thigh,contusion thigh,right,.,contusion thigh right .,thigh,.,leg,trauma,contusion,y,.
+S,7,0,1,2,X,S7,S70,S70.1,S70.12,S70.12X,Superficial injury of hip & thigh,contusion thigh,left,.,contusion thigh left .,thigh,.,leg,trauma,contusion,y,.
+S,7,6,2,0,2,S7,S76,S76.2,S76.20,S76.202,Injury of muscle & tendon at hip & thigh level,adductor fascia muscle tendon thigh,injury,left,adductor fascia muscle tendon thigh injury left,thigh,.,leg,trauma,tendon,y,.
+S,7,6,2,1,1,S7,S76,S76.2,S76.21,S76.211,Injury of muscle & tendon at hip & thigh level,adductor fascia muscle tendon thigh,strain,right,adductor fascia muscle tendon thigh strain right,thigh,.,leg,trauma,strain,y,.
+S,7,6,2,1,2,S7,S76,S76.2,S76.21,S76.212,Injury of muscle & tendon at hip & thigh level,adductor fascia muscle tendon thigh,strain,left,adductor fascia muscle tendon thigh strain left,thigh,.,leg,trauma,strain,y,.
+S,7,6,3,0,1,S7,S76,S76.3,S76.30,S76.301,Injury of muscle & tendon at hip & thigh level,muscle thigh,fascia injury level posterior tendon,right,muscle thigh fascia injury level posterior tendon right,thigh,.,leg,trauma,tendon,y,.
+S,7,6,3,0,2,S7,S76,S76.3,S76.30,S76.302,Injury of muscle & tendon at hip & thigh level,muscle thigh,fascia injury level posterior tendon,left,muscle thigh fascia injury level posterior tendon left,thigh,.,leg,trauma,tendon,y,.
+S,7,6,3,1,1,S7,S76,S76.3,S76.31,S76.311,Injury of muscle & tendon at hip & thigh level,muscle thigh,fascia level posterior strain tendon,right,muscle thigh fascia level posterior strain tendon right,thigh,.,leg,trauma,strain,y,.
+S,7,6,3,1,2,S7,S76,S76.3,S76.31,S76.312,Injury of muscle & tendon at hip & thigh level,muscle thigh,fascia level posterior strain tendon,left,muscle thigh fascia level posterior strain tendon left,thigh,.,leg,trauma,strain,y,.
+S,7,6,3,1,9,S7,S76,S76.3,S76.31,S76.319,Injury of muscle & tendon at hip & thigh level,muscle thigh,fascia level posterior strain tendon,.,muscle thigh fascia level posterior strain tendon .,thigh,.,leg,trauma,strain,y,.
+S,7,6,9,1,1,S7,S76,S76.9,S76.91,S76.911,Injury of muscle & tendon at hip & thigh level,thigh,fascia level muscles strain tendons,right,thigh fascia level muscles strain tendons right,thigh,.,leg,trauma,strain,y,.
+S,7,9,9,2,1,S7,S79,S79.9,S79.92,S79.921,Other & unspecified injuries of hip & thigh,injury,thigh,right,injury thigh right,thigh,.,leg,trauma,injury,y,.
 M,2,1,7,6,1,M2,M21,M21.7,M21.76,M21.761,Other acquired deformities of limbs,acquired length limb unequal,fibula tibia,.,acquired length limb unequal fibula tibia .,tibia,tibia,leg,musculoskeletal,joint disorder,y,.
 M,2,1,7,6,2,M2,M21,M21.7,M21.76,M21.762,Other acquired deformities of limbs,acquired length limb unequal,fibula tibia,.,acquired length limb unequal fibula tibia .,tibia,tibia,leg,musculoskeletal,joint disorder,y,.
 M,7,6,8,1,1,M7,M76,M76.8,M76.81,M76.811,"Enthesopathies of lower limb, excluding foot",leg tibial,anterior syndrome,.,leg tibial anterior syndrome .,tibia,tibia,leg,musculoskeletal,"disorder, soft-tissue",y,.
@@ -2226,67 +2226,67 @@ Q,7,4,3,.,.,Q7,Q74,Q74.3,Q74.3,Q74.3,Other congenital malformations of limb(s),a
 Q,7,4,8,.,.,Q7,Q74,Q74.8,Q74.8,Q74.8,Other congenital malformations of limb(s),congenital limbs malformations,.,.,congenital limbs malformations . .,.,.,other,congenital,malformation,y,.
 Q,7,4,9,.,.,Q7,Q74,Q74.9,Q74.9,Q74.9,Other congenital malformations of limb(s),congenital limbs malformation,.,.,congenital limbs malformation . .,.,.,other,congenital,malformation,y,.
 M,4,0,0,0,.,M4,M40,M40.0,M40.00,M40.00,Kyphosis & lordosis,kyphosis postural,site,.,kyphosis postural site .,.,.,spine,musculoskeletal,"dorsopathies, deforming",y,.
-C,4,9,2,1,.,C4,C49,C49.2,C49.21,C49.21,Malignant neoplasm of other connective & soft tissue,connective hip including limb lower malignant neoplasm soft tissue,right,.,connective hip including limb lower malignant neoplasm soft tissue right .,.,pelvis,pelvis,tumor,joint,y,.
-C,4,9,2,2,.,C4,C49,C49.2,C49.22,C49.22,Malignant neoplasm of other connective & soft tissue,connective hip including limb lower malignant neoplasm soft tissue,left,.,connective hip including limb lower malignant neoplasm soft tissue left .,.,pelvis,pelvis,tumor,joint,y,.
+C,4,9,2,1,.,C4,C49,C49.2,C49.21,C49.21,Malignant neoplasm of other connective & soft tissue,connective hip including limb lower malignant neoplasm soft tissue,right,.,connective hip including limb lower malignant neoplasm soft tissue right .,.,.,pelvis,tumor,joint,y,.
+C,4,9,2,2,.,C4,C49,C49.2,C49.22,C49.22,Malignant neoplasm of other connective & soft tissue,connective hip including limb lower malignant neoplasm soft tissue,left,.,connective hip including limb lower malignant neoplasm soft tissue left .,.,.,pelvis,tumor,joint,y,.
 M,4,0,1,0,.,M4,M40,M40.1,M40.10,M40.10,Kyphosis & lordosis,kyphosis secondary,site,.,kyphosis secondary site .,.,.,spine,musculoskeletal,"dorsopathies, deforming",y,.
-D,2,1,2,1,.,D2,D21,D21.2,D21.21,D21.21,Other benign neoplasms of connective & other soft tissue,benign connective hip including limb lower neoplasm soft tissue,right,.,benign connective hip including limb lower neoplasm soft tissue right .,.,pelvis,pelvis,tumor,joint,y,.
-D,2,1,2,2,.,D2,D21,D21.2,D21.22,D21.22,Other benign neoplasms of connective & other soft tissue,benign connective hip including limb lower neoplasm soft tissue,left,.,benign connective hip including limb lower neoplasm soft tissue left .,.,pelvis,pelvis,tumor,joint,y,.
-D,3,6,1,3,.,D3,D36,D36.1,D36.13,D36.13,Benign neoplasm of other & unspecified sites,autonomic benign neoplasm nerves nervous peripheral system,hip including limb lower,.,autonomic benign neoplasm nerves nervous peripheral system hip including limb lower .,.,pelvis,pelvis,tumor,joint,y,.
-M,0,0,0,5,1,M0,M00,M00.0,M00.05,M00.051,Pyogenic arthritis,staphylococcal,arthritis hip,.,staphylococcal arthritis hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,0,0,0,5,2,M0,M00,M00.0,M00.05,M00.052,Pyogenic arthritis,staphylococcal,arthritis hip,.,staphylococcal arthritis hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,0,0,8,5,2,M0,M00,M00.8,M00.85,M00.852,Pyogenic arthritis,bacteria due,arthritis hip,.,bacteria due arthritis hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,1,6,9,.,.,M1,M16,M16.9,M16.9,M16.9,Coxarthrosis [arthrosis of hip],hip osteoarthritis,.,.,hip osteoarthritis . .,.,pelvis,pelvis,musculoskeletal,osteoarthritis,y,.
-M,2,1,0,5,2,M2,M21,M21.0,M21.05,M21.052,Other acquired deformities of limbs,classified deformity valgus,hip,.,classified deformity valgus hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,2,1,1,5,2,M2,M21,M21.1,M21.15,M21.152,Other acquired deformities of limbs,classified deformity varus,hip,.,classified deformity varus hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,2,1,2,5,2,M2,M21,M21.2,M21.25,M21.252,Other acquired deformities of limbs,deformity flexion,hip,.,deformity flexion hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,2,4,3,5,1,M2,M24,M24.3,M24.35,M24.351,Other specific joint derangements,classified dislocation pathological,hip,.,classified dislocation pathological hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,2,4,3,5,2,M2,M24,M24.3,M24.35,M24.352,Other specific joint derangements,classified dislocation pathological,hip,.,classified dislocation pathological hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,2,4,3,5,9,M2,M24,M24.3,M24.35,M24.359,Other specific joint derangements,classified dislocation pathological,hip,.,classified dislocation pathological hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,2,4,4,5,1,M2,M24,M24.4,M24.45,M24.451,Other specific joint derangements,dislocation recurrent,hip,.,dislocation recurrent hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,2,4,5,5,1,M2,M24,M24.5,M24.55,M24.551,Other specific joint derangements,contracture,hip,.,contracture hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,2,4,5,5,2,M2,M24,M24.5,M24.55,M24.552,Other specific joint derangements,contracture,hip,.,contracture hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,2,4,8,5,1,M2,M24,M24.8,M24.85,M24.851,Other specific joint derangements,joint,classified derangements hip specific,.,joint classified derangements hip specific .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,2,4,8,5,2,M2,M24,M24.8,M24.85,M24.852,Other specific joint derangements,joint,classified derangements hip specific,.,joint classified derangements hip specific .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,2,4,8,5,9,M2,M24,M24.8,M24.85,M24.859,Other specific joint derangements,joint,classified derangements hip specific,.,joint classified derangements hip specific .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,2,5,2,5,1,M2,M25,M25.2,M25.25,M25.251,Other joint disorders,joint,flail hip,.,joint flail hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,2,5,2,5,2,M2,M25,M25.2,M25.25,M25.252,Other joint disorders,joint,flail hip,.,joint flail hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,2,5,2,5,9,M2,M25,M25.2,M25.25,M25.259,Other joint disorders,joint,flail hip,.,joint flail hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,2,5,4,5,1,M2,M25,M25.4,M25.45,M25.451,Other joint disorders,effusion,hip,.,effusion hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,2,5,5,5,1,M2,M25,M25.5,M25.55,M25.551,Other joint disorders,pain,hip,.,pain hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,2,5,5,5,2,M2,M25,M25.5,M25.55,M25.552,Other joint disorders,pain,hip,.,pain hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,2,5,5,5,9,M2,M25,M25.5,M25.55,M25.559,Other joint disorders,pain,hip,.,pain hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,2,5,8,5,1,M2,M25,M25.8,M25.85,M25.851,Other joint disorders,joint,disorders hip,.,joint disorders hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,2,5,8,5,2,M2,M25,M25.8,M25.85,M25.852,Other joint disorders,joint,disorders hip,.,joint disorders hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,2,5,8,5,9,M2,M25,M25.8,M25.85,M25.859,Other joint disorders,joint,disorders hip,.,joint disorders hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,6,7,3,5,1,M6,M67,M67.3,M67.35,M67.351,Other disorders of synovium & tendon,synovitis transient,hip,.,synovitis transient hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,6,7,3,5,2,M6,M67,M67.3,M67.35,M67.352,Other disorders of synovium & tendon,synovitis transient,hip,.,synovitis transient hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,6,7,3,5,9,M6,M67,M67.3,M67.35,M67.359,Other disorders of synovium & tendon,synovitis transient,hip,.,synovitis transient hip .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,7,0,6,1,.,M7,M70,M70.6,M70.61,M70.61,"Soft tissue disorders related to use, overuse, & pressure",bursitis hip trochanteric,right,.,bursitis hip trochanteric right .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,7,0,6,2,.,M7,M70,M70.6,M70.62,M70.62,"Soft tissue disorders related to use, overuse, & pressure",bursitis hip trochanteric,left,.,bursitis hip trochanteric left .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,7,0,7,1,.,M7,M70,M70.7,M70.71,M70.71,"Soft tissue disorders related to use, overuse, & pressure",hip,bursitis right,.,hip bursitis right .,.,pelvis,pelvis,musculoskeletal,"disorder, soft-tissue",y,.
-M,7,0,7,2,.,M7,M70,M70.7,M70.72,M70.72,"Soft tissue disorders related to use, overuse, & pressure",hip,bursitis left,.,hip bursitis left .,.,pelvis,pelvis,musculoskeletal,"disorder, soft-tissue",y,.
-M,7,6,1,1,.,M7,M76,M76.1,M76.11,M76.11,"Enthesopathies of lower limb, excluding foot",hip psoas tendinitis,right,.,hip psoas tendinitis right .,.,pelvis,pelvis,musculoskeletal,"disorder, soft-tissue",y,.
-M,7,6,1,2,.,M7,M76,M76.1,M76.12,M76.12,"Enthesopathies of lower limb, excluding foot",hip psoas tendinitis,left,.,hip psoas tendinitis left .,.,pelvis,pelvis,musculoskeletal,"disorder, soft-tissue",y,.
-M,8,4,3,5,9,M8,M84,M84.3,M84.35,M84.359,Disorders of continuity of bone,fracture,stress,hip,fracture stress hip,.,pelvis,pelvis,musculoskeletal,stress fracture,y,.
-M,9,1,0,.,.,M9,M91,M91.0,M91.0,M91.0,Juvenile osteochondrosis of hip & pelvis,juvenile osteochondrosis pelvis,.,.,juvenile osteochondrosis pelvis . .,.,pelvis,pelvis,musculoskeletal,"osteochondrosis, juvenile",y,.
-M,9,1,9,1,.,M9,M91,M91.9,M91.91,M91.91,Juvenile osteochondrosis of hip & pelvis,hip juvenile leg osteochondrosis pelvis,right,.,hip juvenile leg osteochondrosis pelvis right .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,9,3,0,0,1,M9,M93,M93.0,M93.00,M93.001,Other osteochondropathies,epiphysis femoral hip nontraumatic slipped upper,left right,.,epiphysis femoral hip nontraumatic slipped upper left right .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,9,3,0,0,2,M9,M93,M93.0,M93.00,M93.002,Other osteochondropathies,epiphysis femoral hip nontraumatic slipped upper,left right,.,epiphysis femoral hip nontraumatic slipped upper left right .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,9,3,0,0,3,M9,M93,M93.0,M93.00,M93.003,Other osteochondropathies,epiphysis femoral hip nontraumatic slipped upper,left right,.,epiphysis femoral hip nontraumatic slipped upper left right .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,9,4,3,5,1,M9,M94,M94.3,M94.35,M94.351,Other disorders of cartilage,chondrolysis hip,left right,.,chondrolysis hip left right .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,9,4,3,5,2,M9,M94,M94.3,M94.35,M94.352,Other disorders of cartilage,chondrolysis hip,left right,.,chondrolysis hip left right .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-M,9,5,5,.,.,M9,M95,M95.5,M95.5,M95.5,Other acquired deformities of musculoskeletal system & connective tissue,acquired deformity pelvis,.,.,acquired deformity pelvis . .,.,pelvis,pelvis,musculoskeletal,joint,y,.
-Q,6,5,0,0,.,Q6,Q65,Q65.0,Q65.00,Q65.00,Congenital deformities of hip,congenital dislocation hip unilateral,.,.,congenital dislocation hip unilateral . .,.,pelvis,pelvis,congenital,deformity,y,.
-Q,6,5,0,1,.,Q6,Q65,Q65.0,Q65.01,Q65.01,Congenital deformities of hip,congenital dislocation hip unilateral,right,.,congenital dislocation hip unilateral right .,.,pelvis,pelvis,congenital,deformity,y,.
-Q,6,5,0,2,.,Q6,Q65,Q65.0,Q65.02,Q65.02,Congenital deformities of hip,congenital dislocation hip unilateral,left,.,congenital dislocation hip unilateral left .,.,pelvis,pelvis,congenital,deformity,y,.
-Q,6,5,1,.,.,Q6,Q65,Q65.1,Q65.1,Q65.1,Congenital deformities of hip,bilateral congenital dislocation hip,.,.,bilateral congenital dislocation hip . .,.,pelvis,pelvis,congenital,deformity,y,.
-Q,6,5,2,.,.,Q6,Q65,Q65.2,Q65.2,Q65.2,Congenital deformities of hip,congenital dislocation hip,.,.,congenital dislocation hip . .,.,pelvis,pelvis,congenital,deformity,y,.
-Q,6,5,5,.,.,Q6,Q65,Q65.5,Q65.5,Q65.5,Congenital deformities of hip,congenital dislocation hip partial,.,.,congenital dislocation hip partial . .,.,pelvis,pelvis,congenital,deformity,y,.
-Q,6,5,6,.,.,Q6,Q65,Q65.6,Q65.6,Q65.6,Congenital deformities of hip,congenital hip unstable,.,.,congenital hip unstable . .,.,pelvis,pelvis,congenital,deformity,y,.
-Q,6,5,8,9,.,Q6,Q65,Q65.8,Q65.89,Q65.89,Congenital deformities of hip,congenital,deformities hip,.,congenital deformities hip .,.,pelvis,pelvis,congenital,deformity,y,.
-Q,6,5,9,.,.,Q6,Q65,Q65.9,Q65.9,Q65.9,Congenital deformities of hip,congenital deformity hip,.,.,congenital deformity hip . .,.,pelvis,pelvis,congenital,deformity,y,.
-R,2,9,4,.,.,R2,R29,R29.4,R29.4,R29.4,Other symptoms & signs involving the nervous & musculoskeletal systems,clicking hip,.,.,clicking hip . .,.,pelvis,pelvis,symptoms/findings,joint,y,.
-S,3,0,0,X,X,S3,S30,S30.0,S30.0X,S30.0XX,"Superficial injury of abdomen, lower back, & pelvis",contusion lower pelvis,initial sequela subsequent,.,contusion lower pelvis initial sequela subsequent .,.,pelvis,pelvis,trauma,contusion,y,.
+D,2,1,2,1,.,D2,D21,D21.2,D21.21,D21.21,Other benign neoplasms of connective & other soft tissue,benign connective hip including limb lower neoplasm soft tissue,right,.,benign connective hip including limb lower neoplasm soft tissue right .,.,.,pelvis,tumor,joint,y,.
+D,2,1,2,2,.,D2,D21,D21.2,D21.22,D21.22,Other benign neoplasms of connective & other soft tissue,benign connective hip including limb lower neoplasm soft tissue,left,.,benign connective hip including limb lower neoplasm soft tissue left .,.,.,pelvis,tumor,joint,y,.
+D,3,6,1,3,.,D3,D36,D36.1,D36.13,D36.13,Benign neoplasm of other & unspecified sites,autonomic benign neoplasm nerves nervous peripheral system,hip including limb lower,.,autonomic benign neoplasm nerves nervous peripheral system hip including limb lower .,.,.,pelvis,tumor,joint,y,.
+M,0,0,0,5,1,M0,M00,M00.0,M00.05,M00.051,Pyogenic arthritis,staphylococcal,arthritis hip,.,staphylococcal arthritis hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,0,0,0,5,2,M0,M00,M00.0,M00.05,M00.052,Pyogenic arthritis,staphylococcal,arthritis hip,.,staphylococcal arthritis hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,0,0,8,5,2,M0,M00,M00.8,M00.85,M00.852,Pyogenic arthritis,bacteria due,arthritis hip,.,bacteria due arthritis hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,1,6,9,.,.,M1,M16,M16.9,M16.9,M16.9,Coxarthrosis [arthrosis of hip],hip osteoarthritis,.,.,hip osteoarthritis . .,.,.,pelvis,musculoskeletal,osteoarthritis,y,.
+M,2,1,0,5,2,M2,M21,M21.0,M21.05,M21.052,Other acquired deformities of limbs,classified deformity valgus,hip,.,classified deformity valgus hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,2,1,1,5,2,M2,M21,M21.1,M21.15,M21.152,Other acquired deformities of limbs,classified deformity varus,hip,.,classified deformity varus hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,2,1,2,5,2,M2,M21,M21.2,M21.25,M21.252,Other acquired deformities of limbs,deformity flexion,hip,.,deformity flexion hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,2,4,3,5,1,M2,M24,M24.3,M24.35,M24.351,Other specific joint derangements,classified dislocation pathological,hip,.,classified dislocation pathological hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,2,4,3,5,2,M2,M24,M24.3,M24.35,M24.352,Other specific joint derangements,classified dislocation pathological,hip,.,classified dislocation pathological hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,2,4,3,5,9,M2,M24,M24.3,M24.35,M24.359,Other specific joint derangements,classified dislocation pathological,hip,.,classified dislocation pathological hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,2,4,4,5,1,M2,M24,M24.4,M24.45,M24.451,Other specific joint derangements,dislocation recurrent,hip,.,dislocation recurrent hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,2,4,5,5,1,M2,M24,M24.5,M24.55,M24.551,Other specific joint derangements,contracture,hip,.,contracture hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,2,4,5,5,2,M2,M24,M24.5,M24.55,M24.552,Other specific joint derangements,contracture,hip,.,contracture hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,2,4,8,5,1,M2,M24,M24.8,M24.85,M24.851,Other specific joint derangements,joint,classified derangements hip specific,.,joint classified derangements hip specific .,.,.,pelvis,musculoskeletal,joint,y,.
+M,2,4,8,5,2,M2,M24,M24.8,M24.85,M24.852,Other specific joint derangements,joint,classified derangements hip specific,.,joint classified derangements hip specific .,.,.,pelvis,musculoskeletal,joint,y,.
+M,2,4,8,5,9,M2,M24,M24.8,M24.85,M24.859,Other specific joint derangements,joint,classified derangements hip specific,.,joint classified derangements hip specific .,.,.,pelvis,musculoskeletal,joint,y,.
+M,2,5,2,5,1,M2,M25,M25.2,M25.25,M25.251,Other joint disorders,joint,flail hip,.,joint flail hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,2,5,2,5,2,M2,M25,M25.2,M25.25,M25.252,Other joint disorders,joint,flail hip,.,joint flail hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,2,5,2,5,9,M2,M25,M25.2,M25.25,M25.259,Other joint disorders,joint,flail hip,.,joint flail hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,2,5,4,5,1,M2,M25,M25.4,M25.45,M25.451,Other joint disorders,effusion,hip,.,effusion hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,2,5,5,5,1,M2,M25,M25.5,M25.55,M25.551,Other joint disorders,pain,hip,.,pain hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,2,5,5,5,2,M2,M25,M25.5,M25.55,M25.552,Other joint disorders,pain,hip,.,pain hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,2,5,5,5,9,M2,M25,M25.5,M25.55,M25.559,Other joint disorders,pain,hip,.,pain hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,2,5,8,5,1,M2,M25,M25.8,M25.85,M25.851,Other joint disorders,joint,disorders hip,.,joint disorders hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,2,5,8,5,2,M2,M25,M25.8,M25.85,M25.852,Other joint disorders,joint,disorders hip,.,joint disorders hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,2,5,8,5,9,M2,M25,M25.8,M25.85,M25.859,Other joint disorders,joint,disorders hip,.,joint disorders hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,6,7,3,5,1,M6,M67,M67.3,M67.35,M67.351,Other disorders of synovium & tendon,synovitis transient,hip,.,synovitis transient hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,6,7,3,5,2,M6,M67,M67.3,M67.35,M67.352,Other disorders of synovium & tendon,synovitis transient,hip,.,synovitis transient hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,6,7,3,5,9,M6,M67,M67.3,M67.35,M67.359,Other disorders of synovium & tendon,synovitis transient,hip,.,synovitis transient hip .,.,.,pelvis,musculoskeletal,joint,y,.
+M,7,0,6,1,.,M7,M70,M70.6,M70.61,M70.61,"Soft tissue disorders related to use, overuse, & pressure",bursitis hip trochanteric,right,.,bursitis hip trochanteric right .,.,.,pelvis,musculoskeletal,joint,y,.
+M,7,0,6,2,.,M7,M70,M70.6,M70.62,M70.62,"Soft tissue disorders related to use, overuse, & pressure",bursitis hip trochanteric,left,.,bursitis hip trochanteric left .,.,.,pelvis,musculoskeletal,joint,y,.
+M,7,0,7,1,.,M7,M70,M70.7,M70.71,M70.71,"Soft tissue disorders related to use, overuse, & pressure",hip,bursitis right,.,hip bursitis right .,.,.,pelvis,musculoskeletal,"disorder, soft-tissue",y,.
+M,7,0,7,2,.,M7,M70,M70.7,M70.72,M70.72,"Soft tissue disorders related to use, overuse, & pressure",hip,bursitis left,.,hip bursitis left .,.,.,pelvis,musculoskeletal,"disorder, soft-tissue",y,.
+M,7,6,1,1,.,M7,M76,M76.1,M76.11,M76.11,"Enthesopathies of lower limb, excluding foot",hip psoas tendinitis,right,.,hip psoas tendinitis right .,.,.,pelvis,musculoskeletal,"disorder, soft-tissue",y,.
+M,7,6,1,2,.,M7,M76,M76.1,M76.12,M76.12,"Enthesopathies of lower limb, excluding foot",hip psoas tendinitis,left,.,hip psoas tendinitis left .,.,.,pelvis,musculoskeletal,"disorder, soft-tissue",y,.
+M,8,4,3,5,9,M8,M84,M84.3,M84.35,M84.359,Disorders of continuity of bone,fracture,stress,hip,fracture stress hip,.,.,pelvis,musculoskeletal,stress fracture,y,.
+M,9,1,0,.,.,M9,M91,M91.0,M91.0,M91.0,Juvenile osteochondrosis of hip & pelvis,juvenile osteochondrosis pelvis,.,.,juvenile osteochondrosis pelvis . .,.,.,pelvis,musculoskeletal,"osteochondrosis, juvenile",y,.
+M,9,1,9,1,.,M9,M91,M91.9,M91.91,M91.91,Juvenile osteochondrosis of hip & pelvis,hip juvenile leg osteochondrosis pelvis,right,.,hip juvenile leg osteochondrosis pelvis right .,.,.,pelvis,musculoskeletal,joint,y,.
+M,9,3,0,0,1,M9,M93,M93.0,M93.00,M93.001,Other osteochondropathies,epiphysis femoral hip nontraumatic slipped upper,left right,.,epiphysis femoral hip nontraumatic slipped upper left right .,.,.,pelvis,musculoskeletal,joint,y,.
+M,9,3,0,0,2,M9,M93,M93.0,M93.00,M93.002,Other osteochondropathies,epiphysis femoral hip nontraumatic slipped upper,left right,.,epiphysis femoral hip nontraumatic slipped upper left right .,.,.,pelvis,musculoskeletal,joint,y,.
+M,9,3,0,0,3,M9,M93,M93.0,M93.00,M93.003,Other osteochondropathies,epiphysis femoral hip nontraumatic slipped upper,left right,.,epiphysis femoral hip nontraumatic slipped upper left right .,.,.,pelvis,musculoskeletal,joint,y,.
+M,9,4,3,5,1,M9,M94,M94.3,M94.35,M94.351,Other disorders of cartilage,chondrolysis hip,left right,.,chondrolysis hip left right .,.,.,pelvis,musculoskeletal,joint,y,.
+M,9,4,3,5,2,M9,M94,M94.3,M94.35,M94.352,Other disorders of cartilage,chondrolysis hip,left right,.,chondrolysis hip left right .,.,.,pelvis,musculoskeletal,joint,y,.
+M,9,5,5,.,.,M9,M95,M95.5,M95.5,M95.5,Other acquired deformities of musculoskeletal system & connective tissue,acquired deformity pelvis,.,.,acquired deformity pelvis . .,.,.,pelvis,musculoskeletal,joint,y,.
+Q,6,5,0,0,.,Q6,Q65,Q65.0,Q65.00,Q65.00,Congenital deformities of hip,congenital dislocation hip unilateral,.,.,congenital dislocation hip unilateral . .,.,.,pelvis,congenital,deformity,y,.
+Q,6,5,0,1,.,Q6,Q65,Q65.0,Q65.01,Q65.01,Congenital deformities of hip,congenital dislocation hip unilateral,right,.,congenital dislocation hip unilateral right .,.,.,pelvis,congenital,deformity,y,.
+Q,6,5,0,2,.,Q6,Q65,Q65.0,Q65.02,Q65.02,Congenital deformities of hip,congenital dislocation hip unilateral,left,.,congenital dislocation hip unilateral left .,.,.,pelvis,congenital,deformity,y,.
+Q,6,5,1,.,.,Q6,Q65,Q65.1,Q65.1,Q65.1,Congenital deformities of hip,bilateral congenital dislocation hip,.,.,bilateral congenital dislocation hip . .,.,.,pelvis,congenital,deformity,y,.
+Q,6,5,2,.,.,Q6,Q65,Q65.2,Q65.2,Q65.2,Congenital deformities of hip,congenital dislocation hip,.,.,congenital dislocation hip . .,.,.,pelvis,congenital,deformity,y,.
+Q,6,5,5,.,.,Q6,Q65,Q65.5,Q65.5,Q65.5,Congenital deformities of hip,congenital dislocation hip partial,.,.,congenital dislocation hip partial . .,.,.,pelvis,congenital,deformity,y,.
+Q,6,5,6,.,.,Q6,Q65,Q65.6,Q65.6,Q65.6,Congenital deformities of hip,congenital hip unstable,.,.,congenital hip unstable . .,.,.,pelvis,congenital,deformity,y,.
+Q,6,5,8,9,.,Q6,Q65,Q65.8,Q65.89,Q65.89,Congenital deformities of hip,congenital,deformities hip,.,congenital deformities hip .,.,.,pelvis,congenital,deformity,y,.
+Q,6,5,9,.,.,Q6,Q65,Q65.9,Q65.9,Q65.9,Congenital deformities of hip,congenital deformity hip,.,.,congenital deformity hip . .,.,.,pelvis,congenital,deformity,y,.
+R,2,9,4,.,.,R2,R29,R29.4,R29.4,R29.4,Other symptoms & signs involving the nervous & musculoskeletal systems,clicking hip,.,.,clicking hip . .,.,.,pelvis,symptoms/findings,joint,y,.
+S,3,0,0,X,X,S3,S30,S30.0,S30.0X,S30.0XX,"Superficial injury of abdomen, lower back, & pelvis",contusion lower pelvis,initial sequela subsequent,.,contusion lower pelvis initial sequela subsequent .,.,.,pelvis,trauma,contusion,y,.
 M,4,0,2,0,9,M4,M40,M40.2,M40.20,M40.209,Kyphosis & lordosis,kyphosis,region,.,kyphosis region .,.,.,spine,musculoskeletal,"dorsopathies, deforming",y,.
 M,4,0,5,0,.,M4,M40,M40.5,M40.50,M40.50,Kyphosis & lordosis,lordosis,site,.,lordosis site .,.,.,spine,musculoskeletal,"dorsopathies, deforming",y,.
 S,3,2,3,0,1,S3,S32,S32.3,S32.30,S32.301,Fracture of lumbar spine & pelvis,fracture,ilium,right,fracture ilium right,ilium,ilium,pelvis,trauma,fracture,y,.
@@ -2309,27 +2309,27 @@ S,3,2,6,1,1,S3,S32,S32.6,S32.61,S32.611,Fracture of lumbar spine & pelvis,fractu
 S,3,2,6,1,2,S3,S32,S32.6,S32.61,S32.612,Fracture of lumbar spine & pelvis,fracture,avulsion ischium,displaced left,fracture avulsion ischium displaced left,ischium,ischium,pelvis,trauma,fracture,y,.
 S,3,2,6,1,4,S3,S32,S32.6,S32.61,S32.614,Fracture of lumbar spine & pelvis,fracture,avulsion ischium,nondisplaced right,fracture avulsion ischium nondisplaced right,ischium,ischium,pelvis,trauma,fracture,y,.
 S,3,2,6,9,2,S3,S32,S32.6,S32.69,S32.692,Fracture of lumbar spine & pelvis,fracture,ischium,left,fracture ischium left,ischium,ischium,pelvis,trauma,fracture,y,.
-S,3,2,8,1,0,S3,S32,S32.8,S32.81,S32.810,Fracture of lumbar spine & pelvis,fracture,disruption fractures multiple pelvic pelvis ring,stable,fracture disruption fractures multiple pelvic pelvis ring stable,.,pelvis,pelvis,trauma,fracture,y,.
-S,3,2,8,1,1,S3,S32,S32.8,S32.81,S32.811,Fracture of lumbar spine & pelvis,fracture,disruption fractures multiple pelvic pelvis ring,unstable,fracture disruption fractures multiple pelvic pelvis ring unstable,.,pelvis,pelvis,trauma,fracture,y,.
-S,3,2,8,2,X,S3,S32,S32.8,S32.82,S32.82X,Fracture of lumbar spine & pelvis,fracture,disruption fractures multiple pelvic pelvis ring,.,fracture disruption fractures multiple pelvic pelvis ring .,.,pelvis,pelvis,trauma,fracture,y,.
-S,3,2,9,X,X,S3,S32,S32.9,S32.9X,S32.9XX,Fracture of lumbar spine & pelvis,fracture,lumbosacral pelvis spine,.,fracture lumbosacral pelvis spine .,.,pelvis,pelvis,trauma,fracture,y,.
-S,7,0,0,1,X,S7,S70,S70.0,S70.01,S70.01X,Superficial injury of hip & thigh,contusion hip,right,.,contusion hip right .,.,pelvis,pelvis,trauma,contusion,y,.
-S,7,0,0,2,X,S7,S70,S70.0,S70.02,S70.02X,Superficial injury of hip & thigh,contusion hip,left,.,contusion hip left .,.,pelvis,pelvis,trauma,contusion,y,.
-S,7,3,0,0,1,S7,S73,S73.0,S73.00,S73.001,"Dislocation, sprain, & strain of joint & ligaments of hip",hip,dislocation subluxation,right,hip dislocation subluxation right,.,pelvis,pelvis,trauma,dislocation,y,.
-S,7,3,0,0,2,S7,S73,S73.0,S73.00,S73.002,"Dislocation, sprain, & strain of joint & ligaments of hip",hip,dislocation subluxation,left,hip dislocation subluxation left,.,pelvis,pelvis,trauma,dislocation,y,.
-S,7,3,0,0,3,S7,S73,S73.0,S73.00,S73.003,"Dislocation, sprain, & strain of joint & ligaments of hip",hip,dislocation subluxation,.,hip dislocation subluxation .,.,pelvis,pelvis,trauma,dislocation,y,.
-S,7,3,0,0,4,S7,S73,S73.0,S73.00,S73.004,"Dislocation, sprain, & strain of joint & ligaments of hip",hip,dislocation subluxation,right,hip dislocation subluxation right,.,pelvis,pelvis,trauma,dislocation,y,.
-S,7,3,0,0,5,S7,S73,S73.0,S73.00,S73.005,"Dislocation, sprain, & strain of joint & ligaments of hip",hip,dislocation subluxation,left,hip dislocation subluxation left,.,pelvis,pelvis,trauma,dislocation,y,.
-S,7,3,0,3,5,S7,S73,S73.0,S73.03,S73.035,"Dislocation, sprain, & strain of joint & ligaments of hip",hip,anterior,dislocation left,hip anterior dislocation left,.,pelvis,pelvis,trauma,dislocation,y,.
-S,7,3,1,0,1,S7,S73,S73.1,S73.10,S73.101,"Dislocation, sprain, & strain of joint & ligaments of hip",hip sprain,initial left right sequela subsequent,.,hip sprain initial left right sequela subsequent .,.,pelvis,pelvis,trauma,sprain,y,.
-S,7,3,1,9,1,S7,S73,S73.1,S73.19,S73.191,"Dislocation, sprain, & strain of joint & ligaments of hip",hip sprain,initial left right sequela subsequent,.,hip sprain initial left right sequela subsequent .,.,pelvis,pelvis,trauma,sprain,y,.
-S,7,3,1,9,2,S7,S73,S73.1,S73.19,S73.192,"Dislocation, sprain, & strain of joint & ligaments of hip",hip sprain,initial left right sequela subsequent,.,hip sprain initial left right sequela subsequent .,.,pelvis,pelvis,trauma,sprain,y,.
-S,7,3,1,9,9,S7,S73,S73.1,S73.19,S73.199,"Dislocation, sprain, & strain of joint & ligaments of hip",hip sprain,initial left right sequela subsequent,.,hip sprain initial left right sequela subsequent .,.,pelvis,pelvis,trauma,sprain,y,.
-S,7,6,0,1,1,S7,S76,S76.0,S76.01,S76.011,Injury of muscle & tendon at hip & thigh level,fascia hip muscle tendon,strain,right,fascia hip muscle tendon strain right,.,pelvis,pelvis,trauma,strain,y,.
-S,7,6,0,1,2,S7,S76,S76.0,S76.01,S76.012,Injury of muscle & tendon at hip & thigh level,fascia hip muscle tendon,strain,left,fascia hip muscle tendon strain left,.,pelvis,pelvis,trauma,strain,y,.
-S,7,6,0,1,9,S7,S76,S76.0,S76.01,S76.019,Injury of muscle & tendon at hip & thigh level,fascia hip muscle tendon,strain,.,fascia hip muscle tendon strain .,.,pelvis,pelvis,trauma,strain,y,.
-S,7,9,9,1,1,S7,S79,S79.9,S79.91,S79.911,Other & unspecified injuries of hip & thigh,injury,hip,right,injury hip right,.,pelvis,pelvis,trauma,injury,y,.
-S,7,9,9,1,2,S7,S79,S79.9,S79.91,S79.912,Other & unspecified injuries of hip & thigh,injury,hip,left,injury hip left,.,pelvis,pelvis,trauma,injury,y,.
+S,3,2,8,1,0,S3,S32,S32.8,S32.81,S32.810,Fracture of lumbar spine & pelvis,fracture,disruption fractures multiple pelvic pelvis ring,stable,fracture disruption fractures multiple pelvic pelvis ring stable,.,.,pelvis,trauma,fracture,y,.
+S,3,2,8,1,1,S3,S32,S32.8,S32.81,S32.811,Fracture of lumbar spine & pelvis,fracture,disruption fractures multiple pelvic pelvis ring,unstable,fracture disruption fractures multiple pelvic pelvis ring unstable,.,.,pelvis,trauma,fracture,y,.
+S,3,2,8,2,X,S3,S32,S32.8,S32.82,S32.82X,Fracture of lumbar spine & pelvis,fracture,disruption fractures multiple pelvic pelvis ring,.,fracture disruption fractures multiple pelvic pelvis ring .,.,.,pelvis,trauma,fracture,y,.
+S,3,2,9,X,X,S3,S32,S32.9,S32.9X,S32.9XX,Fracture of lumbar spine & pelvis,fracture,lumbosacral pelvis spine,.,fracture lumbosacral pelvis spine .,.,.,pelvis,trauma,fracture,y,.
+S,7,0,0,1,X,S7,S70,S70.0,S70.01,S70.01X,Superficial injury of hip & thigh,contusion hip,right,.,contusion hip right .,.,.,pelvis,trauma,contusion,y,.
+S,7,0,0,2,X,S7,S70,S70.0,S70.02,S70.02X,Superficial injury of hip & thigh,contusion hip,left,.,contusion hip left .,.,.,pelvis,trauma,contusion,y,.
+S,7,3,0,0,1,S7,S73,S73.0,S73.00,S73.001,"Dislocation, sprain, & strain of joint & ligaments of hip",hip,dislocation subluxation,right,hip dislocation subluxation right,.,.,pelvis,trauma,dislocation,y,.
+S,7,3,0,0,2,S7,S73,S73.0,S73.00,S73.002,"Dislocation, sprain, & strain of joint & ligaments of hip",hip,dislocation subluxation,left,hip dislocation subluxation left,.,.,pelvis,trauma,dislocation,y,.
+S,7,3,0,0,3,S7,S73,S73.0,S73.00,S73.003,"Dislocation, sprain, & strain of joint & ligaments of hip",hip,dislocation subluxation,.,hip dislocation subluxation .,.,.,pelvis,trauma,dislocation,y,.
+S,7,3,0,0,4,S7,S73,S73.0,S73.00,S73.004,"Dislocation, sprain, & strain of joint & ligaments of hip",hip,dislocation subluxation,right,hip dislocation subluxation right,.,.,pelvis,trauma,dislocation,y,.
+S,7,3,0,0,5,S7,S73,S73.0,S73.00,S73.005,"Dislocation, sprain, & strain of joint & ligaments of hip",hip,dislocation subluxation,left,hip dislocation subluxation left,.,.,pelvis,trauma,dislocation,y,.
+S,7,3,0,3,5,S7,S73,S73.0,S73.03,S73.035,"Dislocation, sprain, & strain of joint & ligaments of hip",hip,anterior,dislocation left,hip anterior dislocation left,.,.,pelvis,trauma,dislocation,y,.
+S,7,3,1,0,1,S7,S73,S73.1,S73.10,S73.101,"Dislocation, sprain, & strain of joint & ligaments of hip",hip sprain,initial left right sequela subsequent,.,hip sprain initial left right sequela subsequent .,.,.,pelvis,trauma,sprain,y,.
+S,7,3,1,9,1,S7,S73,S73.1,S73.19,S73.191,"Dislocation, sprain, & strain of joint & ligaments of hip",hip sprain,initial left right sequela subsequent,.,hip sprain initial left right sequela subsequent .,.,.,pelvis,trauma,sprain,y,.
+S,7,3,1,9,2,S7,S73,S73.1,S73.19,S73.192,"Dislocation, sprain, & strain of joint & ligaments of hip",hip sprain,initial left right sequela subsequent,.,hip sprain initial left right sequela subsequent .,.,.,pelvis,trauma,sprain,y,.
+S,7,3,1,9,9,S7,S73,S73.1,S73.19,S73.199,"Dislocation, sprain, & strain of joint & ligaments of hip",hip sprain,initial left right sequela subsequent,.,hip sprain initial left right sequela subsequent .,.,.,pelvis,trauma,sprain,y,.
+S,7,6,0,1,1,S7,S76,S76.0,S76.01,S76.011,Injury of muscle & tendon at hip & thigh level,fascia hip muscle tendon,strain,right,fascia hip muscle tendon strain right,.,.,pelvis,trauma,strain,y,.
+S,7,6,0,1,2,S7,S76,S76.0,S76.01,S76.012,Injury of muscle & tendon at hip & thigh level,fascia hip muscle tendon,strain,left,fascia hip muscle tendon strain left,.,.,pelvis,trauma,strain,y,.
+S,7,6,0,1,9,S7,S76,S76.0,S76.01,S76.019,Injury of muscle & tendon at hip & thigh level,fascia hip muscle tendon,strain,.,fascia hip muscle tendon strain .,.,.,pelvis,trauma,strain,y,.
+S,7,9,9,1,1,S7,S79,S79.9,S79.91,S79.911,Other & unspecified injuries of hip & thigh,injury,hip,right,injury hip right,.,.,pelvis,trauma,injury,y,.
+S,7,9,9,1,2,S7,S79,S79.9,S79.91,S79.912,Other & unspecified injuries of hip & thigh,injury,hip,left,injury hip left,.,.,pelvis,trauma,injury,y,.
 M,4,2,0,0,.,M4,M42,M42.0,M42.00,M42.00,Spinal osteochondrosis,spine,juvenile osteochondrosis site,.,spine juvenile osteochondrosis site .,.,.,spine,musculoskeletal,"dorsopathies, deforming",y,.
 M,4,2,9,.,.,M4,M42,M42.9,M42.9,M42.9,Spinal osteochondrosis,osteochondrosis spinal,.,.,osteochondrosis spinal . .,.,.,spine,musculoskeletal,"dorsopathies, deforming",y,.
 M,4,3,0,0,.,M4,M43,M43.0,M43.00,M43.00,Other deforming dorsopathies,spondylolysis,site,.,spondylolysis site .,.,.,spine,musculoskeletal,"dorsopathies, deforming",y,.
