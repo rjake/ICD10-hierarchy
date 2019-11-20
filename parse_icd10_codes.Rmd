@@ -255,7 +255,7 @@ filter(final, str_detect(ICD10_CD, "S42.42")) %>%
   head()
 
 
-write_csv(final, "first_pass.csv", na = ".")
+write_csv(final, "icd10_diagnosis_hierarchy.csv")
 ```
 
 
