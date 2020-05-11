@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ICD10CM.tabular>
+  <version>2020</version>
+  <chapter>
+    <name>19</name>
+    <desc>Injury, poisoning and certain other consequences of external causes (S00-T88)</desc>
+    <notes>
+      <note>Use secondary code(s) from Chapter 20, External causes of morbidity, to indicate cause of injury.  Codes within the T section that include the external cause do not require an additional external cause code</note>
+    </notes>
+    <useAdditionalCode>
+      <note>code to identify any retained foreign body, if applicable (Z18.-)</note>
+    </useAdditionalCode>
+    <excludes1>
+      <note>birth trauma (P10-P15)</note>
+      <note>obstetric trauma (O70-O71)</note>
+    </excludes1>
+    <notes>
+      <note>The chapter uses the S-section for coding different types of injuries related to single body regions and the T-section to cover injuries to unspecified body regions as well as poisoning and certain other consequences of external causes.</note>
+    </notes>
+    <section id="S00-S99">
+      <desc>Injuries to the head (S00-S09)</desc>
+      <includes>
+        <note>injuries of ear</note>
+        <note>injuries of eye</note>
+        <note>injuries of face [any part]</note>
+        <note>injuries of gum</note>
+        <note>injuries of jaw</note>
+        <note>injuries of oral cavity</note>
+        <note>injuries of palate</note>
+        <note>injuries of periocular area</note>
+        <note>injuries of scalp</note>
+        <note>injuries of temporomandibular joint area</note>
+        <note>injuries of tongue</note>
+        <note>injuries of tooth</note>
+      </includes>
+      <codeAlso>
+        <note>for any associated infection</note>
+      </codeAlso>
+      <excludes2>
+        <note>burns and corrosions (T20-T32)</note>
+        <note>effects of foreign body in ear (T16)</note>
+        <note>effects of foreign body in larynx (T17.3)</note>
+        <note>effects of foreign body in mouth NOS (T18.0)</note>
+        <note>effects of foreign body in nose (T17.0-T17.1)</note>
+        <note>effects of foreign body in pharynx (T17.2)</note>
+        <note>effects of foreign body on external eye (T15.-)</note>
+        <note>frostbite (T33-T34)</note>
+        <note>insect bite or sting, venomous (T63.4)</note>
+      </excludes2>
+      <diag>
+        <name>S12</name>
+        <desc>Fracture of cervical vertebra and other parts of neck</desc>
+        <notes>
+          <note>A fracture not indicated as displaced or nondisplaced should be coded to displaced</note>
+          <note>A fracture not indicated as open or closed should be coded to closed</note>
+        </notes>
+        <sevenChrNote>
+          <note>The appropriate 7th character is to be added to all codes from subcategories S12.0-S12.6</note>
+        </sevenChrNote>
+        <sevenChrDef>
+          <extension char="A">initial encounter for closed fracture</extension>
+          <extension char="B">initial encounter for open fracture</extension>
+          <extension char="D">subsequent encounter for fracture with routine healing</extension>
+          <extension char="G">subsequent encounter for fracture with delayed healing</extension>
+          <extension char="K">subsequent encounter for fracture with nonunion</extension>
+          <extension char="S">sequela</extension>
+        </sevenChrDef>
+        <diag>
+          <name>S12.0</name>
+          <desc>Fracture of first cervical vertebra</desc>
+          <inclusionTerm>
+            <note>Atlas</note>
+          </inclusionTerm>
+          <diag>
+            <name>S12.00</name>
+            <desc>Unspecified fracture of first cervical vertebra</desc>
+            <diag>
+              <name>S12.000</name>
+              <desc>Unspecified displaced fracture of first cervical vertebra</desc>
+            </diag>
+            <diag>
+              <name>S12.001</name>
+              <desc>Unspecified nondisplaced fracture of first cervical vertebra</desc>
+            </diag>
+          </diag>
+          </diag>
+        <diag>
+          <name>S12.1</name>
+          <desc>Fracture of second cervical vertebra</desc>
+          <inclusionTerm>
+            <note>Axis</note>
+          </inclusionTerm>
+          <diag>
+            <name>S12.10</name>
+            <desc>Unspecified fracture of second cervical vertebra</desc>
+            <diag>
+              <name>S12.100</name>
+              <desc>Unspecified displaced fracture of second cervical vertebra</desc>
+            </diag>
+            <diag>
+              <name>S12.101</name>
+              <desc>Unspecified nondisplaced fracture of second cervical vertebra</desc>
+            </diag>
+          </diag>
+        </diag>
+        <diag>
+          <name>S12.8</name>
+          <desc>Fracture of other parts of neck</desc>
+          <inclusionTerm>
+            <note>Hyoid bone</note>
+            <note>Larynx</note>
+            <note>Thyroid cartilage</note>
+            <note>Trachea</note>
+          </inclusionTerm>
+          <sevenChrNote>
+            <note>The appropriate 7th character is to be added to code S12.8</note>
+          </sevenChrNote>
+          <sevenChrDef>
+            <extension char="A">initial encounter</extension>
+            <extension char="D">subsequent encounter</extension>
+            <extension char="S">sequela</extension>
+          </sevenChrDef>
+        </diag>
+        <diag>
+          <name>S12.9</name>
+          <desc>Fracture of neck, unspecified</desc>
+          <inclusionTerm>
+            <note>Fracture of neck NOS</note>
+            <note>Fracture of cervical spine NOS</note>
+            <note>Fracture of cervical vertebra NOS</note>
+          </inclusionTerm>
+          <sevenChrNote>
+            <note>The appropriate 7th character is to be added to code S12.9</note>
+          </sevenChrNote>
+          <sevenChrDef>
+            <extension char="A">initial encounter</extension>
+            <extension char="D">subsequent encounter</extension>
+            <extension char="S">sequela</extension>
+          </sevenChrDef>
+        </diag>
+      </diag>
+    </section>
+  </chapter>
+</ICD10CM.tabular>
