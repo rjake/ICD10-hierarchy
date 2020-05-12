@@ -139,6 +139,116 @@
           </sevenChrDef>
         </diag>
       </diag>
+	  <diag>
+        <name>C44</name>
+        <desc>Other and unspecified malignant neoplasm of skin</desc>
+        <diag>
+          <name>C44.1</name>
+          <desc>Other and unspecified malignant neoplasm of skin of eyelid, including canthus</desc>
+          <excludes1>
+            <note>connective tissue of eyelid (C49.0)</note>
+          </excludes1>
+          <diag>
+            <name>C44.10</name>
+            <desc>Unspecified malignant neoplasm of skin of eyelid, including canthus</desc>
+            <diag>
+              <name>C44.101</name>
+              <desc>Unspecified malignant neoplasm of skin of unspecified eyelid, including canthus</desc>
+            </diag>
+            <diag>
+              <name>C44.102</name>
+              <desc>Unspecified malignant neoplasm of skin of right eyelid, including canthus</desc>
+              <diag>
+                <name>C44.1021</name>
+                <desc>Unspecified malignant neoplasm of skin of right upper eyelid, including canthus</desc>
+              </diag>
+			</diag>
+		  </diag>
+	    </diag>
+	  </diag>
+	  <diag>
+        <name>M80</name>
+        <desc>Osteoporosis with current pathological fracture</desc>
+        <includes>
+          <note>osteoporosis with current fragility fracture</note>
+        </includes>
+        <useAdditionalCode>
+          <note>code to identify major osseous defect, if applicable (M89.7-)</note>
+        </useAdditionalCode>
+        <excludes1>
+          <note>collapsed vertebra NOS (M48.5)</note>
+          <note>pathological fracture NOS (M84.4)</note>
+          <note>wedging of vertebra NOS (M48.5)</note>
+        </excludes1>
+        <excludes2>
+          <note>personal history of (healed) osteoporosis fracture (Z87.310)</note>
+        </excludes2>
+        <sevenChrNote>
+          <note>The appropriate 7th character is to be added to each code from category M80:</note>
+        </sevenChrNote>
+        <sevenChrDef>
+          <extension char="A">initial encounter for fracture</extension>
+          <extension char="D">subsequent encounter for fracture with routine healing</extension>
+          <extension char="G">subsequent encounter for fracture with delayed healing</extension>
+          <extension char="K">subsequent encounter for fracture with nonunion</extension>
+          <extension char="P">subsequent encounter for fracture with malunion</extension>
+          <extension char="S">sequela</extension>
+        </sevenChrDef>
+        <diag>
+          <name>M80.0</name>
+          <desc>Age-related osteoporosis with current pathological fracture</desc>
+          <inclusionTerm>
+            <note>Involutional osteoporosis with current pathological fracture</note>
+            <note>Osteoporosis NOS with current pathological fracture</note>
+            <note>Postmenopausal osteoporosis with current pathological fracture</note>
+            <note>Senile osteoporosis with current pathological fracture</note>
+          </inclusionTerm>
+          <diag>
+            <name>M80.00</name>
+            <desc>Age-related osteoporosis with current pathological fracture, unspecified site</desc>
+          </diag>
+          <diag>
+            <name>M80.01</name>
+            <desc>Age-related osteoporosis with current pathological fracture, shoulder</desc>
+            <diag>
+              <name>M80.011</name>
+              <desc>Age-related osteoporosis with current pathological fracture, right shoulder</desc>
+            </diag>
+		  </diag>
+	    </diag>
+	  </diag>
+	  <diag>
+        <name>E08</name>
+        <desc>Diabetes mellitus due to underlying condition</desc>
+		  <diag>
+		   <name>E08.3</name>
+		   <desc>Diabetes mellitus due to underlying condition with ophthalmic complications</desc>
+		   <diag>
+		  	<name>E08.32</name>
+		  	<desc>Diabetes mellitus due to underlying condition with mild nonproliferative diabetic retinopathy</desc>
+		  	<inclusionTerm>
+		  	  <note>Diabetes mellitus due to underlying condition with nonproliferative diabetic retinopathy NOS</note>
+		  	</inclusionTerm>
+		  	<sevenChrNote>
+		  	  <note>One of the following 7th characters is to be assigned to codes in subcategory E08.32 to designate laterality of the disease:</note>
+		  	</sevenChrNote>
+		  	<sevenChrDef>
+		  	  <extension char="1">right eye</extension>
+		  	  <extension char="2">left eye</extension>
+		  	  <extension char="3">bilateral</extension>
+		  	  <extension char="9">unspecified eye</extension>
+		  	</sevenChrDef>
+		  	<diag>
+		  	  <name>E08.321</name>
+		  	  <desc>Diabetes mellitus due to underlying condition with mild nonproliferative diabetic retinopathy with macular edema</desc>
+		  	</diag>
+		  	<diag>
+		  	  <name>E08.329</name>
+		  	  <desc>Diabetes mellitus due to underlying condition with mild nonproliferative diabetic retinopathy without macular edema</desc>
+		  	</diag>
+		   </diag>
+		  </diag>
+	  </diag>
     </section>
   </chapter>
 </ICD10CM.tabular>
