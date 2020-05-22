@@ -6,7 +6,7 @@ library(tidyverse)
 
 
 full_dx_list <-
-  readxl::read_excel("input/Section111ValidICD10-Apr2020.xlsx") %>%
+  readxl::read_excel("input/Section111ValidICD10-Apr2020.xlsx", guess_max = 7e4) %>%
   select(icd10_code = 1, description = 2) %>% 
   mutate(
     icd10_code = str_replace( # add a "." if more than 3 char
@@ -53,8 +53,8 @@ raw_name_desc <-
   keep_filled_only(ignore = row)
 
 
-# prep_name_desc2 <- 
-#   raw_name_desc %>% 
+# prep_name_desc <-
+#   raw_name_desc %>%
 #   select(
 #     section = name,
 #     section_text = desc,
@@ -70,22 +70,22 @@ raw_name_desc <-
 #     first_7_text = desc21,
 #     first_8 = name23,
 #     first_8_text = desc24,
-#   ) %>% 
-#   fill(section, section_text, region, region_text, first_3) %>% 
-#   group_by(first_3) %>% fill(first_3_text) %>% ungroup() %>% 
-#   group_by(first_3_text) %>% fill(first_5) %>% ungroup() %>% 
-#   group_by(first_5) %>% fill(first_6_text) %>% ungroup() %>% 
-#   group_by(first_6_text) %>% fill(first_7) %>% ungroup() %>% 
-#   group_by(first_7) %>% fill(first_7_text) %>% 
-#   ungroup() %>% 
+#   ) %>%
+#   fill(section, section_text, region, region_text, first_3) %>%
+#   group_by(first_3) %>% fill(first_3_text) %>% ungroup() %>%
+#   group_by(first_3_text) %>% fill(first_5) %>% ungroup() %>%
+#   group_by(first_5) %>% fill(first_6_text) %>% ungroup() %>%
+#   group_by(first_6_text) %>% fill(first_7) %>% ungroup() %>%
+#   group_by(first_7) %>% fill(first_7_text) %>%
+#   ungroup() %>%
 #   filter_at(vars(matches("first.*text")), any_vars(!is.na(.)))
 
 offset_select <- function(x, ...) {
   start <- x
   end <- 13 - x
-  
-  raw_name_desc %>% 
-    slice(start:(n() - end)) %>% 
+
+  raw_name_desc %>%
+    slice(start:(n() - end)) %>%
     select(...)
 }
 
@@ -107,7 +107,7 @@ prep_name_desc <-
     offset_select(12, first_8 = name23),
     offset_select(12, first_8_text = desc24)
   ) %>%
-  keep_filled_only(ignore = region) %>% 
+  keep_filled_only(ignore = region) %>%
   filter_at(vars(-region), any_vars(!is.na(.))) %>%
   mutate(row = row_number()) %>%
   keep_filled_only(ignore = row)
@@ -115,25 +115,17 @@ prep_name_desc <-
 
 fill_name_desc <-
   prep_name_desc %>%
-  fill(section, section_text) %>%
+  fill(section, section_text, region, region_text, first_3) %>%
   mutate(section = paste(as.roman(section), section_text, sep = " - ")) %>%
   select(row, everything(), -section_text) %>%
-  fill(region_text, first_3, first_3_text) %>%
-  fill( # fill in all fields, will over fill
-    first_5, first_5_text,
-    first_6, first_6_text,
-    first_7, first_7_text
-  ) %>%
-  mutate( # back out the overfilled fields starting at the longest
-    first_7 = ifelse(is.na(first_8) & first_7 == lag(first_7), NA, first_7),
-    first_6 = ifelse(is.na(first_7) & first_6 == lag(first_6), NA, first_6),
-    first_5 = ifelse(is.na(first_6) & first_5 == lag(first_5), NA, first_5)
-  ) %>% 
-  mutate( # same for the text fields
-    first_7_text = ifelse(is.na(first_7), NA, first_7_text),
-    first_6_text = ifelse(is.na(first_6), NA, first_6_text),
-    first_5_text = ifelse(is.na(first_5), NA, first_5_text)
-  )
+  group_by(first_3)      %>% fill(first_3_text) %>% #ungroup() %>%
+  group_by(first_3_text) %>% fill(first_5)      %>% #ungroup() %>%
+  group_by(first_5)      %>% fill(first_5_text) %>% #ungroup() %>%
+  group_by(first_5_text) %>% fill(first_6)      %>% #ungroup() %>%
+  group_by(first_6)      %>% fill(first_6_text) %>% #ungroup() %>%
+  group_by(first_6_text) %>% fill(first_7)      %>% #ungroup() %>%
+  group_by(first_7)      %>% fill(first_7_text) %>%
+  ungroup()
 
 
 raw_extensions <- # the 8th character in code, ex: S42.___A
