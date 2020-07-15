@@ -4,21 +4,11 @@
 library(tidyverse)
 library(xml2)
 
-xml_doc <- "R/mock_up_example/mock_icd.xml"
+xml_doc <- "input/icd10cm_tabular_2020.xml"#"R/mock_up_example/mock_icd.xml"
 load_xml <- read_xml(xml_doc)
 
 
 # chapters ----
-icd_chapters <-
-  xml_find_all(load_xml, ".//chapter") %>%
-  map_df(~ {
-    tibble(
-      name = xml_text(xml_find_first(.x, ".//name"), trim = TRUE),
-      desc = xml_text(xml_find_first(.x, ".//desc"))
-    )
-  })
-
-# another method
 chapter_nodes <- xml_find_all(load_xml, ".//chapter")
 icd_chapters <-
   tibble(
@@ -37,7 +27,6 @@ icd_section <-
   )
 
 # dx ----
-
 parse_dx <- function(n, j) {
   rep_n <- ifelse(n == 3, 1, n - 4)
   xpath <-
@@ -75,43 +64,6 @@ icd_dx <-
   arrange(icd10_code)
 
 
-# another approach
-dx_nodes_alt <- xml_find_all(load_xml, ".//diag")
-dx_long_alt <-
-  tibble(
-    code = xml_find_first(dx_nodes_alt, ".//name") %>% xml_text(),
-    text = xml_find_first(dx_nodes_alt, ".//desc") %>% xml_text(),
-    length = nchar(code),
-    one_less = str_sub(code, 1, -2) %>% str_remove("\\.$")
-  ) %>% 
-  drop_na()
-
-
-join_dx <- function(df, from, to) {
-  df %>%
-    left_join(
-      dx_long_alt %>%
-        filter(length == (to)) %>%
-        select(
-          "first_{from}" := one_less,
-          "first_{to}" := code,
-          "first_{to}_text" := text
-        )
-    )
-}
-
-
-dx_wide_alt <-
-  dx_long_alt %>%
-  filter(length == 3) %>%
-  select(first_3 = code, first_3_text = text) %>%
-  join_dx(3, 5) %>%
-  join_dx(5, 6) %>%
-  join_dx(6, 7) %>%
-  join_dx(7, 8)
-
-
-
 # extensions ----
 ext_node <- xml_find_all(load_xml, ".//diag/sevenChrDef/extension")
 icd_extensions <-
@@ -140,6 +92,7 @@ prep_extensions <-
     first_5 = ifelse(length == 5, str_sub(applies_to, 1, 5), NA),
     first_6 = ifelse(length == 6, str_sub(applies_to, 1, 6), NA)
   )
+
 
 
 # see what it looks like
@@ -192,5 +145,6 @@ final_diagnoses <-
     )
   )
 
-final_diagnoses
-unique(final_diagnoses$icd10_code)
+head(final_diagnoses, 10)
+
+write_csv(final_diagnoses, "output/icd10_diagnosis_hierarchy.csv")
