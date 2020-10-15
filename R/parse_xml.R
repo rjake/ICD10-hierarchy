@@ -19,7 +19,8 @@ icd_chapters <-
     chapter_desc = xml_text(xml_find_first(chapter_nodes, ".//desc"))
   ) %>% 
   mutate(
-    category = str_remove_all(chapter_desc, ".*\\(|\\)")#,
+    chapter = str_remove_all(chapter_desc, ".*\\(|\\)"),
+    category = chapter,
     #chapter_desc = trimws(str_extract(chapter_desc, "[^\\(]+"))
   ) %>% 
     separate_rows(category)
@@ -28,11 +29,19 @@ icd_chapters <-
 
 # sections ----
 section_nodes <- xml_find_all(load_xml, ".//section")
-icd_section <-
+icd_sections <-
   tibble(
-    id = xml_attr(section_nodes, "id"),
-    desc = xml_text(xml_find_first(section_nodes, ".//desc"))
-  )
+    section = xml_attr(section_nodes, "id"),
+    section_desc = xml_text(xml_find_first(section_nodes, ".//desc"))
+  ) %>% 
+  mutate(
+    section = str_remove_all(section_desc, ".*\\(|\\)"),
+    category = section
+  ) %>% 
+  separate_rows(category) %>% 
+  group_by(category) %>% 
+  slice_tail(n = 1) %>% 
+  ungroup()
 
 # dx ----
 parse_dx <- function(n, title, join_field) {
@@ -149,8 +158,8 @@ join_dx <- function(df, join_var, v1, v2) {
     )
 }
 
-
-#final_diagnoses <- 
+# with extensions ----
+with_extensions <-
   icd_dx %>%
   # odd but need to bring over the code & text each time so not overwritten
   join_dx(category, x3, x3_desc) %>%
@@ -170,16 +179,55 @@ join_dx <- function(df, join_var, v1, v2) {
         !is.na(extension) ~ paste0(str_pad(icd10_code, 7, "right", "X"), extension),
         TRUE ~ icd10_code
       )
-  ) %>%
+  )
+
+# final join ----
+final_joins <- 
+  with_extensions %>%
   left_join(icd_chapters) %>% 
   #  select(icd10_code, starts_with("x")) %>% 
-  select(icd10_code, starts_with("chap"), everything()) %>% 
+  arrange(icd10_code) %>% 
   fill(chapter) %>% 
-  fill(chapter_desc)
+  fill(chapter_desc) %>% 
+  left_join(icd_sections) %>% 
+  fill(section) %>% 
+  fill(section_desc) %>% 
+  select(
+    icd10_code, starts_with("chap"), starts_with("sect"), everything()
+  )
 
+  
+  
+find_difference <- function(x, y) {
+  # df <- drop_na(final_joins, subcategory_3_desc)[3,]
+  # x <- df$subcategory_3_desc
+  # y <- df$subcategory_2_desc
+  x <- str_remove_all(x, "[[:punct:]]")
+  y <- 
+    trim(str_remove_all(y, "[[:punct:]]")) %>% 
+    str_replace_all(" ", "|")
+  
+  x %>% 
+    str_remove_all(y) %>% 
+    str_replace_all(" {2,}", " ") %>% # remove double spaces
+    trimws()
+}
+
+
+# final diagnoses ----
+final_diagnoses <-
+  final_joins %>% 
+#  filter(category == "S42") %>% select(icd10_code, matches("[y123]_desc")) %>% 
+  mutate(across(matches("cat.*desc"), tolower)) %>% 
+  mutate(
+    subcategory_1_diff = find_difference(subcategory_1_desc, category_desc),
+    subcategory_2_diff = find_difference(subcategory_2_desc, subcategory_1_desc),
+    subcategory_3_diff = find_difference(subcategory_3_desc, subcategory_2_desc)
+  ) #%>%select(ends_with("diff"))
+  
 nrow(final_diagnoses)
 # 75429
 
-head(final_diagnoses, 10)
+final_diagnoses[35000, ] %>% t()
 
 write_csv(final_diagnoses, "output/icd10_diagnosis_hierarchy.csv")
