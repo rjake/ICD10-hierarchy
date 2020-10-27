@@ -2,6 +2,7 @@
 # https://stackoverflow.com/questions/48324165/scraping-table-from-xml
 
 library(tidyverse)
+library(stringi)
 library(xml2)
 
 xml_doc <- 
@@ -204,7 +205,7 @@ find_difference <- function(x, y) {
   # y <- df$subcategory_2_desc
   x <- str_remove_all(x, "[[:punct:]]")
   y <- 
-    trim(str_remove_all(y, "[[:punct:]]")) %>% 
+    trimws(str_remove_all(y, "[[:punct:]]")) %>% 
     str_replace_all(" ", "|")
   
   x %>% 
@@ -213,10 +214,16 @@ find_difference <- function(x, y) {
     trimws()
 }
 
+as_ascii <-
+  final_joins %>% 
+  #  filter(category == "S42") %>% select(icd10_code, matches("[y123]_desc")) %>% 
+  mutate_all(stringi::stri_trans_general, "latin-ascii")
+
 
 # final diagnoses ----
 final_diagnoses <-
-  final_joins %>% 
+  as_ascii %>% 
+  mutate(across(matches("cat.*desc"), tolower)) %>% 
 #  filter(category == "S42") %>% select(icd10_code, matches("[y123]_desc")) %>% 
   mutate(across(matches("cat.*desc"), tolower)) %>% 
   mutate(
@@ -230,4 +237,4 @@ nrow(final_diagnoses)
 
 final_diagnoses[35000, ] %>% t()
 
-write_csv(final_diagnoses, "output/icd10_diagnosis_hierarchy.csv")
+write_csv(final_diagnoses, "output/icd10_diagnosis_hierarchy.csv", na = "")
