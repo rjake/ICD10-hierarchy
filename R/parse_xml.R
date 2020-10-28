@@ -146,26 +146,34 @@ prep_extensions %>%
   # )
 
 
-join_dx <- function(df, join_var, v1, v2) {
+join_dx <- function(df, join_var, loc) {
+  #df <- icd_dx %>% filter(icd10_code == "S42.311"); join_var <- quo(subcategory_2); loc <- 6; 
   df %>%
-    left_join(
+    # filter out any extension field that already has a value
+    filter(across(starts_with("x"), is.na)) %>% 
+    inner_join(
       prep_extensions %>%
+        filter(length == loc) %>% 
         distinct(
           {{join_var}}, 
-          {{v1}} := char, 
-          {{v2}} := text
-        ) %>%
+          "x{{loc}}" := char, 
+          "x{{loc}}_desc" := text
+        ) %>% 
         drop_na()
-    )
+      #,by = deparse(substitute(join_var)) # creates string
+    ) %>% 
+    select(icd10_code, tail(names(.), 2)) %>% 
+    distinct()
 }
 
 # with extensions ----
 with_extensions <-
   icd_dx %>%
   # odd but need to bring over the code & text each time so not overwritten
-  join_dx(category, x3, x3_desc) %>%
-  join_dx(subcategory_1, x5, x5_desc) %>%
-  join_dx(subcategory_2, x6, x6_desc) %>%
+  left_join(join_dx(., subcategory_2, 6)) %>% 
+  left_join(join_dx(., subcategory_1, 5)) %>%
+  left_join(join_dx(., category, 3)) %>%
+#  filter(icd10_code == "S42.311") %>% 
   mutate(
     extension = coalesce(str_sub(extension, 8), x3, x5, x6),
     extension_desc = coalesce(extension_desc, x3_desc, x5_desc, x6_desc)
@@ -193,8 +201,20 @@ final_joins <-
   left_join(icd_sections) %>% 
   fill(section) %>% 
   fill(section_desc) %>% 
+  mutate(
+    description =
+      paste(
+        coalesce(
+          subcategory_3_desc, 
+          subcategory_2_desc, 
+          subcategory_1_desc, 
+          category_desc
+        ),
+        replace_na(extension_desc, "")
+      ) %>% tolower()
+  ) %>%
   select(
-    icd10_code, starts_with("chap"), starts_with("sect"), everything()
+    icd10_code, description, starts_with("chap"), starts_with("sect"), everything()
   )
 
   
@@ -223,7 +243,6 @@ as_ascii <-
 # final diagnoses ----
 final_diagnoses <-
   as_ascii %>% 
-  mutate(across(matches("cat.*desc"), tolower)) %>% 
 #  filter(category == "S42") %>% select(icd10_code, matches("[y123]_desc")) %>% 
   mutate(across(matches("cat.*desc"), tolower)) %>% 
   mutate(
@@ -232,8 +251,13 @@ final_diagnoses <-
     subcategory_3_diff = find_difference(subcategory_3_desc, subcategory_2_desc)
   ) #%>%select(ends_with("diff"))
   
-nrow(final_diagnoses)
-# 75429
+# check for unique
+final_diagnoses %>% 
+  summarise(
+    n = n(),
+    n_icd = n_distinct(icd10_code),
+    n_desc = n_distinct(description)
+  ) # 72135
 
 final_diagnoses[35000, ] %>% t()
 
