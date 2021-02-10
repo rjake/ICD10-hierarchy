@@ -177,7 +177,13 @@ with_extensions <-
 #  filter(icd10_code == "S42.311") %>% 
   mutate(
     extension = coalesce(str_sub(extension, 8), x3, x5, x6),
-    extension_desc = coalesce(extension_desc, x3_desc, x5_desc, x6_desc)
+    extension_desc = coalesce(extension_desc, x3_desc, x5_desc, x6_desc),
+    icd10_code = 
+      ifelse(
+        test = nchar(icd10_code) == 3 & !is.na(extension), 
+        yes = paste0(icd10_code, "."),
+        no = icd10_code
+      )
   ) %>%
   select(-starts_with("x")) %>% 
   mutate(
