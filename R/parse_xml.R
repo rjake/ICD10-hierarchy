@@ -1,12 +1,13 @@
-# ftp://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/ICD10CM/2019/
 # https://stackoverflow.com/questions/48324165/scraping-table-from-xml
 
 library(tidyverse)
 library(stringi)
 library(xml2)
 
-xml_doc <- 
-  "input/icd10cm_tabular_2020.xml"
+url_location <- # can browse all files
+  "ftp://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/ICD10CM/"
+
+xml_doc <- paste0(url_location, "2021/icd10cm_tabular_2021.xml")
   #"R/mock_up_example/mock_icd.xml"
 
 load_xml <- read_xml(xml_doc)
@@ -257,7 +258,7 @@ final_diagnoses %>%
     n = n(),
     n_icd = n_distinct(icd10_code),
     n_desc = n_distinct(description)
-  ) # 72135
+  ) # 72567
 
 final_diagnoses[35000, ] %>% t()
 
