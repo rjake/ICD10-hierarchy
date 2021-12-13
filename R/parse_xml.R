@@ -266,7 +266,8 @@ final_diagnoses <-
     subcategory_1_diff = find_difference(subcategory_1_desc, category_desc),
     subcategory_2_diff = find_difference(subcategory_2_desc, subcategory_1_desc),
     subcategory_3_diff = find_difference(subcategory_3_desc, subcategory_2_desc)
-  ) #%>%select(ends_with("diff"))
+  ) |> 
+  mutate_all(trimws)#%>%select(ends_with("diff"))
   
 # check for unique
 final_diagnoses %>% 
@@ -278,6 +279,52 @@ final_diagnoses %>%
 
 final_diagnoses[35000, ] %>% t()
 
-write_csv(final_diagnoses, "output/icd10_diagnosis_hierarchy.csv", na = "")
+
+append_higher_dx <- function(field, ...){
+  final_diagnoses |> 
+    drop_na(field) |> 
+    filter(!get(field) %in% final_diagnoses$icd10_code) |> 
+    select(
+      icd10_code = field,
+      description = paste0(field, "_desc"),
+      chapter:field,
+      "{field}" := field,
+      "{field}_desc" := paste0(field, "_desc"), 
+      ...
+    ) |> 
+    distinct()
+}
+
+appended_diagnoses <- 
+  final_diagnoses |> 
+  bind_rows(
+    append_higher_dx("subcategory_3", subcategory_1_diff, subcategory_2_diff, subcategory_3_diff),
+    append_higher_dx("subcategory_2", subcategory_1_diff, subcategory_2_diff),
+    append_higher_dx("subcategory_1", subcategory_1_diff),
+    append_higher_dx("category")
+  ) |> 
+  arrange(icd10_code) |> 
+  mutate(
+    current_listing_ind = as.integer(icd10_code %in% final_diagnoses$icd10_code),
+    update_date = Sys.Date()
+  )
+
+# check for missing dx codes
+appended_diagnoses |> count(current_listing_ind)
+
+# check for dupes
+paste(nrow(appended_diagnoses) - n_distinct(appended_diagnoses$icd10_code), "dupes")
+count(appended_diagnoses, icd10_code, sort = TRUE)
+filter(final_diagnoses, icd10_code == "A00.0")
+filter(appended_diagnoses, icd10_code == "A00.0")
+# waldo::compare(.Last.value[1,], .Last.value[2,])
+
+
+filter(final_diagnoses, icd10_code == "C44.10")
+filter(appended_diagnoses, icd10_code == "C44.10")
 
 # write to csv
+write_csv(appended_diagnoses, "output/icd10_diagnosis_hierarchy.csv", na = "")
+
+# remove temp file
+unlink(temp)
