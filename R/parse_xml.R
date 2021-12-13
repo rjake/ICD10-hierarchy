@@ -1,15 +1,25 @@
 # https://stackoverflow.com/questions/48324165/scraping-table-from-xml
-
+# workspace ----
 library(tidyverse)
 library(stringi)
 library(xml2)
 
-url_location <- # can browse all files
-  "ftp://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/ICD10CM/"
+# 2020 can browse all files using http://
+# url_location <- "ftp://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/ICD10CM/" 
+# xml_doc <- paste0(url_location, "2022/icd10cm_tabular_2021.xml")
+# load_xml <- read_xml(xml_doc)
 
-xml_doc <- paste0(url_location, "2021/icd10cm_tabular_2021.xml")
-  #"R/mock_up_example/mock_icd.xml"
 
+# 2021
+url_zip <- "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/ICD10CM/2022/Table%20and%20Index%20zip.zip"
+temp <- tempfile()
+download.file(url_zip, temp)
+# unzip(temp, list=TRUE)
+
+xml_file <- "Table and Index/icd10cm-tabular-2022.xml"
+xml_doc <- unz(temp, xml_file)
+
+# bring in xml
 load_xml <- read_xml(xml_doc)
 
 
@@ -269,3 +279,5 @@ final_diagnoses %>%
 final_diagnoses[35000, ] %>% t()
 
 write_csv(final_diagnoses, "output/icd10_diagnosis_hierarchy.csv", na = "")
+
+# write to csv
