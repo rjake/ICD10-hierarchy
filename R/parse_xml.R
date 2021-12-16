@@ -3,25 +3,18 @@
 library(tidyverse)
 library(stringi)
 library(xml2)
+library(readxl)
+library(glue)
+library(vroom)
 
-# 2020 can browse all files using http://
-# url_location <- "ftp://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/ICD10CM/" 
-# xml_doc <- paste0(url_location, "2022/icd10cm_tabular_2021.xml")
-# load_xml <- read_xml(xml_doc)
+# requires 'year' variable from  R/download-and-unzip-files.R
+# year <- 2014 
+message("working on ", year, ' - - - - - - -') # print heading
 
-
-# 2021
-url_zip <- "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/ICD10CM/2022/Table%20and%20Index%20zip.zip"
-temp <- tempfile()
-download.file(url_zip, temp)
-# unzip(temp, list=TRUE)
-
-xml_file <- "Table and Index/icd10cm-tabular-2022.xml"
-xml_doc <- unz(temp, xml_file)
+xml_path <- paste0("file-history/icd10_", year, ".xml")
 
 # bring in xml
-load_xml <- read_xml(xml_doc)
-
+load_xml <- read_xml(xml_path)
 
 # chapters ----
 chapter_nodes <- xml_find_all(load_xml, ".//chapter")
@@ -88,12 +81,28 @@ parse_dx <- function(n, title, join_field) {
     )
 }
 
-icd_dx <-
+all_sub_category <-
   parse_dx(7, "extension", "subcategory_3") %>%
-  full_join(parse_dx(6, "subcategory_3", "subcategory_2")) %>%
-  full_join(parse_dx(5, "subcategory_2", "subcategory_1")) %>%
-  full_join(parse_dx(4, "subcategory_1", "category")) %>%
-  full_join(parse_dx(3, "category", "supercategory")) %>%
+  full_join(parse_dx(6, "subcategory_3", "subcategory_2"), by = "subcategory_3") %>%
+  full_join(parse_dx(5, "subcategory_2", "subcategory_1"), by = "subcategory_2") %>%
+  full_join(parse_dx(4, "subcategory_1", "category"), by = "subcategory_1") %>%
+  full_join(parse_dx(3, "category", "supercategory"), by = "category")
+
+# as ascii ----
+standardize_ascii <- function(x) {
+  x |> 
+    tolower() |> 
+    stringi::stri_trans_general("latin-ascii")
+}
+
+as_ascii <-
+  all_sub_category %>% 
+  #  filter(category == "S42") %>% select(icd10_code, matches("[y123]_desc")) %>% 
+  mutate(across(matches("cat.*desc"), standardize_ascii))
+
+
+icd_dx <-
+  as_ascii |>
   mutate(
     icd10_code = 
       coalesce(extension, subcategory_3, subcategory_2, subcategory_1, category)
@@ -116,20 +125,21 @@ icd_extensions <-
     name = xml_find_first(ext_node, "../../name") %>% xml_text(),
     note = xml_find_first(ext_node, "../../sevenChrNote/note") %>% xml_text(),
     char = xml_attr(ext_node, "char"),
-    text = xml_text(ext_node)
+    text = xml_text(ext_node) |> standardize_ascii()
   )
 
 # full dataset
 prep_extensions <-
   icd_extensions %>%
+  # filter(name == "M1A") %>% 
   mutate( # extract referenced code patterns
     applies_to =
-      note %>%
+      note %>% # 'The appropriate 7th character is to be added to each code from category M1A, S42, T49.123' %>%
         str_remove_all("O30") %>%
         # expand to S12.1, S12.2, etc
         str_replace("S12.0-S12.6", paste0("S12.", 0:6, collapse = ", ")) %>%
         # pull out dx codes
-        str_extract_all("[A-Z]\\d{2}([\\.A-Z0-9]+)?")
+        str_extract_all("[A-Z](\\d\\w)([\\.A-Z0-9]+)?")
   ) %>%
   unnest(applies_to) %>%
   mutate( # create fields to join to in next step
@@ -158,7 +168,8 @@ prep_extensions %>%
 
 
 join_dx <- function(df, join_var, loc) {
-  #df <- icd_dx %>% filter(icd10_code == "S42.311"); join_var <- quo(subcategory_2); loc <- 6; 
+  # df <- icd_dx %>% filter(icd10_code == "S42.311"); join_var <- quo(subcategory_2); loc <- 6; 
+  
   df %>%
     # filter out any extension field that already has a value
     filter(across(starts_with("x"), is.na)) %>% 
@@ -170,20 +181,20 @@ join_dx <- function(df, join_var, loc) {
           "x{{loc}}" := char, 
           "x{{loc}}_desc" := text
         ) %>% 
-        drop_na()
-      #,by = deparse(substitute(join_var)) # creates string
+        drop_na()#, by = deparse(substitute(join_var)) # creates string
     ) %>% 
     select(icd10_code, tail(names(.), 2)) %>% 
-    distinct()
+    distinct() |> 
+    suppressMessages()
 }
 
 # with extensions ----
 with_extensions <-
   icd_dx %>%
   # odd but need to bring over the code & text each time so not overwritten
-  left_join(join_dx(., subcategory_2, 6)) %>% 
-  left_join(join_dx(., subcategory_1, 5)) %>%
-  left_join(join_dx(., category, 3)) %>%
+  left_join(join_dx(., subcategory_2, 6), by = "icd10_code") %>% 
+  left_join(join_dx(., subcategory_1, 5), by = "icd10_code") %>%
+  left_join(join_dx(., category, 3), by = "icd10_code") %>%
 #  filter(icd10_code == "S42.311") %>% 
   mutate(
     extension = coalesce(str_sub(extension, 8), x3, x5, x6),
@@ -210,12 +221,12 @@ with_extensions <-
 # final join ----
 final_joins <- 
   with_extensions %>%
-  left_join(icd_chapters) %>% 
+  left_join(icd_chapters, by = "category") %>% 
   #  select(icd10_code, starts_with("x")) %>% 
   arrange(icd10_code) %>% 
   fill(chapter) %>% 
   fill(chapter_desc) %>% 
-  left_join(icd_sections) %>% 
+  left_join(icd_sections, by = "category") %>% 
   fill(section) %>% 
   fill(section_desc) %>% 
   mutate(
@@ -234,34 +245,50 @@ final_joins <-
     icd10_code, description, starts_with("chap"), starts_with("sect"), everything()
   )
 
+
+
+#' make hyphens, parentheses literal
+#' @examples 
+#' preserve_punctuation('a-b#')
+# preserve_punctuation <- function(x) {
+#   str_replace_all(
+#     string = x,
+#     pattern = "([[:punct:]])", 
+#     replacement = 
+#       str_c(
+#         "\\", "\\", # 2 escaped '\' 
+#         "\\1"       # capture group
+#       )
+#   ) 
+# }
+
+
+#' find text difference between two strings
+#' @examples 
+#' find_difference(x = '1 2 3 4-6', ref = '1 3')
+find_difference <- function(x, ref) {
+  clean_ref <-
+    coalesce(ref, "") |> 
+    str_replace_all(',', " ") |>
+    trimws() |> 
+    str_split(" ") 
   
+  clean_x <- 
+    coalesce(x, "") |> 
+    str_replace_all(",", " ") |> 
+    str_split(" ") 
   
-find_difference <- function(x, y) {
-  # df <- drop_na(final_joins, subcategory_3_desc)[3,]
-  # x <- df$subcategory_3_desc
-  # y <- df$subcategory_2_desc
-  x <- str_remove_all(x, "[[:punct:]]")
-  y <- 
-    trimws(str_remove_all(y, "[[:punct:]]")) %>% 
-    str_replace_all(" ", "|")
-  
-  x %>% 
-    str_remove_all(y) %>% 
-    str_replace_all(" {2,}", " ") %>% # remove double spaces
+  map2(clean_x, clean_ref, setdiff) |> 
+    map_chr(paste, collapse = " ") |> 
+    str_replace_all(" {2,}", " ") |> 
     trimws()
 }
 
-as_ascii <-
-  final_joins %>% 
-  #  filter(category == "S42") %>% select(icd10_code, matches("[y123]_desc")) %>% 
-  mutate_all(stringi::stri_trans_general, "latin-ascii")
-
 
 # final diagnoses ----
-final_diagnoses <-
-  as_ascii %>% 
-#  filter(category == "S42") %>% select(icd10_code, matches("[y123]_desc")) %>% 
-  mutate(across(matches("cat.*desc"), tolower)) %>% 
+with_diff_cols <-
+  final_joins %>% 
+  #filter(category == "S42") %>% select(icd10_code, matches("[y123]_desc")) %>% 
   mutate(
     subcategory_1_diff = find_difference(subcategory_1_desc, category_desc),
     subcategory_2_diff = find_difference(subcategory_2_desc, subcategory_1_desc),
@@ -269,62 +296,67 @@ final_diagnoses <-
   ) |> 
   mutate_all(trimws)#%>%select(ends_with("diff"))
   
-# check for unique
-final_diagnoses %>% 
-  summarise(
-    n = n(),
-    n_icd = n_distinct(icd10_code),
-    n_desc = n_distinct(description)
-  ) # 72567
 
-final_diagnoses[35000, ] %>% t()
+with_diff_cols[35000, ] %>% t()
 
 
 append_higher_dx <- function(field, ...){
-  final_diagnoses |> 
+  # TODO:
+    # Note: Using an external vector in selections is ambiguous.
+    # i Use `all_of(field)` instead of `field` to silence this message.
+    # i See <https://tidyselect.r-lib.org/reference/faq-external-vector.html>.
+  with_diff_cols |> 
     drop_na(field) |> 
-    filter(!get(field) %in% final_diagnoses$icd10_code) |> 
+    filter(!get(field) %in% with_diff_cols$icd10_code) |> 
     select(
       icd10_code = field,
       description = paste0(field, "_desc"),
       chapter:field,
       "{field}" := field,
-      "{field}_desc" := paste0(field, "_desc"), 
+      "{field}_desc" := paste0(field, "_desc"),
       ...
-    ) |> 
-    distinct()
+    ) |>
+    distinct() |>
+    mutate(
+      # remove ending commas from description fields, ex dx: O10.10
+      across(matches("desc"), str_remove, ",$")
+    )
 }
 
-appended_diagnoses <- 
-  final_diagnoses |> 
+final_diagnosis <- 
+  with_diff_cols |> 
   bind_rows(
     append_higher_dx("subcategory_3", subcategory_1_diff, subcategory_2_diff, subcategory_3_diff),
     append_higher_dx("subcategory_2", subcategory_1_diff, subcategory_2_diff),
     append_higher_dx("subcategory_1", subcategory_1_diff),
     append_higher_dx("category")
-  ) |> 
+  ) |>
   arrange(icd10_code) |> 
   mutate(
-    current_listing_ind = as.integer(icd10_code %in% final_diagnoses$icd10_code),
+    year = year,
+    derived_code_ind = as.integer(!icd10_code %in% with_diff_cols$icd10_code),
     update_date = Sys.Date()
   )
 
 # check for missing dx codes
-appended_diagnoses |> count(current_listing_ind)
+final_diagnosis |> count(derived_code_ind)
 
 # check for dupes
-paste(nrow(appended_diagnoses) - n_distinct(appended_diagnoses$icd10_code), "dupes")
-count(appended_diagnoses, icd10_code, sort = TRUE)
-filter(final_diagnoses, icd10_code == "A00.0")
-filter(appended_diagnoses, icd10_code == "A00.0")
+paste(nrow(final_diagnosis) - n_distinct(final_diagnosis$icd10_code), "dupes")
+# count(final_diagnosis, icd10_code, sort = TRUE)
+# filter(final_diagnosis, icd10_code == "A00.0")
 # waldo::compare(.Last.value[1,], .Last.value[2,])
 
 
-filter(final_diagnoses, icd10_code == "C44.10")
-filter(appended_diagnoses, icd10_code == "C44.10")
+#filter(with_diff_cols, icd10_code == "C44.10")
+#filter(final_diagnosis, icd10_code == "C44.10")
+
 
 # write to csv
-write_csv(appended_diagnoses, "output/icd10_diagnosis_hierarchy.csv", na = "")
-
-# remove temp file
-unlink(temp)
+vroom::vroom_write(
+  final_diagnosis, 
+  glue("output/icd10_diagnosis_hierarchy_{year}.csv"), 
+  delim = ",",
+  na = ""
+)
+#write_csv(final_diagnosis, "~/github/Chop-Data-Blocks/data/lookup_diagnosis_icd10.csv", na = "")
