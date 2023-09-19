@@ -107,6 +107,7 @@ icd_dx <-
     icd10_code = 
       coalesce(extension, subcategory_3, subcategory_2, subcategory_1, category)
   ) %>%
+  #filter(str_detect(icd10_code, "S42")) %>%
   select(
     icd10_code, 
     starts_with("category"), 
@@ -120,6 +121,7 @@ icd_dx <-
 
 # extensions ----
 ext_node <- xml_find_all(load_xml, ".//diag/sevenChrDef/extension")
+
 icd_extensions <-
   tibble(
     name = xml_find_first(ext_node, "../../name") %>% xml_text(),
@@ -131,7 +133,6 @@ icd_extensions <-
 # full dataset
 prep_extensions <-
   icd_extensions %>%
-  # filter(name == "M1A") %>% 
   mutate( # extract referenced code patterns
     applies_to =
       note %>% # 'The appropriate 7th character is to be added to each code from category M1A, S42, T49.123' %>%
@@ -154,25 +155,27 @@ prep_extensions <-
 
 # see what it looks like
 prep_extensions %>%
+  filter(str_detect(name, "S4")) %>% 
   group_by(note) %>%
   summarise(
     n = n_distinct(applies_to),
     codes = paste(unique(applies_to), collapse = ", "),
     chars = paste(unique(char), collapse = ", ")
   ) %>%
-  ungroup() %>%
-  filter(n > 1) #%>% 
+  ungroup() #%>% filter(n > 1) #%>% 
   # mutate(
   #   note = str_remove_all(note, "The appropriate 7th character is to be added to|One of the following 7th characters is to be assigned to( each)? code(s in subcategory)?|to designate ((lateral|sever)ity|the stage) of (the disease|glaucoma)")
   # )
 
 
 join_dx <- function(df, join_var, loc) {
-  # df <- icd_dx %>% filter(icd10_code == "S42.311"); join_var <- quo(subcategory_2); loc <- 6; 
+  # df <- icd_dx %>% filter(icd10_code == "S42.271"); join_var <- quo(subcategory_2); loc <- 6; 
+  # df <- icd_dx %>% filter(icd10_code == "S42.271"); join_var <- quo(subcategory_1); loc <- 5; 
+  # df <- icd_dx %>% filter(icd10_code == "S42.271"); join_var <- quo(category); loc <- 3; 
   
   df %>%
     # filter out any extension field that already has a value
-    filter(across(starts_with("x"), is.na)) %>% 
+    filter(if_all(starts_with("x"), ~is.na(.x))) %>% 
     inner_join(
       prep_extensions %>%
         filter(length == loc) %>% 
@@ -181,7 +184,8 @@ join_dx <- function(df, join_var, loc) {
           "x{{loc}}" := char, 
           "x{{loc}}_desc" := text
         ) %>% 
-        drop_na()#, by = deparse(substitute(join_var)) # creates string
+        drop_na(),#, by = deparse(substitute(join_var)) # creates string
+      relationship = "many-to-many"
     ) %>% 
     select(icd10_code, tail(names(.), 2)) %>% 
     distinct() |> 
@@ -192,10 +196,10 @@ join_dx <- function(df, join_var, loc) {
 with_extensions <-
   icd_dx %>%
   # odd but need to bring over the code & text each time so not overwritten
-  left_join(join_dx(., subcategory_2, 6), by = "icd10_code") %>% 
-  left_join(join_dx(., subcategory_1, 5), by = "icd10_code") %>%
-  left_join(join_dx(., category, 3), by = "icd10_code") %>%
-#  filter(icd10_code == "S42.311") %>% 
+  left_join(join_dx(., subcategory_2, 6), by = "icd10_code", relationship = "many-to-many") %>%
+  left_join(join_dx(., subcategory_1, 5), by = "icd10_code", relationship = "many-to-many") %>%
+  left_join(join_dx(., category, 3), by = "icd10_code", relationship = "many-to-many") %>%
+  #filter(icd10_code == "S42.261") %>% 
   mutate(
     extension = coalesce(str_sub(extension, 8), x3, x5, x6),
     extension_desc = coalesce(extension_desc, x3_desc, x5_desc, x6_desc),
@@ -216,7 +220,11 @@ with_extensions <-
         !is.na(extension) ~ paste0(str_pad(icd10_code, 7, "right", "X"), extension),
         TRUE ~ icd10_code
       )
-  )
+  ) |> 
+  distinct()
+
+paste(nrow(with_extensions) - n_distinct(with_extensions$icd10_code), "dupes")
+#count(with_extensions, icd10_code, sort = TRUE)
 
 # final join ----
 final_joins <- 
@@ -297,7 +305,7 @@ with_diff_cols <-
   mutate_all(trimws)#%>%select(ends_with("diff"))
   
 
-with_diff_cols[35000, ] %>% t()
+# with_diff_cols |> filter(icd10_code == "S52.271S") |> gather() |> print(n = Inf)
 
 
 append_higher_dx <- function(field, ...){
@@ -319,7 +327,7 @@ append_higher_dx <- function(field, ...){
     distinct() |>
     mutate(
       # remove ending commas from description fields, ex dx: O10.10
-      across(matches("desc"), str_remove, ",$")
+      across(matches("desc"), ~str_remove(.x, ",$"))
     )
 }
 
@@ -344,7 +352,7 @@ final_diagnosis |> count(derived_code_ind)
 # check for dupes
 paste(nrow(final_diagnosis) - n_distinct(final_diagnosis$icd10_code), "dupes")
 # count(final_diagnosis, icd10_code, sort = TRUE)
-# filter(final_diagnosis, icd10_code == "A00.0")
+# filter(final_diagnosis, icd10_code == "S42.271A") |> distinct()
 # waldo::compare(.Last.value[1,], .Last.value[2,])
 
 
