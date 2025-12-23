@@ -6,6 +6,7 @@ require(beepr)
 # might need to download and inspect to find file name
 year_metadata <- {
   list(
+    list(year = 2026L, url = "https://www.cms.gov/files/zip/2026-code-tables-tabular-and-index.zip", file = "Table and Index/icd10cm_tabular_2026.xml"),
     list(year = 2025L, url = "https://www.cms.gov/files/zip/2025-code-tables-tabular-and-index.zip", file = "icd10cm_tabular_2025.xml"),
     list(year = 2024L, url = "https://www.cms.gov/files/zip/2024-code-tables-tabular-and-index-updated-02/01/2024.zip", file = "icd10cm_tabular_2024.xml"),
     list(year = 2023L, url = "https://www.cms.gov/files/zip/2023-code-tables-tabular-and-index-updated-01/11/2023.zip", file = "icd10cm_tabular_2023.xml"),
@@ -19,7 +20,7 @@ year_metadata <- {
     list(year = 2015L, url = "https://www.cms.gov/Medicare/Coding/ICD10/Downloads/2015-tables-index.zip", file = "Tabular.xml"),
     list(year = 2014L, url = "https://www.cms.gov/Medicare/Coding/ICD10/Downloads/2014-ICD10-Code-Tables-and-Index.zip", file = "Tabular.xml")
   ) |>
-    set_names(paste0("y_", 2025:2014))
+    set_names(paste0("y_", 2026:2014))
 }
 
 # view as table
@@ -33,7 +34,7 @@ if (!file.exists(archive)) {
 
 # download files from CDC
 download_zip_file <- function(x, overwrite = FALSE) {
-  # x = year_metadata$y_2024
+  # x = year_metadata$y_2026
   message("working on ", x$year, " - - - - - - -")
   archive_zip <- paste0(archive, "/cms/", x$year, ".zip")
   if (!file.exists(archive_zip) | overwrite) {
@@ -44,7 +45,7 @@ download_zip_file <- function(x, overwrite = FALSE) {
 
 # unzip files from CDC
 unzip_file <- function(x, overwrite = FALSE) {
-  # x <- year_metadata$y_2025
+  # x <- year_metadata$y_2026
   message("working on ", x$year, " - - - - - - -")
   new_xml_path <- paste0(archive, "/icd10_", x$year, ".xml")
   archive_zip <- paste0(archive, "/cms/", x$year, ".zip")
@@ -54,9 +55,22 @@ unzip_file <- function(x, overwrite = FALSE) {
       message("file already exists for", x$year, "use 'overwrite = TRUE'")
     )
   }
-
-  unzip(zipfile = archive_zip, files = x$file, exdir = archive)
-  file.rename(file.path(archive, x$file), new_xml_path)
+  
+  if (FALSE) { # use to find path of xml file
+    unzip(zipfile = archive_zip, list = TRUE)$Name  |> 
+      grep(pattern = "tabular.*xml$", value = TRUE)
+  }
+  
+  unzip(
+    zipfile = archive_zip, 
+    files = x$file, 
+    exdir = archive,
+    junkpaths = TRUE # only use basename
+  )
+  
+  # rename file
+  file.path(archive, basename(x$file)) |> 
+    file.rename(new_xml_path)
 }
 
 
@@ -76,11 +90,12 @@ beepr::beep(5)
 
 
 # parse all xml and write csv files
-map_int(year_metadata[1:2], pluck, "year") |>
+map_int(year_metadata[1], pluck, "year") |>
   walk(
     ~ ({
       assign("year", .x, envir = globalenv())
       source(file = "R/parse_xml.R")
     })
   )
+
 beepr::beep(5)
